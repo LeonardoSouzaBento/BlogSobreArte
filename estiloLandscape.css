@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500; 1.500&display=swap');
+
+*{
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0px;
+}
+main{
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+header h1{
+    font-family: "Roboto Condensed";
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+header{
+    width: 100vw;
+    margin-top: -9px;
+    padding-top: 25px;
+    background-color: rgb(238, 238, 238);
+}
+main h2,main h3, main h4, div#votacao > h3 {
+    color: rgb(50, 50, 50);
+    font-family: "Roboto Condensed";
+    font-size: 1.43em;
+}
+p{
+    font-size: 1.08em;
+}
+main h3{
+    color: rgb(54, 54, 54);
+    font-weight: 600;
+    font-size: 1.25em;
+}
+main div{
+    display: grid;
+}
+div#introducao{
+    display: block;
+    line-height: normal;
+    text-align: left;
+    position: static;
+    margin: auto;
+    width: 50vw;
+}
+div#introducao h3{
+    margin-top: 30px;
+    text-align: left;
+    color: rgb(65, 65, 65);
+}
+div#introducao p{
+    margin-bottom: 40px;
+    text-align: right;
+    text-align: justify;
+}
+header>div#monalisa{
+    background: black url(MonaLisa/FundoDetelaMonaLisa.png);
+    display: block;
+    margin: auto;
+    height: 200px;
+    transform: translate(50% 50%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*1*/
+    main>div#sombrasSimplificadas>div#imagens1{
+        display: grid;
+        margin: auto;
+        margin-bottom: 40px;
+        gap: 20px 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2;
+        padding:25px;
+        background-color: rgb(210, 210, 210);
+    }
+    main>div#sombrasSimplificadas>p{
+        display: block;
+        padding-top: 0px;
+        padding-left: 280px;
+        padding-right: 280px;
+        padding-bottom: 17px;
+        margin: auto;
+    }
+    main>div#sombrasSimplificadas>h2{
+        margin-left: 280px;
+    }
+
+        img#mulher1{
+            padding-left: 0px;
+            width: 250px;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        img#mulher2{
+            padding-left: 0px;
+            width: 250px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        img#cavalo{
+            margin-left: -30px;
+            width: 300px;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        img#cavalo2{
+            margin-left:-10px;
+            width: 300px;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+/*2*/
+        div#pelos{
+            display: block;
+            width: 100%;
+            height: 600px;
+            background-color: rgb(210, 210, 210);
+            grid-template-columns: 5;
+            grid-template-rows: 2;
+        }
+
+aside{
+margin: auto;
+max-width: 85%;
+}
+footer{
+    margin: auto;
+    max-width: 80%;
+}
+div#votacao > h3{
+   text-align: center;
+   margin: auto;
+}
+div#votacao > div.fundodosgatos> img{
+    width: 190px;
+    display: grid;
+}
+div#votacao > div.fundodosgatos{
+    background-color: rgb(210, 210, 210);
+    padding: 20px 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 6;
+    grid-template-rows: 2;
+}
+div#votacao > div.fundodosgatos>img#fileira1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}

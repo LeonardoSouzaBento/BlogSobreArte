@@ -1,0 +1,22 @@
+Apresentação rápida: automatizar rolagem, mostrar todos os recursos.
+Marcação amarela para leitura com (leitor de texto) ativado. "Quer ativar o leitor de texto para ouvir-los?"
+
+Icone pequeno em "que é o modo como enxergamos o efeito das sombras nos objetos"
+Para abrir uma imagem de exemplo.
+
+Abrir imagens
+No conjunto de imagens da monalisa
+
+Quando eu deixar o mouse em cima dos titulos, quero que as imagens aumentem para mostrar bem de perto, dentro dos limites do tamanho tamanho definido.
+
+Botão de descida rápida
+Para enquadrar o site como se fosse um slide.
+
+Botão de seta para baixo
+Para abrir lista de tópicos, na frente dos títulos.
+
+Botão "Você sabia"?
+Cobre a tela da seção onde está.
+
+Mudança na funcionalidade da rolagem
+Na parte de "sombras simplificadas", a rolagem faz o seguinte: as imagens ficam menores e dispostas a esquerda, organizadas conforme a versão mobile. As imagens de "Pelos" ficam ao lado, ocupando um espaço maior. Tudo isso ocupa uma largura maior da tela.
