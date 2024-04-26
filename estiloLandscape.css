@@ -5,6 +5,14 @@
 *{
     font-family: "Open Sans", sans-serif;
 }
+.material-symbols-outlined {
+    display: inline;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
 body{
     overflow-x: hidden;
     height: 100%;
@@ -119,6 +127,12 @@ header>div#monalisa{
             grid-row-start: 1;
             grid-row-end: 3;
         }
+
+        main>div#sombrasSimplificadas>div#rel3d>h4{
+            display: inline
+            margin-left: 230px;
+        }
+
 /*2*/
         div#pelos{
             display: block;
