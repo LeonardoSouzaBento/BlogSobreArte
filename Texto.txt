@@ -8,24 +8,9 @@ Certa vez eu queria pintar ilustrações uma parede de um muro, no entanto, eu n
 
 Sombras simplificadas
 
-Essa é uma simplificação do sombreamento realista. O formato que a sombra faz no objeto é desenhado. E a quantidade tons do objeto é reduzida a uns poucos tons. Você sabe que os desenhos animados são pintados desse modo.
-Os contornos podem descrever formas realistas ou estilizadas, ou ainda, serem ausentes, um desenho sem contornos (no caso de se ter muitos tons, por exemplo).
-
-Relacionado ao 3d
-Esse estilo de pintura pode ser usado em bonecos 3d (digitais ou reais).
-gif de bersek e boneco de dragonball
-
-
-
 	Animais
-	No caso da pelagem de animais, mechas podem ser feitas com cores sólidas. Veja que é diferente da ilustração do cavalo que você viu acima.
-
-	Mechas coloridas para pelagem de animais
-	É um bom modo de representar pelos?
-
-	Folhas representando a pelagem
-	Sergey Kovalenko pensou em  pensou em usar folhas para representar pelagem.
-	Reprodução de Sergey Kovalenko a partir do site https://dribbble.com/sodesign
+Link para primeiro artista
+	https://www.instagram.com/vectorpets/
 
 Formas geométricas
 
