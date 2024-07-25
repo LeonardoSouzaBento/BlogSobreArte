@@ -19,6 +19,7 @@ body{
     overflow-x: hidden;
     height: 100%;
     margin: 0px;
+    margin: auto;
 }
 main{
     margin: auto;
@@ -51,6 +52,8 @@ main h2,main h3, main h4, div#votacao > h3 {
     font-family: "Roboto Condensed";
     font-size: 1.43em;
 }
+h2{font-size: 1.45em;margin-left: 40px;}
+
 p{
     font-size: 1.08em;
 }
@@ -337,6 +340,43 @@ main>div#sombrasSimpli>div#pelagem>div#folhas{
     div#folhas>img#cer{
         grid-row:4/5 ;
         grid-column:2/3 ;
+    }
+div#poligonos{
+    height: 530px;
+    width: 1100px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    background-color: rgb(226, 226, 226);
+}
+    div#poligonos>div{
+        width: 1000px;
+        height: 550px;
+        margin: auto;
+        margin-top: 0px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 200px 200px;
+    }
+
+    div#poligonos>div>img#ind{
+        grid-column: 1/2;
+        height: 440px;
+    }
+    div#poligonos>div>img#can{
+        grid-column: 2/3;
+        height: 440px;
+        margin-left: -10px;
+    }
+    div#poligonos>div>img#qua1{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        width: 300px;
+    }
+    div#poligonos>div>img#qua2{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 300px;
+        margin-top: 30px;
     }
 
 
