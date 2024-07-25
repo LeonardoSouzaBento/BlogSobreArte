@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500; 1.500&display=swap');
 
+@media screen and (min-width: 992px){
 *{
     font-family: "Open Sans", sans-serif;
 }
@@ -431,4 +432,5 @@ footer> div#sobre{
     padding-top: 80px;
     margin: auto;
     max-width: 80%;
+}
 }
