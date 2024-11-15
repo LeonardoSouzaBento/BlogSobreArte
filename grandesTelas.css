@@ -9,26 +9,9 @@
 body{
     overflow-x: hidden;
 }
-main{
-    display: block;
-    width: 1200px;
-    margin: auto;
-}
-a{
-    text-decoration: none;
-}
-img{
-    border-radius: 10px;
-}
-div{
-    border-radius: 10px;
-}
-header h1{
-    font-family: "Roboto Condensed";
-    font-weight: 500;
-    text-align: center;
-    margin: auto;
-    margin: 30px 0px 45px 0px;
+iframe{
+    width: auto; 
+    height: auto;
 }
 header{
     display: block;
@@ -37,23 +20,14 @@ header{
     padding-top: 25px;
     background-color: rgb(238, 238, 238);
 }
-main h2,main h3, main h4, div#votacao > h3 {
-    color: rgb(50, 50, 50);
+header h1{
     font-family: "Roboto Condensed";
-    font-size: 1.43em;
-}
-h2{font-size: 1.45em;margin-left: 40px;}
-
-p{
-    font-size: 1.08em;
-}
-main h3{
-    color: rgb(54, 54, 54);
-    font-weight: 600;
-    font-size: 1.25em;
-}
-main div{
-    display: grid;
+    font-weight: 500;
+    text-align: center;
+    margin: 15px 5% 22px 5%;
+    font-size: 2em;
+    width: 90%;
+    line-height: 45px;
 }
 header>div#monalisa{
     background: black url(MonaLisa/FundoDetelaMonaLisa.png);
@@ -64,11 +38,11 @@ header>div#monalisa{
     align-items: center;
     margin: auto;
     height: 200px;
-    transform: translate(-0.52%, 0%);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 #monachild{
     height: 180px;
     width: 85%;
@@ -78,6 +52,7 @@ header>div#monalisa{
 }
 #monachild img{
     height: 150px;
+    width: auto;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.389);
     border-radius: 5%;
     border: 1px solid rgba(255, 255, 255, 0.441);
@@ -90,6 +65,36 @@ header>div#monalisa{
     img#f{height: 140px;}
     img#g{height: 130px;}
 
+main{
+    display: block;
+    margin: auto;
+}
+main div{
+    border-radius: 10px;
+    align-self: auto;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border-radius: 10px;
+    width: 220px;
+}
+main h2,main h3, main h4, div#votacao > h3 {
+    color: rgb(50, 50, 50);
+    font-family: "Roboto Condensed";
+    font-size: 1.43em;
+}
+h2{font-size: 1.45em; margin-left: 35px;}
+
+p{
+    font-size: 1.08em;
+}
+main h3{
+    color: rgb(54, 54, 54);
+    font-weight: 600;
+    font-size: 1.25em;
+}
 div#intro{
     display: block;
     line-height: normal;
@@ -279,96 +284,94 @@ div#ss{
         }
 
 main>div#sombrasSimpli>div#pelagem>div#folhas{
-    display: grid;
-    grid-template-columns: 180px 180px;
-    grid-template-rows: 50px 90px 180px 180px;;
-    width: 360px;
-    height: 480px;
-    padding: 5px 25px;
-    margin-right: 0px;
-    gap: 7px;
+    width: 362px;
+    height: 460px;
+    padding: 17px;
+    gap: 10px;
     border-radius: 10px;
     background-color: rgb(52, 52, 52);
     box-shadow: inset 0 0 15px #0000006d;
 }
     main>div#sombrasSimpli>div#pelagem>div#folhas>h3{
-        text-align: left;
-        margin-top: 20px;
-        grid-column: 1 / 3;
-        grid-row: 1/2;
         color:#91c049;
+        margin-left: -66px;
     }
     main>div#sombrasSimpli>div#pelagem>div#folhas>p{
-        max-width: 310px;
+        width: 90%;
         margin: auto;
-        grid-column: 1 / 3;
-        grid-row: 2/3;
-        padding-bottom: 7px;
-        text-align: center;
+        margin-bottom: 20px;
+        padding: 0px;
         color: white;
     }
     main>div#sombrasSimpli>div#pelagem>div#folhas>p>a{
         color:#A8DF54;
     }
-    main>div#sombrasSimpli>div#pelagem>div#folhas>img{
-        max-height: 150px;
+    div#gFol{
+        display: flex;
+        gap: 15px;
+        flex-flow: row wrap;
+    }
+    div#gFol>img{
+        width: max-content;
+        max-height: 147px;
         box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.247);
         border: 0.2px solid rgb(66, 66, 66);
     }
-    div#folhas>img#ag{
-        grid-row:3/4 ;
-        grid-column:1/2 ;
-    }
-    div#folhas>img#co{
-        grid-row: 3/4;
-        grid-column:2/3 ;
-    }
-    div#folhas>img#lo{
-        grid-row: 4/5;
-        grid-column: 1/2;
-    }
-    div#folhas>img#cer{
-        grid-row:4/5 ;
-        grid-column:2/3 ;
-    }
+
 div#poligonos{
     height: 530px;
-    width: 1100px;
+    width: 92%;
     margin: auto;
+    margin-top: 90px;
     margin-bottom: 20px;
     padding-top: 10px;
     background-color: rgb(226, 226, 226);
 }
-    div#poligonos>div{
-        width: 1000px;
-        height: 550px;
-        margin: auto;
+    div#poligonos h2{
+        display: block;
+        height: 40px;
+    }
+    div#gPol{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        height: 450px;
+    }
+    div#pol{
+        width: 56.5%;
+        height: 350px;
+        padding: 25px;
+        display: flex;
+        flex-flow: column wrap;
         margin-top: 0px;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 200px 200px;
+        gap: 15px;
     }
 
-    div#poligonos>div>img#ind{
-        grid-column: 1/2;
-        height: 440px;
+    img#ind{
+        width: 215px;
+        height: fit-content;
     }
-    div#poligonos>div>img#can{
-        grid-column: 2/3;
-        height: 440px;
-        margin-left: -10px;
+    img#can{
+        width: 227px;
+        height: fit-content;
     }
-    div#poligonos>div>img#qua1{
-        grid-column: 3/4;
-        grid-row: 1/2;
-        width: 300px;
+    img#qua1{
+        width: 240px;
+        height: fit-content;
     }
-    div#poligonos>div>img#qua2{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        width: 300px;
-        margin-top: 30px;
+    img#qua2{
+        width: 240px;
+        height: fit-content;
     }
 
+    div#rel3D2{
+        align-self: flex-start;
+        width: 360px;
+        height: 470px;
+        margin-left: 20px;
+        box-shadow: inset 0 0 15px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
+        background-color: rgb(43, 43, 43);
+    }
 
 aside{
 margin: auto;
