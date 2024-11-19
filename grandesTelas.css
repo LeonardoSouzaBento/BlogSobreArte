@@ -15,10 +15,7 @@ iframe{
 }
 header{
     display: block;
-    height: 347px;
     margin: auto;
-    margin-top: -9px;
-    padding-top: 25px;
     background-color: rgb(238, 238, 238);
 }
 header h1{
@@ -137,14 +134,11 @@ div#intro{
         height: auto;
     }
 div#ss{
-    grid-column: 1/2;
-    height: 600px;
     padding-top: 40px;
     margin: auto;
 }
     main>div#sombrasSimpli>div#ss>h2{
         font-size: 1.45em;
-        margin-left: 40px;
         margin-bottom: 0px;
         padding-bottom: 7px;
     }
@@ -189,19 +183,13 @@ div#ss{
             }
 
     div#rel3d{
-        grid-column: 2/3;
         display: flexbox;
         background-color: rgb(43, 43, 43);
         width: 360px;
-        height: 470px;
-        margin-top: 60px;
-        margin-left: -80px;
-        padding-bottom: 43px;
         box-shadow: inset 0 0 15px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
     }
         main>div#sombrasSimpli>div#rel3d>h3{
             padding-top: 20px;
-            padding-bottom: 22px;
             color: white;
             margin: 0px 0px 0px 40px;
         }
