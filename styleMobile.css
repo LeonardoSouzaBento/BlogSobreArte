@@ -18,7 +18,7 @@ iframe{
 header{
     display: block;
     margin: auto;
-    padding: 18px 0px;
+    padding: 18px 0px 1px;
     background-color: rgb(238, 238, 238);
 }
 header h1{
@@ -68,10 +68,6 @@ header>div#monalisa{
     img#f{height: 87px;}
     img#g{height: 81px;}
 
-main{
-    display: block;
-    margin: auto;
-}
 main div{
     border-radius: 7px;
     align-self: auto;
@@ -105,6 +101,8 @@ div#intro{
     line-height: 1.5em;
     text-align: left;
     margin: auto;
+    margin-bottom: 34px;
+    padding: 40px 0px 40px;
     width: 100%;
     background-color: white;
     background-image: linear-gradient(to top, rgb(218, 218, 218), white);
@@ -116,18 +114,15 @@ div#intro{
 }
     div#intro> h3{
         display: block;
-        text-align: center;;
-        padding-top: 15px;
-        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 25px;
         color: rgb(65, 65, 65);
         font-size: 1.5em;
         border-radius: 6px;
     }
     div#intro p{
         margin: auto;
-        padding: 20px;
-        margin-bottom: 34px;
-        text-align: right;
         text-align: justify;
         width: 80%;
         font-size: 1.1em;
@@ -144,13 +139,13 @@ div#ss{
     margin-left: 3%;
 }
     main>div#sombrasSimpli>div#ss>h2{
-        margin-bottom: 0px;
-        padding-bottom: 4px;
+        width: 100%;
+        text-align: center;
+        margin: 0px 0px 25px 0px;
     }
     main>div#sombrasSimpli>div#ss>p{
-        width: 90%;
-        margin-left: 5px;
-        padding: 0px 0px 7px 40px;
+       text-align:left;
+       margin-bottom: 25px;
     }
         div#imgs1{
             width: 94%;
@@ -300,12 +295,10 @@ main>div#sombrasSimpli>div#pelagem>div#folhas{
     }
 
 div#poligonos{
-    height: 530px;
     width: 92%;
     margin: auto;
-    margin-top: 90px;
     margin-bottom: 20px;
-    padding-top: 10px;
+    padding: 10px 0px 10px;
     background-color: rgb(226, 226, 226);
 }
     div#poligonos h2{
@@ -314,42 +307,39 @@ div#poligonos{
     }
     div#gPol{
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         width: 100%;
-        height: 450px;
     }
     div#pol{
-        width: 56.5%;
-        height: 350px;
-        padding: 25px;
+        width: 100%;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
         margin-top: 0px;
-        gap: 15px;
+        margin-bottom: 30px;
+        gap: 12px;
     }
 
     img#ind{
-        width: 215px;
-        height: fit-content;
+        width: 124px;
     }
     img#can{
-        width: 227px;
-        height: fit-content;
+        width: 131px;
     }
     img#qua1{
-        width: 240px;
-        height: fit-content;
+        width: 139px;
+        order:1;
     }
     img#qua2{
-        width: 240px;
-        height: fit-content;
+        width: 139px;
+        order:1;
     }
 
     div#rel3D2{
-        align-self: flex-start;
-        width: 360px;
-        height: 470px;
-        margin-left: 20px;
+        width: 90%;
+        height: 300px;
+        margin-left: 5%;
         box-shadow: inset 0 0 15px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
         background-color: rgb(43, 43, 43);
     }
