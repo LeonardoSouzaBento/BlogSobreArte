@@ -7,8 +7,9 @@
     font-family: "Open Sans", sans-serif;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden; margin: 0px;
 }
+main{padding-bottom: 30px;}
 iframe{
     flex: auto;
     width: 90%;
@@ -26,9 +27,10 @@ header h1{
     font-weight: 500;
     text-align: left;
     display: block;
-    margin: 15px 7.5% 22px 7.5%;
+    margin: 0px;
+    margin-left: 8.5%;
     font-size: 1.8em;
-    width: 85%;
+    width: 84%;
     padding: 20px 0px;
 }
 header>div#monalisa{
@@ -46,7 +48,6 @@ header>div#monalisa{
 }
 
 #monachild{
-    height: 104px;
     width: 98%;
     display: flex;
     justify-content: center;
@@ -71,6 +72,7 @@ header>div#monalisa{
 main div{
     border-radius: 7px;
     align-self: auto;
+    border: 1px solid red;
 }
 a{
     text-decoration: none;
@@ -113,10 +115,11 @@ div#intro{
 
 }
     div#intro> h3{
-        display: block;
+        width: 80%;
         text-align: center;
-        margin-top: 0px;
         margin-bottom: 25px;
+        margin-left: 10%;
+        margin-top: 0px;
         color: rgb(65, 65, 65);
         font-size: 1.5em;
         border-radius: 6px;
@@ -130,12 +133,11 @@ div#intro{
     main> div#sombrasSimpli{
         width: 100%;
         margin: auto;
-        margin-bottom: 20px;
-        height: auto;
+        padding-bottom: 20px;
     }
 div#ss{
     width: 94%;
-    margin: auto;
+    margin: 0px;
     margin-left: 3%;
 }
     main>div#sombrasSimpli>div#ss>h2{
@@ -149,32 +151,61 @@ div#ss{
     }
         div#imgs1{
             width: 94%;
+            height: 65vw;
             display: flex;
-            flex-flow: row wrap;
-            align-content: space-evenly;
-            height: auto;
+            flex-flow: row nowrap;
+            align-content: flex-start;
+            justify-content: space-between;
+            align-items: center;
             margin-left: 3%;
             margin-bottom: 35px;
-            gap: 26px;
+        }
+        div#imgMaior{
+            background-color: rgb(203, 193, 193);
+            width: 74%;
+            padding: 0px;
+            margin: 0px;
+        }
+        img#mulher1{
+            width: 100%;
+            height: auto;
+            margin-top: 3px;
+        }
+
+        div#imgsMenor{
+            background-color: rgb(192, 133, 133);
+            width: 22%;
+            height: 100%;
+            padding:0px;
+            margin: 0px;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 18px;
+        }
+        div#imgsMenor>img{
+            flex: 1 1 auto;
         }
         div#imgs1>img{
             flex: auto;
             box-shadow: 7px 5px 7px rgba(0, 0, 0, 0.326);
-            height: max-content;
+            object-fit: cover;
         }
-            img#mulher1, img#mulher2 {
-                width: 115px;
+            img#mulher2 {
+                width: 100%;
             }
             img#cavalo{
-                margin-left: -13px;
-                width: 98px;
+                width: 100%;
                 order: 1;
                 margin-left: 0px;
+                object-fit: cover;
+                height: 19vw;
+
             }
-            img#cavalo2{
-                margin-left:-7px;
-                width: 98px;
+            img#beatles{
+                width: 100%;
+                object-fit: cover;
                 order: 1;
+                height: 19vw;
             }
 
     div#rel3d{
@@ -210,6 +241,7 @@ div#ss{
         width: 96%;
         margin-left: 3%;
         padding: 0px;
+        padding-bottom: 20px;
         display: flex;
         flex-flow: column wrap;
         justify-content: space-evenly;
@@ -345,16 +377,17 @@ div#poligonos{
     }
 
 aside{
-width: 90%;
-margin: 5%;
+display: flex;
+justify-content: center;
 }
 
 div#gatos{
     display: flex;
     flex-flow: row wrap;
-    width: 90%;
+    width: 84%;
     padding: 20px;
-    gap: 30px;
+    justify-content: center;
+    gap: 15px;
     border-radius: 15px;
     background-color: rgb(81, 81, 81);
     background-image: linear-gradient(to bottom, rgb(174, 174, 174), rgb(214, 214, 214));
@@ -372,10 +405,10 @@ div#gatos{
         width: 100%;
         box-shadow: 4px 5px 5px rgb(139, 139, 139);
     }
-    }
+    
 
     div#gatos> img{
-        width: 240px;
+        width: 139px;
         height: max-content;
         border-radius: 5px;
         box-shadow: 10px 6px 10px rgba(0, 0, 0, 0.245);
@@ -384,12 +417,10 @@ footer{
     display: block;
     padding: 20px;
     margin: auto;
-    width: 100%;
     background-color: black;
     color: white;
 }
 footer> div#sobre{
-    display: block;
-    margin: auto;
-    width: 80%;
-}
+    width: 90%;
+    margin-left: 5%;
+}}

@@ -16,52 +16,53 @@ iframe{
 header{
     display: block;
     margin: auto;
+    margin-bottom: 10px;
     background-color: rgb(238, 238, 238);
 }
 header h1{
     font-family: "Roboto Condensed";
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     margin: 15px 5% 22px 5%;
-    font-size: 2em;
+    font-size: 1.8em;
     width: 90%;
     line-height: 45px;
+    letter-spacing: 0.9px;
 }
 header>div#monalisa{
     background: black url(MonaLisa/FundoDetelaMonaLisa.png);
     width: 100%;
+    padding: 30px 0px;
     border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 200px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 #monachild{
-    height: 180px;
     width: 85%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 #monachild img{
-    height: 150px;
+    height: 160px;
     width: auto;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.389);
     border-radius: 5%;
     border: 1px solid rgba(255, 255, 255, 0.441);
 }
-    img#a{height: 130px;} 
-    img#b{height: 140px;}
-    img#c{height: 150px;}
-    img#d{height: 160px;}
-    img#e{height: 150px;}
-    img#f{height: 140px;}
-    img#g{height: 130px;}
+    img#a{height: 135px;} 
+    img#b{height: 145px;}
+    img#c{height: 155px;}
+    img#d{height: 165px;}
+    img#e{height: 155px;}
+    img#f{height: 145px;}
+    img#g{height: 135px;}
 
 main{
     display: block;
@@ -70,6 +71,7 @@ main{
 main div{
     border-radius: 10px;
     align-self: auto;
+    border: 1px solid red;
 }
 a{
     text-decoration: none;
@@ -82,11 +84,13 @@ main h2,main h3, main h4, div#votacao > h3 {
     color: rgb(50, 50, 50);
     font-family: "Roboto Condensed";
     font-size: 1.43em;
+    border: 1px solid red;
 }
 h2{font-size: 1.45em; margin-left: 35px;}
 
 p{
     font-size: 1.08em;
+    border: 1px solid red;
 }
 main h3{
     color: rgb(54, 54, 54);
@@ -98,11 +102,11 @@ div#intro{
     line-height: normal;
     text-align: left;
     position: static;
+    padding: 35px 0px 80px;
     margin: auto;
     width: 100%;
-    height: 244px;
     background-image: linear-gradient(to top, rgba(206, 206, 206, 0.677), white);
-    background-size: 100% 50px;
+    background-size: 100% 20%;
     background-repeat: no-repeat;
     background-position: bottom;
     border-radius: 0px;
@@ -111,31 +115,31 @@ div#intro{
     div#intro> h3{
         display: block;
         text-align: center;
-        margin-top: 70px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         color: rgb(65, 65, 65);
         font-size: 1.5em;
         border-radius: 10px;
+        letter-spacing: 0.5px;
     }
     div#intro p{
-        margin: auto;
-        margin-bottom: 120px;
-        text-align: right;
         text-align: justify;
-        max-width: 650px;
+        width: 48%;
+        letter-spacing: 0.8px;
     }
     main> div#sombrasSimpli{
-        display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-rows: repeat(2, 590px);
-        max-width: 1250px;
-        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+        width: 90%;
+        margin-left: 5%;
         margin-bottom: 40px;
-        height: auto;
+        position: relative;
     }
 div#ss{
     padding-top: 40px;
-    margin: auto;
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 64%;
 }
     main>div#sombrasSimpli>div#ss>h2{
         font-size: 1.45em;
@@ -143,63 +147,74 @@ div#ss{
         padding-bottom: 7px;
     }
     main>div#sombrasSimpli>div#ss>p{
-        width: 690px;
-        padding: 0px 0px 7px 40px;
         font-size: 1.1em;
+        margin-left: 0px;
+        width: 100%;
     }
         main>div#sombrasSimpli>div#ss>div#imgs1{
-            width: 700px;
-            display: grid;
-            margin-left: 40px;
-            margin-bottom: 70px;
-            gap: 20px 20px;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 2;
+            width: 100%;
+            height: 420px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: space-evenly;
+            margin-left: 0px;
+            position: relative;
         }
         main>div#sombrasSimpli>div#ss>div#imgs1>img{
             box-shadow: 7px 5px 7px rgba(0, 0, 0, 0.326);
+            margin: 0px;
+            padding: 0px;
+            object-fit: cover;
         }
-            img#mulher1{
-                width: 175px;
-                grid-row-start: 1;
-                grid-row-end: 2;
+            div#imgs1>img#mulher1{
+                height: 45%;
+                width: auto;   
             }
-            img#mulher2{
-                width: 175px;
-                grid-row-start: 2;
-                grid-row-end: 3;
+            div#imgs1>img#mulher2{
+                height: 45%;
+                width: auto;   
             }
-            img#cavalo{
-                margin-left: -22px;
-                width: 210px;
-                grid-row-start: 1;
-                grid-row-end: 3;
+            div#imgs1> img#cavalo{
+                height: 100%;
+                width: auto;      
+                order: -1;
             }
-            img#cavalo2{
-                margin-left:-10px;
-                width: 210px;
-                grid-row-start: 1;
-                grid-row-end: 3;
+            div#imgs1> img#beatles{
+                height: 100%;
+                width: auto;   
+                order: -1;
             }
 
     div#rel3d{
-        display: flexbox;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
         background-color: rgb(43, 43, 43);
-        width: 360px;
+        width: 26%;
         box-shadow: inset 0 0 15px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
+        z-index: 1;
+        position: absolute;
+        top: 65px;
+        right: 40px;
+        flex: auto;
     }
-        main>div#sombrasSimpli>div#rel3d>h3{
+       div#rel3d>h3{
+            width: 100%;
             padding-top: 20px;
+            padding: 0px;
             color: white;
-            margin: 0px 0px 0px 40px;
+            margin-left: 0px;
+            margin-bottom: 15px;
         }
-        main>div#sombrasSimpli>div#rel3d>p{
+        div#rel3d>p{
             color: white;
             display: block;
-            width:300px ;
+            width: 86%;
             font-size: 0.97em;
-            margin: 7px 0px 7px 40px;
-            padding: 0px 0px 20px 0px;
+            margin: 0px;
+            padding: 0px 0px 10px 0px;
         }
             main>div#sombrasSimpli>div#rel3d>iframe{
                 display: block;
@@ -208,8 +223,7 @@ div#ss{
             }
 
     main>div#sombrasSimpli>div#pelagem{
-        width: 1250px;
-        height: 600px;
+        width: 100%;
         padding-bottom: 40px;
         display: flex;
         flex-direction: row;
@@ -218,6 +232,7 @@ div#ss{
         align-items: center;
         background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(211, 211, 211));
         border-radius: 15px;
+        margin-left: 0px;
     }
         div#pelagem h3{
             height: 20px;
@@ -273,6 +288,9 @@ div#ss{
         }
 
 main>div#sombrasSimpli>div#pelagem>div#folhas{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     width: 362px;
     height: 460px;
     padding: 17px;
@@ -283,7 +301,10 @@ main>div#sombrasSimpli>div#pelagem>div#folhas{
 }
     main>div#sombrasSimpli>div#pelagem>div#folhas>h3{
         color:#91c049;
-        margin-left: -66px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        text-indent: 0px;
     }
     main>div#sombrasSimpli>div#pelagem>div#folhas>p{
         width: 90%;
@@ -299,6 +320,7 @@ main>div#sombrasSimpli>div#pelagem>div#folhas{
         display: flex;
         gap: 15px;
         flex-flow: row wrap;
+        position: relative;
     }
     div#gFol>img{
         width: max-content;
@@ -364,7 +386,7 @@ div#poligonos{
 
 aside{
 margin: auto;
-max-width: 85%;
+width: 85%;
 }
 
 div#gatos{
