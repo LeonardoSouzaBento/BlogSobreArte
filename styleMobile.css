@@ -24,7 +24,7 @@ header{
 }
 header h1{
     font-family: "Roboto Condensed";
-    font-weight: 500;
+    font-weight: 600;
     text-align: left;
     display: block;
     margin: 0px;
@@ -219,6 +219,7 @@ div#ss{
             }
 
     div#rel3d{
+        position: relative;
         display: flex;
         flex-flow: column nowrap;
         background-color: rgb(43, 43, 43);
@@ -226,6 +227,12 @@ div#ss{
         margin-bottom: 30px;
         padding: 12px;
         box-shadow: inset 0 0 8px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
+    }
+    button#rel3d{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: white;
     }
         div#rel3d>h3{
             text-align: center;
@@ -255,6 +262,7 @@ div#ss{
         display: flex;
         flex-flow: column wrap;
         justify-content: space-evenly;
+        align-items: center;
         background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(211, 211, 211));
         border-radius: 10px;
     }
@@ -269,37 +277,48 @@ div#ss{
         flex-flow: row wrap;
         width: 94%;
         justify-content: center;
-        margin-left: 3%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         padding: 5px 0px;
         gap: 12px;
     }
     div#pelossolidos p{
         width: 100%;
     }
-        div#pelossolidos > img{
-            width: 132px;
-            object-fit: contain;
-            border-radius: 10px;
-            border: 1px solid rgb(208, 208, 208);
-            box-shadow: 5px 5px 10px 0px rgb(163, 163, 163);
+        div#imgsPel{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: center;
+            gap: 5%;
+            padding: 15px 0px;
+            height: 380px;
         }
-        div#pelossolidos > img#cat{
-            order: 0;
-        }
-        div#pelossolidos > img#lion{
-            order: 1;
-        }
-        div#pelossolidos > img#wolf{
-            order: 1;
-        }
-        div#pelossolidos > img#dog{
-        width: 132px;
-        }
+            div#imgsPel img{
+                min-width: 42%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 10px;
+                border: 1px solid rgb(208, 208, 208);
+                box-shadow: 5px 5px 10px 0px rgb(163, 163, 163);
+                flex: 0 0 auto;
+            }
+            img#cat{
+                order: 0;
+            }
+            img#lion{
+                order: 1;
+            }
+            img#wolf{
+                order: 1;
+            }
+            img#dog{
+                width: 43.8%;
+            }
 
 main>div#sombrasSimpli>div#pelagem>div#folhas{
     width: 84%;
-    margin-left: 4%;
     padding: 12px;
     gap: 10px;
     border-radius: 10px;

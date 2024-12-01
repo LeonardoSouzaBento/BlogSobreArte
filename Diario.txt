@@ -1,0 +1,7 @@
+Diário
+
+01/12/2024
+
+A configuração flex: 1 1 auto; ou flex; 1 0 auto; (com aumento ativado) impede de ver o tamanho que for definido para a imagem (pelo aumento).
+
+O width impede a imagem de crescer, mas não o min-width.
