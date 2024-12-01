@@ -36,23 +36,25 @@ header h1{
 header>div#monalisa{
     background: black url(MonaLisa/FundoDetelaMonaLisa.png);
     width: 100%;
+    height: 54vw;
     border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     padding: 20px 0px;
-    background-position: center center;
+    background-position: -122vw center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #monachild{
     width: 98%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 17px;
+    gap: 20px;
     overflow-x: hidden;
 }
 #monachild img{
@@ -60,14 +62,16 @@ header>div#monalisa{
     box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.389);
     border-radius: 5%;
     border: 1px solid rgba(255, 255, 255, 0.441);
+    padding: 0px;
+    margin: 0px;
 }
-    img#a{height: 81px;} 
-    img#b{height: 87px;}
-    img#c{height: 93px;}
-    img#d{height: 99px;}
-    img#e{height: 93px;}
-    img#f{height: 87px;}
-    img#g{height: 81px;}
+    img#a{height: 79%;} 
+    img#b{height: 84%;}
+    img#c{height: 89%;}
+    img#d{height: 94%;}
+    img#e{height: 89%;}
+    img#f{height: 84%;}
+    img#g{height: 79%;}
 
 main div{
     border-radius: 7px;
@@ -80,6 +84,10 @@ a{
 img{
     border-radius: 7px;
     width: 63px;
+}
+img:hover{
+    transform: scale(1.04);
+    transition: transform 0.25s ease;
 }
 main h2,main h3, main h4, div#votacao > h3 {
     color: rgb(50, 50, 50);
@@ -131,14 +139,17 @@ div#intro{
         font-size: 1.1em;
     }
     main> div#sombrasSimpli{
-        width: 100%;
-        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
         padding-bottom: 20px;
     }
 div#ss{
     width: 94%;
     margin: 0px;
-    margin-left: 3%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
     main>div#sombrasSimpli>div#ss>h2{
         width: 100%;
@@ -150,14 +161,13 @@ div#ss{
        margin-bottom: 25px;
     }
         div#imgs1{
-            width: 94%;
+            width: 95%;
             height: 65vw;
             display: flex;
             flex-flow: row nowrap;
             align-content: flex-start;
             justify-content: space-between;
             align-items: center;
-            margin-left: 3%;
             margin-bottom: 35px;
         }
         div#imgMaior{
@@ -180,7 +190,7 @@ div#ss{
             margin: 0px;
             display: flex;
             flex-flow: column nowrap;
-            gap: 18px;
+            gap: 5%;
         }
         div#imgsMenor>img{
             flex: 1 1 auto;
@@ -192,28 +202,28 @@ div#ss{
         }
             img#mulher2 {
                 width: 100%;
+                height: 27%;
             }
             img#cavalo{
                 width: 100%;
                 order: 1;
                 margin-left: 0px;
                 object-fit: cover;
-                height: 19vw;
-
+                height: 28%;
             }
             img#beatles{
                 width: 100%;
                 object-fit: cover;
                 order: 1;
-                height: 19vw;
+                height: 28%;
             }
 
     div#rel3d{
         display: flex;
         flex-flow: column nowrap;
         background-color: rgb(43, 43, 43);
-        width: 80%;
-        margin: 0px 0px 30px 7%;
+        width: 84%;
+        margin-bottom: 30px;
         padding: 12px;
         box-shadow: inset 0 0 8px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
     }
