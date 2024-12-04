@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500; 1.500&display=swap');
 
 @media only screen and (min-width: 375px){
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+    
 *{
     font-family: "Open Sans", sans-serif;
 }
@@ -84,10 +93,6 @@ a{
 img{
     border-radius: 7px;
     width: 63px;
-}
-img:hover{
-    transform: scale(1.04);
-    transition: transform 0.25s ease;
 }
 main h2,main h3, main h4, div#votacao > h3 {
     color: rgb(50, 50, 50);
@@ -228,12 +233,31 @@ div#ss{
         padding: 12px;
         box-shadow: inset 0 0 8px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
     }
-    button#rel3d{
+    /*
+    span:hover{
+        transform: scale(1.06);
+        transition: transform 0.3s ease;
+    }*/
+    span#expand, span#collapse {
         position: absolute;
-        top: 0px;
-        right: 0px;
-        background-color: white;
+        top: 16px;
+        right: 16px;
+        height: 7%;
+        width: 13.5%;
+        color: white;
+        font-size: 1.8em;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 2px;
+        border-radius: 7px;
+        border: 1px solid rgb(160, 160, 160);
+        background-color: rgb(35, 35, 35);
+        box-shadow: inset 3px 3px 4px rgb(77, 77, 77);
     }
+    span#expand{ z-index: 1;}
+    
+    span#collapse{ z-index:0;}
+
         div#rel3d>h3{
             text-align: center;
             font-size: 1.5em;
@@ -360,11 +384,13 @@ div#poligonos{
     margin: auto;
     margin-bottom: 20px;
     padding: 10px 0px 10px;
-    background-color: rgb(226, 226, 226);
+    background-image: linear-gradient(to top, rgb(224, 224, 224), white);
 }
     div#poligonos h2{
         display: block;
         height: 40px;
+        margin-left: 25px;
+        margin-bottom: 10px;
     }
     div#gPol{
         display: flex;
@@ -375,34 +401,37 @@ div#poligonos{
         width: 100%;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: flex-start;
         margin-top: 0px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         gap: 12px;
+        padding-bottom: 28px;
+        background-image: linear-gradient(to top, rgb(205, 205, 205), white);
+        border-radius: 5px 5px 0px 0px;
     }
 
     img#ind{
-        width: 124px;
+        min-width: 41%;
     }
     img#can{
-        width: 131px;
+        min-width: 43.5%;
     }
     img#qua1{
-        width: 139px;
-        order:1;
+        min-width: 90%;
+        order:-1;
     }
     img#qua2{
-        width: 139px;
-        order:1;
+        min-width: 90%;
+        order:0;
     }
 
     div#rel3D2{
-        width: 90%;
+        width: 100%;
         height: 300px;
-        margin-left: 5%;
         box-shadow: inset 0 0 15px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
         background-color: rgb(43, 43, 43);
+        border-radius: 0px 0px 10px 10px;
     }
 
 aside{
