@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500; 1.500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
 
 @media only screen and (min-width: 375px){
 
@@ -13,48 +13,45 @@
 }
     
 *{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 body{
     overflow-x: hidden; margin: 0px;
 }
 main{padding-bottom: 30px;}
-iframe{
-    flex: auto;
-    width: 90%;
-    height: 34vw;
-    padding: 7px;
-}
+
 header{
     display: block;
     margin: auto;
-    padding: 18px 0px 1px;
+    padding: 0px;
     background-color: rgb(238, 238, 238);
 }
 header h1{
     font-family: "Roboto Condensed";
-    font-weight: 600;
+    font-weight: 500;
     text-align: left;
     display: block;
-    margin: 0px;
-    margin-left: 8.5%;
-    font-size: 1.8em;
-    width: 84%;
-    padding: 20px 0px;
+    margin: auto;
+    font-size: 1.5em;
+    width: 80%;
+    padding: 50px 0px;
+    letter-spacing: 0.6px;
+    line-height: 32px;
 }
-header>div#monalisa{
+div#monalisa{
     background: black url(MonaLisa/FundoDetelaMonaLisa.png);
     width: 100%;
-    height: 54vw;
+    height: 180px;
     border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     padding: 20px 0px;
-    background-position: -122vw center;
+    background-position: -123vw center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1px solid black;
 }
 
 #monachild{
@@ -74,37 +71,34 @@ header>div#monalisa{
     padding: 0px;
     margin: 0px;
 }
-    img#a{height: 79%;} 
-    img#b{height: 84%;}
-    img#c{height: 89%;}
-    img#d{height: 94%;}
-    img#e{height: 89%;}
-    img#f{height: 84%;}
-    img#g{height: 79%;}
+    img#a{height: 77%;} 
+    img#b{height: 82%;}
+    img#c{height: 87%;}
+    img#d{height: 92%;}
+    img#e{height: 87%;}
+    img#f{height: 82%;}
+    img#g{height: 77%;}
 
 main div{
-    border-radius: 7px;
     align-self: auto;
-    border: 1px solid red;
 }
 a{
     text-decoration: none;
 }
 img{
-    border-radius: 7px;
+    border-radius: 6px;
     width: 63px;
+    box-shadow: 3px 3px 4px rgb(131, 131, 131);
 }
-main h2,main h3, main h4, div#votacao > h3 {
-    color: rgb(50, 50, 50);
+h2, h3, h4{
     font-family: "Roboto Condensed";
-    font-size: 1.5em;
 }
-h2{font-size: 1.2em; margin-left: 35px;}
-
+h2{font-size: 1.32em; font-weight: 600;}
+h3{ font-size: 1.2em;}
 p{
-    font-size: 1.2em;
-    width: 90%;
-    margin-left: 5%;
+    font-weight: 400;
+    font-size: 1.05em;
+    letter-spacing: 0.7px;
 }
 main h3{
     color: rgb(54, 54, 54);
@@ -134,61 +128,73 @@ div#intro{
         margin-left: 10%;
         margin-top: 0px;
         color: rgb(65, 65, 65);
-        font-size: 1.5em;
+        font-size: 1.35em;
         border-radius: 6px;
     }
     div#intro p{
         margin: auto;
         text-align: justify;
         width: 80%;
-        font-size: 1.1em;
+        font-size: 1em;
     }
     main> div#sombrasSimpli{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        padding-bottom: 20px;
     }
 div#ss{
-    width: 94%;
+    width: 100%;
     margin: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 12%;
     display: flex;
     flex-flow: column;
     align-items: center;
+    background-image: linear-gradient(to top, rgb(218, 218, 218), white);
+    background-size: 100% 15px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    box-shadow: 0px 1px 0px rgb(152, 152, 152) ;
 }
-    main>div#sombrasSimpli>div#ss>h2{
-        width: 100%;
-        text-align: center;
-        margin: 0px 0px 25px 0px;
+    div.txt{
+        width: 88%;
+        position: relative;
     }
-    main>div#sombrasSimpli>div#ss>p{
-       text-align:left;
-       margin-bottom: 25px;
+    div#ss>div.txt>h2{
+        margin-bottom: 27px;
+        margin-top: 0px;
     }
-        div#imgs1{
-            width: 95%;
-            height: 65vw;
-            display: flex;
-            flex-flow: row nowrap;
-            align-content: flex-start;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 35px;
+    div#ss>div.txt>p{
+        margin-bottom: 28px;
+        margin-top: 0px;
+    }
+    div#imgs1{
+        width: 88%;
+        height: 65vw;
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        align-items: center;
+    }
+        div#imgs1>img{
+            flex: auto;
+            box-shadow: 7px 5px 7px rgba(0, 0, 0, 0.326);
+            object-fit: cover;
         }
         div#imgMaior{
-            background-color: rgb(203, 193, 193);
+            display: flex;
+            height: 244px;
             width: 74%;
             padding: 0px;
             margin: 0px;
         }
-        img#mulher1{
-            width: 100%;
-            height: auto;
-            margin-top: 3px;
-        }
+            img#mulher1{
+                width: 100%;
+                object-fit: cover;
+            }
 
         div#imgsMenor{
-            background-color: rgb(192, 133, 133);
             width: 22%;
             height: 100%;
             padding:0px;
@@ -197,116 +203,175 @@ div#ss{
             flex-flow: column nowrap;
             gap: 5%;
         }
-        div#imgsMenor>img{
-            flex: 1 1 auto;
-        }
-        div#imgs1>img{
-            flex: auto;
-            box-shadow: 7px 5px 7px rgba(0, 0, 0, 0.326);
-            object-fit: cover;
-        }
-            img#mulher2 {
-                width: 100%;
-                height: 27%;
-            }
-            img#cavalo{
-                width: 100%;
-                order: 1;
-                margin-left: 0px;
-                object-fit: cover;
-                height: 28%;
-            }
-            img#beatles{
-                width: 100%;
-                object-fit: cover;
-                order: 1;
-                height: 28%;
-            }
+                div#imgsMenor>img{
+                    flex: 1 1 auto;
+                }
+                img#mulher2 {
+                    width: 100%;
+                    height: 27%;
+                }
+                img#cavalo{
+                    width: 100%;
+                    order: 1;
+                    margin-left: 0px;
+                    object-fit: cover;
+                    height: 28%;
+                }
+                img#beatles{
+                    width: 100%;
+                    object-fit: cover;
+                    order: 1;
+                    height: 28%;
+                }
+
+    div#sscc{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        background-image: linear-gradient(to top, rgb(218, 218, 218), white);
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        box-shadow: 0px 1px 0px rgb(152, 152, 152) ;
+        padding-bottom: 10%;
+    }
+    div#sscc>div.txt{height: 148px; margin-bottom: 17px;}
+    div#sscc>div.txt>p{
+        font-weight:400;
+        width: 70%;
+        background-color: rgb(243, 243, 243);
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-align: justify;
+    }
+    div#sscc>div.txt>button{
+        position: absolute;  
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 7px;
+        box-shadow: 3px 3px 3px rgb(208, 208, 208);
+    }
+    div#sscc>div.txt>button#yes{
+        bottom: 35px;
+        right: 10px;
+    }
+    div#sscc>div.txt>button#no{
+        bottom: 0px;
+        right: 10px;
+    }
+    div#imgs_sscc{
+        width: 88%;
+        min-height: 468px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: space-between;
+    }
+    div#imgs_sscc>img{min-width: 47%; flex: none;}
 
     div#rel3d{
         position: relative;
         display: flex;
         flex-flow: column nowrap;
+        align-items: center;
         background-color: rgb(43, 43, 43);
-        width: 84%;
-        margin-bottom: 30px;
-        padding: 12px;
+        width: 100%;
+        margin-bottom: 25px;
         box-shadow: inset 0 0 8px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
+    }
+    div#rel3d>div.txt{
+        width: 84%;
+        margin-bottom: 15px;
     }
     /*
     span:hover{
         transform: scale(1.06);
         transition: transform 0.3s ease;
     }*/
-    span#expand, span#collapse {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        height: 7%;
-        width: 13.5%;
-        color: white;
-        font-size: 1.8em;
-        text-align: center;
-        padding-top: 8px;
-        padding-bottom: 2px;
-        border-radius: 7px;
-        border: 1px solid rgb(160, 160, 160);
-        background-color: rgb(35, 35, 35);
-        box-shadow: inset 3px 3px 4px rgb(77, 77, 77);
-    }
-    span#expand{ z-index: 1;}
-    
-    span#collapse{ z-index:0;}
-
-        div#rel3d>h3{
-            text-align: center;
+        div#rel3d>div.txt>h3{
+            align-self: flex-start;
             font-size: 1.5em;
-            padding: 12px 10px;
+            padding: 25px 0px;
             color: white;
             margin: 0px;
         }
-        div#rel3d>p{
+
+        span#expand, span#collapse {
+            position: absolute;
+            top: 18px;
+            right: 0px;
+            width: 12.5%;
+            color: white;
+            font-size: 1.8em;
+            text-align: center;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-radius: 7px;
+            border: 1px solid black;
+            background-color: rgb(35, 35, 35);
+            box-shadow: 3px 3px 3px rgb(24, 24, 24);
+        }
+        span#expand{ z-index: 1;}
+        
+        span#collapse{ z-index:0;}
+
+        div#rel3d>div.txt>p{
             color: white;
             display: block;
             text-align: justify;
-            margin-left: 5%;
-            width:86%;
-            padding: 7px;
+            margin-top: 10px;
+            font-size: 1.05em;
+            line-height: 25px;
         }
-            main>div#sombrasSimpli>div#rel3d>iframe{
-                display: block;
-                margin: auto;
+        div#iframe{ 
+            display: flex; 
+            flex-flow: column wrap;}
+            div#rel3d>div#iframe>iframe{
+                margin-bottom: 21px;
+                border-radius: 6px;
             }
 
-    main>div#sombrasSimpli>div#pelagem{
-        width: 96%;
-        margin-left: 3%;
-        padding: 0px;
-        padding-bottom: 20px;
+    div#pelagem{
+        width: 100%;
+        padding: 0px 0px 40px 0px;
         display: flex;
         flex-flow: column wrap;
         justify-content: space-evenly;
         align-items: center;
-        background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(211, 211, 211));
-        border-radius: 10px;
+        background-image: linear-gradient(to top, rgb(218, 218, 218), white);
+        background-size: 100% 15px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        box-shadow: 0px 1px 0px rgb(152, 152, 152) ;
     }
-        div#pelagem h3{
-            width: 90%;
-            color: black;
-            font-size: 1.4em;
-            padding: 10px;
-        }
     div#pelossolidos{
         display: flex;
         flex-flow: row wrap;
         width: 94%;
         justify-content: center;
-        margin-bottom: 40px;
-        padding: 5px 0px;
-        gap: 12px;
+        margin-bottom: 5px;
+        padding: 0px;
     }
+    div#pelossolidos>div.txt{
+        display: flex;
+        flex-flow: column wrap;
+        border: 1px solid white;
+        padding: 0px;
+    }
+        div#pelossolidos>div.txt> h3{
+            width: 100%;
+            color: black;
+            font-size: 1.25em;
+            padding: 10px 0px;
+            margin-top: 0px;
+        }
     div#pelossolidos p{
         width: 100%;
+        margin: 0px;
+        padding: 0px;
     }
         div#imgsPel{
             display: flex;
@@ -328,27 +393,30 @@ div#ss{
                 box-shadow: 5px 5px 10px 0px rgb(163, 163, 163);
                 flex: 0 0 auto;
             }
-            img#cat{
-                order: 0;
-            }
-            img#lion{
-                order: 1;
-            }
-            img#wolf{
-                order: 1;
-            }
-            img#dog{
-                width: 43.8%;
-            }
+            img#cat{order: 0;}
+            img#lion{order: 1;}
+            img#wolf{order: 1;}
+            img#dog{width: 43.8%;}
 
-main>div#sombrasSimpli>div#pelagem>div#folhas{
-    width: 84%;
-    padding: 12px;
-    gap: 10px;
-    border-radius: 10px;
-    background-color: rgb(52, 52, 52);
-    box-shadow: inset 0 0 15px #0000006d;
-}
+    div#pelagem>button{
+        width: 90%;
+        padding: 10px 0px;
+        color: white;
+        background-color: black;
+        border-radius: 7px;
+        font-size: 1em;
+        font-weight: 500;
+        z-index: 1;
+    }
+
+    div#folhas{
+        width: 90%;
+        padding: 12px 0px;
+        margin-top: -7px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: rgb(52, 52, 52);
+        box-shadow: inset 0 0 15px #0000006d;
+    }
     main>div#sombrasSimpli>div#pelagem>div#folhas>h3{
         padding: 20px 7px;
         margin: 0px;
@@ -380,25 +448,36 @@ main>div#sombrasSimpli>div#pelagem>div#folhas{
     }
 
 div#poligonos{
-    width: 92%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
     margin: auto;
     margin-bottom: 20px;
     padding: 10px 0px 10px;
     background-image: linear-gradient(to top, rgb(224, 224, 224), white);
+    border: none;
+}
+div#poligonos>div.txt{
+    width: 85%;
+}
+div#poligonos>div.txt>p{
+    margin-top: 0px;
+    font-size: 1em;
 }
     div#poligonos h2{
-        display: block;
         height: 40px;
-        margin-left: 25px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
     div#gPol{
         display: flex;
         flex-flow: column nowrap;
+        align-items: center;
         width: 100%;
+        border: none;
     }
     div#pol{
-        width: 100%;
+        width: 94%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -407,32 +486,156 @@ div#poligonos{
         margin-bottom: 0px;
         gap: 12px;
         padding-bottom: 28px;
-        background-image: linear-gradient(to top, rgb(205, 205, 205), white);
         border-radius: 5px 5px 0px 0px;
+        border: none;
     }
 
+    div#pol>img{
+        border: 1px solid white;
+        box-shadow: 5px 5px 5px 0px rgb(136, 136, 136);
+    }
     img#ind{
-        min-width: 41%;
+        min-width: 41%; 
+        background-image: to top, black, white;
     }
-    img#can{
-        min-width: 43.5%;
-    }
-    img#qua1{
-        min-width: 90%;
-        order:-1;
-    }
-    img#qua2{
-        min-width: 90%;
-        order:0;
-    }
-
+    img#can{ min-width: 43.5%;}
+    img#qua1{min-width: 90%;order:-1;}
+    img#qua2{min-width: 90%;order:0;}
+      
     div#rel3D2{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        position: relative;
         width: 100%;
-        height: 300px;
-        box-shadow: inset 0 0 15px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
+        padding-bottom: 20px;
+        padding-top: 22px;
+        box-shadow: 7px 5px 7px rgb(141, 141, 141);
         background-color: rgb(43, 43, 43);
         border-radius: 0px 0px 10px 10px;
+        color: white;
     }
+    div#rel3D2>div.txt{
+        width: 82%;
+        padding-bottom: 10px;
+    }
+    div#rel3D2>div.txt>h3{ 
+        color: white;
+        height: 45px; 
+        font-size: 1.5em; 
+        line-height: 45px;
+        margin: 0px 0px 20px;
+        font-weight: 500;
+        align-self: flex-start; 
+        border-radius: 8px;  
+    }
+    div#rel3D2>div.txt>span{
+        position: absolute;
+        top: 0px;
+        right: 16px;
+        height: 10px;
+        width: 12.5%;
+        color: white;
+        font-size: 1.8em;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 23px;
+        border-radius: 7px;
+        border: 0.5px solid rgb(160, 160, 160);
+        background-color: rgb(35, 35, 35);
+        box-shadow: inset 3px 3px 4px rgb(24, 24, 24);
+    }
+    div#rel3D2>div.txt>p{
+        text-align: justify;
+        line-height: 25px;
+        margin: 0px 0px 18px;
+    }
+    div#papercraft{
+        width: 90%;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        border: none;
+        gap: 5%;
+        padding: 0px;
+    }
+    div#papercraft>iframe{
+        margin-bottom: 20px; border-radius: 7px;
+        flex: 1 0 auto;
+        box-shadow: 5px 5px 5px 0px rgb(27, 27, 27);
+    }
+    div#papercraft img{
+        min-width: 42%;
+        flex: 1 0 auto;
+        box-shadow: none;
+    }
+
+/**/
+
+    div#tri1{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    div#tri{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 92%;
+        margin-bottom: 30px;
+        border: none;
+    }
+    div#tri>h2{
+        align-self: flex-start;
+        margin-left: 25px;
+    }
+    div#tri>div{
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 90%;
+        padding: 10px;
+        height: 294px;
+        align-content: space-between;
+        gap: 5%;
+        border: none;
+    }
+    div#tri>div>img{
+        min-width: 46%;
+        flex: none;
+        box-shadow: 5px 5px 5px 0px rgb(136, 136, 136);
+    }
+
+    div#trij{
+        width: 92%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding-bottom: 7px;
+        border: none;
+    }
+    div#trij>h2{
+       width: 70%;
+       align-self: flex-start;
+       margin-left: 25px;
+    }
+    div#trij>div{
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 15px;
+        border: none;
+    }
+    div#trij>div>img{
+        flex: none;
+        min-width: 46%;
+        box-shadow: 5px 5px 5px 0px rgb(136, 136, 136);
+    }
+
 
 aside{
 display: flex;

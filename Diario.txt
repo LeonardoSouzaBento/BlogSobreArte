@@ -5,3 +5,7 @@ Diário
 A configuração flex: 1 1 auto; ou flex; 1 0 auto; (com aumento ativado) impede de ver o tamanho que for definido para a imagem (pelo aumento).
 
 O width impede a imagem de crescer, mas não o min-width.
+
+07/12/2024
+
+O objet-fit (no, caso eu precisei do cover), só funciona se o elemento pai ter altura e largura especificadas.

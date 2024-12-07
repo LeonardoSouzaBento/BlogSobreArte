@@ -9,21 +9,16 @@
 body{
     overflow-x: hidden;
 }
-iframe{
-    width: auto; 
-    height: auto;
-}
 header{
     display: block;
     margin: auto;
-    margin-bottom: 10px;
     background-color: rgb(238, 238, 238);
 }
 header h1{
     font-family: "Roboto Condensed";
     font-weight: 600;
     text-align: center;
-    margin: 15px 5% 22px 5%;
+    margin: 15px 5% 20px 5%;
     font-size: 1.8em;
     width: 90%;
     line-height: 45px;
@@ -32,8 +27,8 @@ header h1{
 header>div#monalisa{
     background: black url(MonaLisa/FundoDetelaMonaLisa.png);
     width: 100%;
-    height: auto;
-    padding: 30px 0px;
+    height: 220px;
+    padding: 0px;
     border-radius: 0px;
     display: flex;
     justify-content: center;
@@ -46,16 +41,17 @@ header>div#monalisa{
 
 #monachild{
     width: 85%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 #monachild img{
-    height: 160px;
     width: auto;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.389);
     border-radius: 5%;
     border: 1px solid rgba(255, 255, 255, 0.441);
+    flex: none;
 }
     img#a{height: 135px;} 
     img#b{height: 145px;}
@@ -72,7 +68,6 @@ main{
 main div{
     border-radius: 10px;
     align-self: auto;
-    border: 1px solid red;
 }
 a{
     text-decoration: none;
@@ -81,22 +76,25 @@ img{
     border-radius: 10px;
     width: 220px;
 }
+
 main h2,main h3, main h4, div#votacao > h3 {
     color: rgb(50, 50, 50);
     font-family: "Roboto Condensed";
     font-size: 1.43em;
-    border: 1px solid red;
 }
 h2{font-size: 1.45em; margin-left: 35px;}
 
 p{
-    font-size: 1.08em;
-    border: 1px solid red;
+    font-size: 1.08em; font-weight: 450; letter-spacing: 0.6px; line-height: 23px;
 }
 main h3{
     color: rgb(54, 54, 54);
     font-weight: 600;
     font-size: 1.25em;
+}
+img:hover{
+    transform: scale(1.06);
+    transition: transform 0.3s ease;
 }
 div#intro{
     display: block;
@@ -116,7 +114,7 @@ div#intro{
     div#intro> h3{
         display: block;
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
         color: rgb(65, 65, 65);
         font-size: 1.5em;
         border-radius: 10px;
@@ -167,13 +165,13 @@ div#ss{
     div#imgMaior{
         background-color: rgb(203, 193, 193);
         width: 53%;
+        height: auto;
         padding: 0px;
         margin: 0px;
     }
     img#mulher1{
         width: 100%;
         height: auto;
-        margin-top: 3px;
     }
 
     div#imgsMenor{
