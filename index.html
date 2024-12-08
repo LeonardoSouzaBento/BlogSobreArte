@@ -38,41 +38,36 @@
         <div id="sombrasSimpli">
                 <div id="ss">
                     <div class="txt">
-                        <h2>1. Sombras simplificadas</h2>
+                        <h2>1. Sombras simplificadas (com ou sem contornos)</h2>
                         <p>
                             Essa é uma simplificação do sombreamento realista. O formato que a sombra faz no objeto é desenhado. E a quantidade tons é reduzida. Você sabe que desenhos animados são pintados desse modo.
                         </p>
                     </div>
 
-                    <div id="imgs1">
-                        <div id="imgMaior">
+                    <div id="imgs_ss" class="imgs">
+                        <div class="maior">
                             <img id="mulher1" src="SombrasSimplificadas/mulher1.jpg" alt="">
                         </div>
 
-                        <div id="imgsMenor">
+                        <div class="menor">
                             <img id="cavalo" src="SombrasSimplificadas/cavalo.jpg" alt="">
                             <img id="beatles" src="SombrasSimplificadas/beatles.png" alt="">
                             <img id="mulher2" src="SombrasSimplificadas/mulher2.jpg" alt="">
                         </div>
                     </div>
-                </div>
 
-                <div id="sscc">
-                    <div class="txt">
-                        <h2>1.1. Sombras simplificadas com contornos</h2>
-                        <p>Para voçe, a aparência fica melhor desse jeito?</p>
-                        <button id="yes">Sim</button>
-                        <button id="no">Não</button>
-                    </div>
-
-                    <div id="imgs_sscc">
-                        <img src="https://i.pinimg.com/736x/17/2f/c9/172fc932095e06888fc514bb9f19264a.jpg" alt="">
-                        <img src="https://i.pinimg.com/236x/0b/64/ae/0b64ae1763df0210b4ad1d8716059725.jpg" alt="">
-                        <img src="https://i.pinimg.com/236x/23/aa/7d/23aa7d035132835a8df74275952541b7.jpg" alt="">
-                        <img src="https://i.pinimg.com/236x/51/91/c6/5191c65d2c4d56cb412ec7c6b7dac46f.jpg" alt="">
+                    <div id="imgs_2" class="imgs">
+                            <div class="maior">
+                                <img src="https://i.pinimg.com/236x/51/91/c6/5191c65d2c4d56cb412ec7c6b7dac46f.jpg" alt="">
+                            </div>
+                            <div class="menor">
+                                <img src="https://i.pinimg.com/236x/23/aa/7d/23aa7d035132835a8df74275952541b7.jpg" alt="">
+                                <img src="https://i.pinimg.com/236x/0b/64/ae/0b64ae1763df0210b4ad1d8716059725.jpg" alt="">
+                                <img src="https://i.pinimg.com/736x/17/2f/c9/172fc932095e06888fc514bb9f19264a.jpg" alt="">
+                            </div>
                     </div>
                 </div>
-                
+
                 <div id="rel3d">
                     <div class="txt">
                         <span class="material-symbols-outlined" id="expand"> expand_all </span>
@@ -91,24 +86,36 @@
             <div id="pelagem">
                 <div id="pelossolidos">
                     <div class="txt">
-                        <h3>1.1.1 Sombras simplificadas: pelagem de animais</h3>
+                        <h3>Pelagem de animais feitas nesse estilo</h3>
 
-                        <p>Veja que é diferente da pelagem do cavalo da imagem anterior. Cada mecha tem uma cor solida diferente da mecha ao lado (podem, iclusive, serem multicoloridas). É trabalho um de ilustração manual e bonito.</p>
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                        <span class="material-symbols-outlined">
+                            remove
+                        </span>
+
+                        <p>Cada mecha tem uma cor solida diferente da mecha ao lado ( elas podem ser multicoloridas). Veja que é diferente da pelagem do cavalo (o cavalo tem o pelo baixo). É trabalho um de ilustração manual, manual e bonito.</p>
                     </div>
 
-                    <div id="imgsPel">
-                        <img id="cat" src="SombrasSimplificadas/gato.jpg" alt="">
-                        <img id="wolf" src="SombrasSimplificadas/lobo.png" alt="">
-                        <img id="lion" src="SombrasSimplificadas/leao.png" alt="">
-                        <img id="dog" src="SombrasSimplificadas/cachorro.jpg" alt="">
+                    <div id="imgsPel" class="imgs">
+                        <div class="maior">
+                            <img id="lion" src="SombrasSimplificadas/leao.png" alt="">
+                        </div>
+                        <div class="menor">
+                            <img id="cat" src="SombrasSimplificadas/gato.jpg" alt="">
+                            <img id="wolf" src="SombrasSimplificadas/lobo.png" alt="">
+                            <img id="dog" src="SombrasSimplificadas/cachorro.jpg" alt="">
+                        </div>
                     </div>
                 </div>
 
-                <button>Ver +</button>
-
                 <div id="folhas">
-                    <h3>Folhas como penas ou pelos</h3>
-                    <p><a href="https://dribbble.com/sodesign" target="_blank">Sergey Kovalenko</a> pensou em usar folhas para representar pelagem.</p>
+                    <div class="txt">
+                        <h3>Folhas como penas ou pelos</h3>
+                        <p><a href="https://dribbble.com/sodesign" target="_blank">Sergey Kovalenko</a> pensou em usar folhas para representar pelagem.</p>
+                    </div>
+
                     <div id="gFol">
                         <img id="ag" src="Folhas/aguia.png" alt="">
                         <img id="co" src="Folhas/coruja.png" alt="">
@@ -152,38 +159,71 @@
             </div>
         </div>
 
-        <div id="tri1">
+        <div id="triJ">
             <div id="tri">
                 <h2>3. Triangulos juntos</h2>
-                <div>
-                    <img id="inu" src="Triangulos/inu.png" alt="">
-                    <img id="sher" src="Triangulos/sherlock.png" alt="">
-                    <img id="per" src="Triangulos/perereca.png" alt="">
-                    <img id="tuc" src="Triangulos/Tucano.png" alt="">
-                </div>
-            </div>
-            <div id="trij">
-                <div>
-                    <h2>3.1. Triangulos  juntos e contornados</h2>
-                    <p>Encontramos ilustrações assim pesquisando por algo como "mosaic illustration", mas mosaicos não tendem a ser feitos somente com triangulos.</p>
-                </div>
-
-                <div>
-                    <img src="Triangulos/abelha.png" alt="">
-                    <img src="Triangulos/tucanos.png" alt="">
-                    <img src="Triangulos/passaros.png" alt="">
-                    <img src="Triangulos/mulher.png" alt="">
-                </div>
-
-                <div>
-                    <span>Ver mais</span>
-                    <p></p>
+                <div class="imgs">
+                    <div class="maior">
+                        <img id="sher" src="Triangulos/sherlock.png" alt="">
+                    </div>
+                    <div class="menor">
+                        <img id="inu" src="Triangulos/inu.png" alt="">
+                        <img id="per" src="Triangulos/perereca.png" alt="">
+                        <img id="tuc" src="Triangulos/Tucano.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div>
-            <h2>Mosaicos</h2>
+        <div id="mosaicoT">
+            <div class="txt">
+                <h2>3.1. Mosaico de triângulos</h2>
+                <p>Pesquisando por "mosaic illustration", encontramos ilustrações como essas, mas mosaicos reais não tendem a ser feitos somente com triangulos.</p>
+            </div>
+
+            <div class="imgs" id="imgsT">
+                <div class="maior">
+                    <img src="Triangulos/abelha.png" alt="">
+                </div>
+                <div class="menor">
+                    <img src="Triangulos/tucanos.png" alt="">
+                    <img src="Triangulos/passaros.png" alt="">
+                    <img src="Triangulos/mulher.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="mosaicFR">
+            <h2>4. Mosaico com formas retangulares</h2>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div id="mosaicFC">
+            <div class="txt">
+                <h2>4.1 Mosaico de formas curvas</h2>
+            </div>
+
+            <div>
+                <img src="FormasArredondadas/pomba1.jpg" alt="" id="pomba">
+                <img src="FormasArredondadas/rosas.jpg" alt="">
+                <img src="FormasArredondadas/pombas.jpg" alt="">
+                <img src="FormasArredondadas/patos.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="forJ">
+            <h2>5. Formas curvas juntas (insiparadas das anteriores)</h2>
+            <div>
+                <img src="FormasArredondadas/cachorro.jpg" alt="">
+                <img src="FormasArredondadas/galinhas.jpg" alt="">
+                <img src="FormasArredondadas/esquilo.jpg" alt="">
+                <img src="FormasArredondadas/porco.jpg" alt="">
+            </div>
         </div>
 
         <div id="cir">
@@ -194,27 +234,6 @@
                 <img src="PontosouCirculos/elefante.png" alt="">
                 <img src="PontosouCirculos/joaninha.png" alt="">
                 <img src="PontosouCirculos/perereca.png" alt="">
-            </div>
-        </div>
-
-        <div>
-            <div id="for">
-                <h2>5. Formas curvas juntas</h2>
-                <div>
-                    <img src="FormasArredondadas/cachorro.jpg" alt="">
-                    <img src="FormasArredondadas/galinhas.jpg" alt="">
-                    <img src="FormasArredondadas/esquilo.jpg" alt="">
-                    <img src="FormasArredondadas/porco.jpg" alt="">
-                </div>
-            </div>
-            <div id="forjec">
-                <h2>5.1. Formas curvas juntas e contornadas</h2>
-                <div>
-                    <img src="FormasArredondadas/pomba1.jpg" alt="">
-                    <img src="FormasArredondadas/rosas.jpg" alt="">
-                    <img src="FormasArredondadas/pombas.jpg" alt="">
-                    <img src="FormasArredondadas/patos.jpg" alt="">
-                </div>
             </div>
         </div>
 
@@ -248,6 +267,10 @@
                 <img src="Linhas/homem2.jpg" alt="">
                 <img src="Linhas/homem3.jpg" alt="">
                 <img src="Linhas/leão.jpg" alt="">
+            </div>
+
+            <div id="rel3d3">
+
             </div>
         </div>
 

@@ -9,3 +9,7 @@ O width impede a imagem de crescer, mas não o min-width.
 07/12/2024
 
 O objet-fit (no, caso eu precisei do cover), só funciona se o elemento pai ter altura e largura especificadas.
+
+08/12/2024
+
+As divs filhas de uma div em display flex não crescem se o flex do pai não estiver coonfigurado. Ex.: flex: 1 0 240px; (Esqueci disso porque estudei sem praticar de imediato).

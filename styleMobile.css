@@ -81,6 +81,7 @@ div#monalisa{
 
 main div{
     align-self: auto;
+    border: 1px solid black;
 }
 a{
     text-decoration: none;
@@ -137,10 +138,50 @@ div#intro{
         width: 80%;
         font-size: 1em;
     }
+
+/*Classes para imagens*/
+    .imgs{
+        width: 100%;
+        flex: 1 0 240px;
+        height: 62vw;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .maior{
+        width: 72%;
+        height: 100%;
+    }
+    .maior>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .menor{
+        display: flex;
+        flex-flow: column;
+        width: 20%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 6%;
+    }
+    div.menor>img{
+        width: 100%;
+        height: 28%;
+        flex: 1 0 auto;
+        object-fit: cover;
+    }
+/*^^^^^^*/
+
     main> div#sombrasSimpli{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        margin: auto;
     }
 div#ss{
     width: 100%;
@@ -157,8 +198,9 @@ div#ss{
     box-shadow: 0px 1px 0px rgb(152, 152, 152) ;
 }
     div.txt{
-        width: 88%;
+        width: 90%;
         position: relative;
+        height: auto;
     }
     div#ss>div.txt>h2{
         margin-bottom: 27px;
@@ -168,110 +210,17 @@ div#ss{
         margin-bottom: 28px;
         margin-top: 0px;
     }
-    div#imgs1{
-        width: 88%;
-        height: 65vw;
-        display: flex;
-        flex-flow: row nowrap;
-        align-content: flex-start;
-        justify-content: space-between;
-        align-items: center;
-    }
-        div#imgs1>img{
-            flex: auto;
-            box-shadow: 7px 5px 7px rgba(0, 0, 0, 0.326);
-            object-fit: cover;
-        }
-        div#imgMaior{
-            display: flex;
-            height: 244px;
-            width: 74%;
-            padding: 0px;
-            margin: 0px;
-        }
-            img#mulher1{
-                width: 100%;
-                object-fit: cover;
-            }
+div#imgs_ss{
+    width: 90%;
+    height: 62vw;
+    margin-bottom: 27px;
+}
+   
 
-        div#imgsMenor{
-            width: 22%;
-            height: 100%;
-            padding:0px;
-            margin: 0px;
-            display: flex;
-            flex-flow: column nowrap;
-            gap: 5%;
-        }
-                div#imgsMenor>img{
-                    flex: 1 1 auto;
-                }
-                img#mulher2 {
-                    width: 100%;
-                    height: 27%;
-                }
-                img#cavalo{
-                    width: 100%;
-                    order: 1;
-                    margin-left: 0px;
-                    object-fit: cover;
-                    height: 28%;
-                }
-                img#beatles{
-                    width: 100%;
-                    object-fit: cover;
-                    order: 1;
-                    height: 28%;
-                }
-
-    div#sscc{
-        width: 100%;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        background-image: linear-gradient(to top, rgb(218, 218, 218), white);
-        background-size: 100% 50%;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        box-shadow: 0px 1px 0px rgb(152, 152, 152) ;
-        padding-bottom: 10%;
+    div#imgs_2{
+        width: 90%;
     }
-    div#sscc>div.txt{height: 148px; margin-bottom: 17px;}
-    div#sscc>div.txt>p{
-        font-weight:400;
-        width: 70%;
-        background-color: rgb(243, 243, 243);
-        padding: 10px 15px;
-        border-radius: 5px;
-        text-align: justify;
-    }
-    div#sscc>div.txt>button{
-        position: absolute;  
-        font-size: 1em;
-        border: none;
-        border-radius: 5px;
-        padding: 5px 7px;
-        box-shadow: 3px 3px 3px rgb(208, 208, 208);
-    }
-    div#sscc>div.txt>button#yes{
-        bottom: 35px;
-        right: 10px;
-    }
-    div#sscc>div.txt>button#no{
-        bottom: 0px;
-        right: 10px;
-    }
-    div#imgs_sscc{
-        width: 88%;
-        min-height: 468px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        align-content: space-between;
-    }
-    div#imgs_sscc>img{min-width: 47%; flex: none;}
-
+   
     div#rel3d{
         position: relative;
         display: flex;
@@ -279,7 +228,7 @@ div#ss{
         align-items: center;
         background-color: rgb(43, 43, 43);
         width: 100%;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         box-shadow: inset 0 0 8px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
     }
     div#rel3d>div.txt{
@@ -350,65 +299,45 @@ div#ss{
     div#pelossolidos{
         display: flex;
         flex-flow: row wrap;
-        width: 94%;
+        width: 90%;
         justify-content: center;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
         padding: 0px;
     }
     div#pelossolidos>div.txt{
         display: flex;
+        width: 100%;
         flex-flow: column wrap;
-        border: 1px solid white;
+        border: 1px solid black;
         padding: 0px;
     }
         div#pelossolidos>div.txt> h3{
-            width: 100%;
+            width: 70%;
             color: black;
-            font-size: 1.25em;
-            padding: 10px 0px;
+            font-size: 1.3em;
+            padding: 0px;
             margin-top: 0px;
+            margin-bottom: 24px;
         }
-    div#pelossolidos p{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-        div#imgsPel{
-            display: flex;
-            flex-flow: row wrap;
+        div#pelossolidos>div.txt> p{
             width: 100%;
-            justify-content: center;
-            align-items: flex-start;
-            align-content: center;
-            gap: 5%;
-            padding: 15px 0px;
-            height: 380px;
+            margin: 0px;
+            margin-bottom: 20px;
+            padding: 0px;
         }
-            div#imgsPel img{
-                min-width: 42%;
-                height: auto;
-                object-fit: cover;
-                border-radius: 10px;
-                border: 1px solid rgb(208, 208, 208);
-                box-shadow: 5px 5px 10px 0px rgb(163, 163, 163);
-                flex: 0 0 auto;
-            }
-            img#cat{order: 0;}
-            img#lion{order: 1;}
-            img#wolf{order: 1;}
-            img#dog{width: 43.8%;}
-
-    div#pelagem>button{
-        width: 90%;
-        padding: 10px 0px;
-        color: white;
-        background-color: black;
-        border-radius: 7px;
-        font-size: 1em;
-        font-weight: 500;
-        z-index: 1;
+        div#pelossolidos>div.txt>span{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            padding: 11px;
+            background-color: rgb(111, 111, 111);
+            color: white;
+            border-radius: 20%;
+        }
+    div#pelossolidos>div.imgs{
+        width: 88%;
     }
-
+    
     div#folhas{
         width: 90%;
         padding: 12px 0px;
@@ -571,71 +500,81 @@ div#poligonos>div.txt>p{
         box-shadow: none;
     }
 
-/**/
-
-    div#tri1{
+/*Triangulos Juntos*/
+    div#triJ{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 26px;
     }
     div#tri{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        width: 92%;
+        width: 90%;
         margin-bottom: 30px;
-        border: none;
     }
     div#tri>h2{
-        align-self: flex-start;
-        margin-left: 25px;
+        align-self: flex-start; margin-bottom: 30px;
     }
-    div#tri>div{
-        position: relative;
+/*Mosaico de Triangulos*/
+    div#mosaicoT{
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        width: 90%;
-        padding: 10px;
-        height: 294px;
-        align-content: space-between;
-        gap: 5%;
-        border: none;
-    }
-    div#tri>div>img{
-        min-width: 46%;
-        flex: none;
-        box-shadow: 5px 5px 5px 0px rgb(136, 136, 136);
-    }
-
-    div#trij{
-        width: 92%;
-        display: flex;
-        flex-flow: column wrap;
+        flex-flow: column;
         align-items: center;
-        padding-bottom: 7px;
-        border: none;
     }
-    div#trij>h2{
-       width: 70%;
-       align-self: flex-start;
-       margin-left: 25px;
-    }
-    div#trij>div{
+    div#imgsT{
         width: 90%;
+        height: 62vw;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
-        gap: 15px;
-        border: none;
+        align-items: flex-start;
+        justify-content: space-between;
     }
-    div#trij>div>img{
-        flex: none;
-        min-width: 46%;
-        box-shadow: 5px 5px 5px 0px rgb(136, 136, 136);
+    div#imgsT>div.maior{
+        width: 72%;
+        height: 100%;
     }
-
+    div#imgsT>div.maior>img{
+        width: 99%;
+        object-fit: contain;
+    }
+    div#imgsT>div.menor{
+        display: flex;
+        flex-flow: column;
+        width: 20%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 6%;
+    }
+    div#imgsT>div.menor>img{
+        width: 100%;
+        flex: 1 0 auto;
+        object-fit: cover;
+        height: 28%;
+    }
+/*Mosaico de formas curvas*/
+    div#mosaicFC{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
+    div#mosaicFC>div.txt{
+        height: auto;
+    }
+    div#mosaicFC>div{
+        width: 88%;
+        height: 400px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    div#mosaicFC>div>img{
+        min-width: 47%;
+    }
 
 aside{
 display: flex;
