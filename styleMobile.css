@@ -81,15 +81,15 @@ div#monalisa{
 
 main div{
     align-self: auto;
-    border: 1px solid black;
 }
 a{
     text-decoration: none;
 }
 img{
-    border-radius: 6px;
+    border-radius: 7px;
     width: 63px;
     box-shadow: 3px 3px 4px rgb(131, 131, 131);
+    border: 1px solid white;
 }
 h2, h3, h4{
     font-family: "Roboto Condensed";
@@ -139,20 +139,22 @@ div#intro{
         font-size: 1em;
     }
 
-/*Classes para imagens*/
+/*Classe 1 para imagens*/
     .imgs{
         width: 100%;
-        flex: 1 0 240px;
-        height: 62vw;
+        flex: 1 0 220px;
+        height: 57vw;
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
         justify-content: space-between;
+        border: none;
     }
 
     .maior{
         width: 72%;
         height: 100%;
+        border: none;
     }
     .maior>img{
         width: 100%;
@@ -168,6 +170,7 @@ div#intro{
         justify-content: space-between;
         align-items: flex-end;
         gap: 6%;
+        border: none;
     }
     div.menor>img{
         width: 100%;
@@ -175,45 +178,178 @@ div#intro{
         flex: 1 0 auto;
         object-fit: cover;
     }
-/*^^^^^^*/
+
+/*Classe 2 para imagens*/
+    .imgs2{
+        width: 100%;
+        flex: 1 0 300px;
+        height: 74vw;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        border: none;
+    }
+
+    .maior2{
+        width: 72%;
+        height: 100%;
+        border: none;
+    }
+    .maior2>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .menor2{
+        display: flex;
+        flex-flow: column;
+        width: 20%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 6%;
+        border: none;
+    }
+    div.menor2>img{
+        width: 100%;
+        height: 28%;
+        flex: 1 0 auto;
+        object-fit: cover;
+    }
+
+/*Classe 3 para imagens*/
+    .imgs3{
+        width: 100%;
+        flex: 1 0 380px;
+        height: 100vw;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        border: none;
+    }
+
+    .maior3{
+        width: 77%;
+        height: 100%;
+        border: none;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    .maior3>img{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .menor3{
+        display: flex;
+        flex-flow: column;
+        width: 17%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 6%;
+        border: none;
+    }
+    div.menor3>img{
+        width: 100%;
+        height: 28%;
+        flex: 1 0 auto;
+        object-fit: cover;
+    }
+
+/*Classe 4 para imagens*/
+.imgs4{
+    width: 100%;
+    flex: 1 0 380px;
+    height: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    border: none;
+}
+
+.maior4{
+    width: 100%;
+    height: 70%;
+    border: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.maior4>img{
+    width: 47%;
+    object-fit: cover;
+}
+
+.menor4{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 25%;
+    justify-content: space-between;
+    gap: 6%;
+    border: none;
+}
+div.menor4>img{
+    width: 44%;
+    height: 100%;
+    flex: 1 0 auto;
+    object-fit: cover;
+}
 
     main> div#sombrasSimpli{
+        width: 100%;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         margin: auto;
+        border: none;
     }
+/*Classe de estilo*/
+.background{
+    box-shadow: 3px 3px 6px rgb(179, 179, 179) ;
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 9px;
+    background-color: rgb(238, 238, 238);
+}
+
 div#ss{
-    width: 100%;
+    width: 90%;
     margin: 0px;
     margin-bottom: 20px;
     padding-bottom: 12%;
     display: flex;
     flex-flow: column;
     align-items: center;
-    background-image: linear-gradient(to top, rgb(218, 218, 218), white);
-    background-size: 100% 15px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    box-shadow: 0px 1px 0px rgb(152, 152, 152) ;
+    box-shadow: 3px 3px 6px rgb(179, 179, 179) ;
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 9px;
+    background-color: rgb(238, 238, 238);
 }
     div.txt{
         width: 90%;
         position: relative;
         height: auto;
+        border: none;
+        padding: 30px;
     }
     div#ss>div.txt>h2{
         margin-bottom: 27px;
         margin-top: 0px;
     }
     div#ss>div.txt>p{
-        margin-bottom: 28px;
+        margin-bottom: 10px;
         margin-top: 0px;
     }
 div#imgs_ss{
     width: 90%;
-    height: 62vw;
-    margin-bottom: 27px;
+    margin-bottom: 32px;
 }
    
 
@@ -227,13 +363,14 @@ div#imgs_ss{
         flex-flow: column nowrap;
         align-items: center;
         background-color: rgb(43, 43, 43);
-        width: 100%;
+        width: 90%;
         margin-bottom: 30px;
         box-shadow: inset 0 0 8px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
+        border-radius: 9px;
     }
     div#rel3d>div.txt{
         width: 84%;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
     }
     /*
     span:hover{
@@ -243,15 +380,16 @@ div#imgs_ss{
         div#rel3d>div.txt>h3{
             align-self: flex-start;
             font-size: 1.5em;
-            padding: 25px 0px;
+            padding: 0px;
             color: white;
             margin: 0px;
+            margin-bottom: 22px;
         }
 
         span#expand, span#collapse {
             position: absolute;
-            top: 18px;
-            right: 0px;
+            top: 20px;
+            right: 10px;
             width: 12.5%;
             color: white;
             font-size: 1.8em;
@@ -271,14 +409,20 @@ div#imgs_ss{
             color: white;
             display: block;
             text-align: justify;
-            margin-top: 10px;
+            margin-top: 0px;
+            margin-bottom: 0px;
             font-size: 1.05em;
             line-height: 25px;
         }
-        div#iframe{ 
+        div#iframe{
             display: flex; 
-            flex-flow: column wrap;}
+            flex-flow: column wrap;
+            align-items: center;
+            border: none;
+        }
             div#rel3d>div#iframe>iframe{
+                width: 90%;
+                height: 90%;
                 margin-bottom: 21px;
                 border-radius: 6px;
             }
@@ -290,25 +434,19 @@ div#imgs_ss{
         flex-flow: column wrap;
         justify-content: space-evenly;
         align-items: center;
-        background-image: linear-gradient(to top, rgb(218, 218, 218), white);
-        background-size: 100% 15px;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        box-shadow: 0px 1px 0px rgb(152, 152, 152) ;
     }
     div#pelossolidos{
         display: flex;
         flex-flow: row wrap;
-        width: 90%;
+        width: 80%;
         justify-content: center;
-        margin-bottom: 20px;
-        padding: 0px;
+        margin-bottom: 32px;
+        padding: 20px;
     }
     div#pelossolidos>div.txt{
         display: flex;
         width: 100%;
         flex-flow: column wrap;
-        border: 1px solid black;
         padding: 0px;
     }
         div#pelossolidos>div.txt> h3{
@@ -329,53 +467,61 @@ div#imgs_ss{
             position: absolute;
             top: 0px;
             right: 0px;
-            padding: 11px;
-            background-color: rgb(111, 111, 111);
+            padding: 8px;
+            background-color: rgb(137, 137, 137);
             color: white;
-            border-radius: 20%;
+            border-radius: 25%;
+            border: 2px solid white;
+            box-shadow: 2px 2px 4px rgb(210, 210, 210);
         }
     div#pelossolidos>div.imgs{
         width: 88%;
     }
     
     div#folhas{
-        width: 90%;
-        padding: 12px 0px;
-        margin-top: -7px;
-        border-radius: 0px 0px 10px 10px;
+        width: 92%;
+        padding: 26px 0px;
+        border-radius: 9px;
         background-color: rgb(52, 52, 52);
         box-shadow: inset 0 0 15px #0000006d;
     }
-    main>div#sombrasSimpli>div#pelagem>div#folhas>h3{
-        padding: 20px 7px;
-        margin: 0px;
-        margin-left: 7px;
-        color:#91c049;
-    }
-    main>div#sombrasSimpli>div#pelagem>div#folhas>p{
-        width: 90%;
+    div#folhas>div.txt{
+        padding: 0px;
+        width: 87%;
         margin: auto;
-        margin-bottom: 20px;
+    }
+    div#folhas>div.txt>span{
+       position: absolute;
+       top: -9px;
+       right: -20px;
+       padding: 10px;
+       background-color: rgb(81, 81, 81);
+       color: white;
+       border-radius: 7px;
+    }
+    div#folhas>div.txt>h3{
+        margin-top: 0px;
+        margin-bottom: 26px;
+        color:#91c049;
+        font-size: 1.35em;
+    }
+    div#folhas>div.txt>p{
+        margin: auto;
+        margin-bottom: 24px;
         padding: 0px;
         color: white;
     }
-    main>div#sombrasSimpli>div#pelagem>div#folhas>p>a{
+    div#folhas>div.txt>p>a{
         color:#A8DF54;
     }
     div#gFol{
-        display: flex;
-        gap: 12px;
-        flex-flow: row wrap;
-        align-items: flex-start;
-        justify-content: center;
+        width: 90%;
+        margin: auto;
     }
-    div#gFol>img{
-        height: 110px;
-        width: auto;
-        box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.247);
-        border: 0.2px solid rgb(66, 66, 66);
+    div#gFol img{
+        border: none;
+        box-shadow: none;
     }
-
 div#poligonos{
     display: flex;
     flex-flow: column wrap;
@@ -384,8 +530,6 @@ div#poligonos{
     margin: auto;
     margin-bottom: 20px;
     padding: 10px 0px 10px;
-    background-image: linear-gradient(to top, rgb(224, 224, 224), white);
-    border: none;
 }
 div#poligonos>div.txt{
     width: 85%;
@@ -402,8 +546,9 @@ div#poligonos>div.txt>p{
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        width: 100%;
-        border: none;
+        width: 90%;
+        padding: 24px 0px;
+        margin-bottom: 32px;
     }
     div#pol{
         width: 94%;
@@ -436,12 +581,12 @@ div#poligonos>div.txt>p{
         flex-flow: column wrap;
         align-items: center;
         position: relative;
-        width: 100%;
+        width: 90%;
         padding-bottom: 20px;
         padding-top: 22px;
         box-shadow: 7px 5px 7px rgb(141, 141, 141);
         background-color: rgb(43, 43, 43);
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 9px;
         color: white;
     }
     div#rel3D2>div.txt{
@@ -554,12 +699,20 @@ div#poligonos>div.txt>p{
         object-fit: cover;
         height: 28%;
     }
+/*Mosaico de formas retangulares*/
+    div#mosaicFR{
+        width: 90%;
+        margin: auto;
+    }
+
+
 /*Mosaico de formas curvas*/
     div#mosaicFC{
         display: flex;
         flex-flow: column;
         align-items: center;
         width: 100%;
+        margin-bottom: 27px;
     }
     div#mosaicFC>div.txt{
         height: auto;
@@ -575,6 +728,67 @@ div#poligonos>div.txt>p{
     div#mosaicFC>div>img{
         min-width: 47%;
     }
+/*Formas curvas juntas*/
+    div#forJ{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+/*Circulos*/
+    div#cir{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 24px 0px;
+    }
+    div#cir>h2{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 24px;
+    }
+    div#cir>p{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 24px;
+    }
+    div#imgs_cir{
+        width: 90%;
+        margin: auto;
+        height: 85vw;
+    }
+
+/*Thomas Pavitte*/
+    div#autores{
+        width: 90%;
+        margin: auto;
+        border-radius: 10px;
+    }
+    div#tho{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 18px;
+    }
+    div#tho>h2{
+        margin-bottom: 22px;
+    }
+    div#tho>p{
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 25px;
+    }
+    div#tho>div.imgs3{
+    height: 85vw;
+    }
+    div#tho>div.imgs3>div.menor3>img{
+        height: 30%;
+    }
+/*Trias Isa*/
+    div#tri{
+        margin: auto;
+    }
+
+
 
 aside{
 display: flex;
