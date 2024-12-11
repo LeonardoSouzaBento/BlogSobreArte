@@ -101,6 +101,10 @@ p{
     font-size: 1.05em;
     letter-spacing: 0.7px;
 }
+main>p{
+    width: 90%;
+    margin: auto;
+}
 main h3{
     color: rgb(54, 54, 54);
     font-weight: 600;
@@ -222,43 +226,59 @@ div#intro{
 /*Classe 3 para imagens*/
     .imgs3{
         width: 100%;
-        flex: 1 0 380px;
-        height: 85vw;
+       /*flex: 1 0 380px;*/
+        min-height: 120vw;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         align-items: flex-start;
         justify-content: space-between;
         border: none;
     }
 
     .maior3{
-        width: 77%;
-        height: 100%;
-        border: none;
+        width: 100%;
+        height: 75%;
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        border: none;
+        background-color: rgb(244, 244, 244);
+        overflow-x: hidden;
+        gap: 7%;
+        padding-left: 14px;
+        margin-left: 3%;
+        margin-right: -3.2%;
+        border-radius: 7px 0px 0px 7px;
+        box-shadow: 2px 2px 4px rgb(153, 153, 153);
     }
     .maior3>img{
-        width: 100%;
+        width: 80%;
+        height: 92%;
+        margin: auto;
         object-fit: contain;
     }
 
     .menor3{
         display: flex;
-        flex-flow: column;
-        width: 17%;
-        height: 100%;
+        flex-flow: row nowrap;
+        width: 96%;
+        height: 24%;
         justify-content: space-between;
-        align-items: flex-end;
-        gap: 6%;
+        align-items: center;
         border: none;
+        margin-right: -6.2%;
+        background-color: rgb(255, 255, 255);
+        padding-left: 14px;
+        border-radius: 6px 0px 0px 6px;
+        box-shadow: 2px 2px 4px rgb(137, 137, 137);
     }
     div.menor3>img{
-        width: 100%;
-        height: 28%;
+        max-width: 46%;
+        height: 70%;
         flex: 1 0 auto;
         object-fit: cover;
+        box-shadow: none;
+        box-shadow: 2px 2px 4px rgb(153, 153, 153);
     }
 
 /*Classe 4 para imagens*/
@@ -541,10 +561,6 @@ div#imgs_ss{
         padding: 25px 0px;
         margin-bottom: 32px;
     }
-    div#gPol>div.imgs3{
-        max-height: 90vw;
-        flex: 1 0 340px;
-    }
     div#gPol> h2{
         width: 90%;
         margin-bottom: 22px;
@@ -570,7 +586,9 @@ div#imgs_ss{
         border-radius: 5px 5px 0px 0px;
         border: none;
     }
-
+    div#pol>div.menor3{
+        gap: 3.5%;
+    }
     div#rel3D2{
         display: flex;
         flex-flow: column wrap;
@@ -692,6 +710,7 @@ div#imgs_ss{
         padding: 0px 0px 25px;
     }
     div#mosaicoT>div.txt{
+        padding: 10px 0px 8px;
         padding-top: 10px;
         padding-bottom: 8px;
     }
@@ -752,6 +771,7 @@ div#imgs_ss{
     }
     div#mosaicFC>div.txt{
         height: auto;
+        padding: 30px 0px;
     }
     div#mosaicFC>div{
         width: 88%;
@@ -795,36 +815,48 @@ div#imgs_ss{
 
 /*Thomas Pavitte*/
     div#autores{
-        width: 90%;
+        width: 100%;
         margin: auto;
         border-radius: 10px;
+        margin-bottom: 30px;
     }
     div#tho{
         width: 90%;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         margin-top: 18px;
+        padding-bottom: 26px;
     }
-    div#tho>h2{
-        margin-bottom: 22px;
-    }
-    div#tho>p{
-        width: 100%;
-        text-align: justify;
-        margin-bottom: 25px;
-    }
-    div#tho>div.imgs3{
-    height: 85vw;
-    }
-    div#tho>div.imgs3>div.menor3>img{
-        height: 30%;
-    }
-/*Trias Isa*/
-    div#tri{
+    div#tho>div.txt{
+        padding-left: 0px;
+        padding-right: 0px;
         margin: auto;
     }
 
+/*Trias Isa*/
+    div#tri{
+        margin: auto;
+        width: 90%;
+        padding-bottom: 25px;
+        padding-top: 24px;
+    }
+    div#tri>h2{
+        margin: auto;
+        width: 90%;
+        margin-bottom: 26px;
+        padding: 0px;
+    }
+    div#tri>div.imgs4{
+        margin: auto;
+        width: 90%;
+    }
 
+
+/*Linhas*/
+div#li{
+    margin: auto;
+    width: 90%;
+}
 
 aside{
     display: flex;
@@ -867,7 +899,7 @@ div#gatos{
     }
 footer{
     display: block;
-    padding: 20px;
+    padding: 20px 0px;
     margin: auto;
     background-color: black;
     color: white;
