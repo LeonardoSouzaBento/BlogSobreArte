@@ -223,7 +223,7 @@ div#intro{
     .imgs3{
         width: 100%;
         flex: 1 0 380px;
-        height: 100vw;
+        height: 85vw;
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
@@ -364,7 +364,7 @@ div#imgs_ss{
         align-items: center;
         background-color: rgb(43, 43, 43);
         width: 90%;
-        margin-bottom: 30px;
+        margin-bottom: 32px;
         box-shadow: inset 0 0 8px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
         border-radius: 9px;
     }
@@ -372,11 +372,6 @@ div#imgs_ss{
         width: 84%;
         margin-bottom: 0px;
     }
-    /*
-    span:hover{
-        transform: scale(1.06);
-        transition: transform 0.3s ease;
-    }*/
         div#rel3d>div.txt>h3{
             align-self: flex-start;
             font-size: 1.5em;
@@ -425,6 +420,7 @@ div#imgs_ss{
                 height: 90%;
                 margin-bottom: 21px;
                 border-radius: 6px;
+                border: 0.5px solid rgb(0, 0, 0);
             }
 
     div#pelagem{
@@ -440,7 +436,7 @@ div#imgs_ss{
         flex-flow: row wrap;
         width: 80%;
         justify-content: center;
-        margin-bottom: 32px;
+        margin-bottom: 20px;
         padding: 20px;
     }
     div#pelossolidos>div.txt{
@@ -479,20 +475,21 @@ div#imgs_ss{
     }
     
     div#folhas{
-        width: 92%;
+        width: 90%;
         padding: 26px 0px;
         border-radius: 9px;
         background-color: rgb(52, 52, 52);
         box-shadow: inset 0 0 15px #0000006d;
+        border: 1px solid rgb(14, 14, 14);
     }
     div#folhas>div.txt{
         padding: 0px;
-        width: 87%;
+        width: 85%;
         margin: auto;
     }
     div#folhas>div.txt>span{
        position: absolute;
-       top: -9px;
+       top: 0px;
        right: -20px;
        padding: 10px;
        background-color: rgb(81, 81, 81);
@@ -504,54 +501,65 @@ div#imgs_ss{
         margin-bottom: 26px;
         color:#91c049;
         font-size: 1.35em;
+        width: 80%;
     }
     div#folhas>div.txt>p{
         margin: auto;
         margin-bottom: 24px;
         padding: 0px;
         color: white;
+        width: 100%;
     }
     div#folhas>div.txt>p>a{
         color:#A8DF54;
     }
     div#gFol{
-        width: 90%;
+        width: 88%;
         margin: auto;
     }
     div#gFol img{
-        border: none;
-        box-shadow: none;
+     box-shadow: 2px 2px 4px rgb(28, 28, 28);
+     border: 1px solid rgb(23, 23, 23);
     }
-div#poligonos{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 10px 0px 10px;
-}
-div#poligonos>div.txt{
-    width: 85%;
-}
-div#poligonos>div.txt>p{
-    margin-top: 0px;
-    font-size: 1em;
-}
-    div#poligonos h2{
-        height: 40px;
-        margin-bottom: 8px;
+
+/*Poligonos*/
+
+    div#poligonos{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 0px;
     }
     div#gPol{
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         width: 90%;
-        padding: 24px 0px;
+        padding: 25px 0px;
         margin-bottom: 32px;
+    }
+    div#gPol>div.imgs3{
+        max-height: 90vw;
+        flex: 1 0 340px;
+    }
+    div#gPol> h2{
+        width: 90%;
+        margin-bottom: 22px;
+        margin-top: 0px;
+    }
+    div#gPol>p{
+        width: 90%;
+        margin-top: 0px;
+        margin-bottom: 24px;
+        font-size: 1em;
+        padding: 0px;
     }
     div#pol{
         width: 94%;
+        height: 60vw;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -559,23 +567,10 @@ div#poligonos>div.txt>p{
         margin-top: 0px;
         margin-bottom: 0px;
         gap: 12px;
-        padding-bottom: 28px;
         border-radius: 5px 5px 0px 0px;
         border: none;
     }
 
-    div#pol>img{
-        border: 1px solid white;
-        box-shadow: 5px 5px 5px 0px rgb(136, 136, 136);
-    }
-    img#ind{
-        min-width: 41%; 
-        background-image: to top, black, white;
-    }
-    img#can{ min-width: 43.5%;}
-    img#qua1{min-width: 90%;order:-1;}
-    img#qua2{min-width: 90%;order:0;}
-      
     div#rel3D2{
         display: flex;
         flex-flow: column wrap;
@@ -591,7 +586,8 @@ div#poligonos>div.txt>p{
     }
     div#rel3D2>div.txt{
         width: 82%;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
+        padding-top: 0px;
     }
     div#rel3D2>div.txt>h3{ 
         color: white;
@@ -622,35 +618,56 @@ div#poligonos>div.txt>p{
     div#rel3D2>div.txt>p{
         text-align: justify;
         line-height: 25px;
-        margin: 0px 0px 18px;
+        margin: 0px 0px 20px;
     }
-    div#papercraft{
-        width: 90%;
-        position: relative;
+    div#rel3D2 em{
+        color: #ffcd57;
+    }
+    div#lowpoly{
+        width: 80%;
+        height: 360px;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         justify-content: space-between;
+        align-items: flex-start;
         border: none;
-        gap: 5%;
-        padding: 0px;
+        gap: 8%;
+        padding: 22px 15px;
+        margin: auto;
+        overflow-x: hidden;
+        background-color: rgb(30, 30, 30);
+        border-radius: 12px 0px 0px 12px;
     }
-    div#papercraft>iframe{
-        margin-bottom: 20px; border-radius: 7px;
-        flex: 1 0 auto;
-        box-shadow: 5px 5px 5px 0px rgb(27, 27, 27);
+    div#lowpoly>p{
+        width: 100%;
+        border: 1px solid blue;
     }
-    div#papercraft img{
-        min-width: 42%;
-        flex: 1 0 auto;
-        box-shadow: none;
+    div#lowpoly>iframe{
+        width: 70%;
+        height: 99%;
+        border-radius: 7px;
+        box-shadow: 2px 2px 4px rgb(0, 0, 0);
     }
-
+    div#lowpoly>img{
+        width: 70%;
+        height: 99%;
+        border-radius: 7px;
+        box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    }
+    div#rel3D2>p{
+        width: 88%;
+        margin: auto;
+        margin-bottom: 24px;
+    }
 /*Triangulos Juntos*/
     div#triJ{
+        width: 90%;
+        margin: auto;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        margin-bottom: 26px;
+        margin-bottom: 5px;
+        padding-bottom: 20px;
     }
     div#tri{
         display: flex;
@@ -660,13 +677,23 @@ div#poligonos>div.txt>p{
         margin-bottom: 30px;
     }
     div#tri>h2{
-        align-self: flex-start; margin-bottom: 30px;
+        align-self: flex-start; 
+        margin-bottom: 26px;
+        padding-top: 10px;
     }
 /*Mosaico de Triangulos*/
     div#mosaicoT{
         display: flex;
         flex-flow: column;
         align-items: center;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 0px 0px 25px;
+    }
+    div#mosaicoT>div.txt{
+        padding-top: 10px;
+        padding-bottom: 8px;
     }
     div#imgsT{
         width: 90%;
@@ -682,7 +709,7 @@ div#poligonos>div.txt>p{
     }
     div#imgsT>div.maior>img{
         width: 99%;
-        object-fit: contain;
+        object-fit: cover;
     }
     div#imgsT>div.menor{
         display: flex;
@@ -703,8 +730,17 @@ div#poligonos>div.txt>p{
     div#mosaicFR{
         width: 90%;
         margin: auto;
+        padding-bottom: 24px;
     }
-
+    div#mosaicFR>h2{
+        width: 90%;
+        margin: auto;
+        padding: 26px 0px;
+    }
+    div#mosaicFR>div.imgs{
+        width: 90%;
+        margin: auto;
+    }
 
 /*Mosaico de formas curvas*/
     div#mosaicFC{
@@ -791,41 +827,43 @@ div#poligonos>div.txt>p{
 
 
 aside{
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
 }
 
 div#gatos{
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
-    width: 84%;
-    padding: 20px;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-between;
+    gap: 10px;
     border-radius: 15px;
-    background-color: rgb(81, 81, 81);
-    background-image: linear-gradient(to bottom, rgb(174, 174, 174), rgb(214, 214, 214));
-    background-repeat: no-repeat;
-    background-position: top;
-    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.149);
+    background-color: rgb(40, 40, 40);
+    border-radius: 7px;
+    padding: 0px 20px;
+    padding-bottom: 24px;
+
 }
     div#gatos>h3{
-        font-size: 1.6em;
+        font-size: 1.35em;
         text-align: center;
         border-radius: 5px;
-        background-color: rgb(86, 86, 86);
-        padding: 20px;
-        color: white;
+        padding: 12px 0px;
         width: 100%;
-        box-shadow: 4px 5px 5px rgb(139, 139, 139);
+        margin-bottom: 20px;
+        color: white;
+        background-color: rgb(11, 11, 11);
     }
-    
-
     div#gatos> img{
-        width: 139px;
-        height: max-content;
+        width: 47%;
         border-radius: 5px;
         box-shadow: 10px 6px 10px rgba(0, 0, 0, 0.245);
+    }
+    div#gatos>img#ult{
+       margin: auto;
     }
 footer{
     display: block;
