@@ -1,0 +1,28 @@
+Pequeno (smartphones maiores):
+
+css
+Copiar código
+@media (min-width: 577px) and (max-width: 768px) { 
+  /* Estilos para telas entre 577px e 768px */
+}
+Médio (tablets):
+
+css
+Copiar código
+@media (min-width: 769px) and (max-width: 992px) { 
+  /* Estilos para telas entre 769px e 992px */
+}
+Grande (desktops):
+
+css
+Copiar código
+@media (min-width: 993px) and (max-width: 1200px) { 
+  /* Estilos para telas entre 993px e 1200px */
+}
+Extra grande (telas muito amplas):
+
+css
+Copiar código
+@media (min-width: 1201px) { 
+  /* Estilos para telas acima de 1200px */
+}

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
 
-@media only screen and (min-width: 375px){
+@media only screen and (max-width: 576px){
 
 .material-symbols-outlined {
     font-variation-settings:
@@ -151,11 +151,9 @@ div#intro{
     }
 
 /*Eestilo de imagens*/
-.escuro{
-    filter: grayscale(100%)  brightness(90%);
-}
-.menor>img, .menor2>img, .menor3>img, .menor4>img{
-    filter: brightness(50%) opacity(80%) grayscale(50%) saturate(180%) sepia(50%);
+
+.menor>div>img, .menor2>img, .menor3>img, .menor4>img{
+    filter: blur(0.8px) opacity(80%) brightness(90%);
 }
 
 /*Classe 1 para imagens*/
@@ -188,14 +186,26 @@ div#intro{
         height: 100%;
         justify-content: space-between;
         align-items: flex-end;
-        gap: 6%;
         border: none;
+        gap: 6%;
     }
-    div.menor>img{
+    .menor>div{
+        position: relative;
         width: 100%;
         height: 28%;
+        background-color: rgb(118, 118, 118);
+        padding: 1px;
+        border-radius: 7px;
+        box-shadow: 2px 2px 4px rgb(97, 97, 97);
+    }
+    div.menor>div>img{
+        width: 100%;
+        height: 100%;
         flex: 1 0 auto;
         object-fit: cover;
+        border: none;
+        margin: auto;
+        box-shadow: none;
     }
 
 /*Classe 2 para imagens*/
@@ -230,6 +240,11 @@ div#intro{
         align-items: flex-end;
         gap: 6%;
         border: none;
+    }
+    .menor2>div{
+        width: 100%;
+        height: 28%;
+        flex: 1 0 auto;
     }
     div.menor2>img{
         width: 100%;
