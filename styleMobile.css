@@ -15,8 +15,8 @@
 *{
     font-family: "Roboto", sans-serif;
 }
-body{
-    overflow-x: hidden; margin: 0px;
+html, body{
+     margin: 0px; overflow-x: hidden;
 }
 main{padding-bottom: 30px;}
 
@@ -32,6 +32,7 @@ header h1{
     text-align: left;
     display: block;
     margin: auto;
+    margin-top: 0px;
     font-size: 1.5em;
     width: 80%;
     padding: 50px 0px;
@@ -78,6 +79,12 @@ div#monalisa{
     img#e{height: 87%;}
     img#f{height: 82%;}
     img#g{height: 77%;}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    }
+
 
 main div{
     align-self: auto;
@@ -142,6 +149,14 @@ div#intro{
         width: 80%;
         font-size: 1em;
     }
+
+/*Eestilo de imagens*/
+.escuro{
+    filter: grayscale(100%)  brightness(90%);
+}
+.menor>img, .menor2>img, .menor3>img, .menor4>img{
+    filter: brightness(50%) opacity(80%) grayscale(50%) saturate(180%) sepia(50%);
+}
 
 /*Classe 1 para imagens*/
     .imgs{
@@ -357,7 +372,7 @@ div#ss{
         position: relative;
         height: auto;
         border: none;
-        padding: 30px;
+        padding: 25px 0px;
     }
     div#ss>div.txt>h2{
         margin-bottom: 27px;
@@ -604,8 +619,6 @@ div#imgs_ss{
     }
     div#rel3D2>div.txt{
         width: 82%;
-        padding-bottom: 0px;
-        padding-top: 0px;
     }
     div#rel3D2>div.txt>h3{ 
         color: white;
@@ -769,10 +782,7 @@ div#imgs_ss{
         width: 100%;
         margin-bottom: 27px;
     }
-    div#mosaicFC>div.txt{
-        height: auto;
-        padding: 30px 0px;
-    }
+
     div#mosaicFC>div{
         width: 88%;
         height: 400px;
@@ -826,11 +836,6 @@ div#imgs_ss{
         margin-bottom: 10px;
         margin-top: 18px;
         padding-bottom: 26px;
-    }
-    div#tho>div.txt{
-        padding-left: 0px;
-        padding-right: 0px;
-        margin: auto;
     }
 
 /*Trias Isa*/
@@ -891,6 +896,7 @@ div#gatos{
     }
     div#gatos> img{
         width: 47%;
+        height: 47%;
         border-radius: 5px;
         box-shadow: 10px 6px 10px rgba(0, 0, 0, 0.245);
     }
