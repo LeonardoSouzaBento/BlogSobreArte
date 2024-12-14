@@ -1,0 +1,39 @@
+Passos para implementar:
+Obter a posição do topo da tela: Use window.scrollY para obter a posição de rolagem atual.
+
+Obter a posição e altura da imagem: Use o método getBoundingClientRect() para pegar as dimensões e posição da imagem em relação à viewport.
+
+Calcular a posição do meio da imagem: Pegue a posição inicial da imagem (topo) e adicione metade da altura dela.
+
+Comparar a posição do topo da tela com o meio da imagem.
+
+Exemplo de Código:
+javascript
+Copiar código
+window.addEventListener('scroll', () => {
+    const image = document.querySelector('img'); // Selecione sua imagem
+    const rect = image.getBoundingClientRect();
+    
+    // Posição do topo da tela (em relação à viewport)
+    const topOfScreen = 0; 
+    
+    // Posição do meio da imagem em relação à viewport
+    const middleOfImage = rect.top + rect.height / 2;
+
+    if (middleOfImage <= topOfScreen) {
+        console.log('O limite do topo da tela está no meio da altura da imagem.');
+    } else {
+        console.log('Ainda não atingiu o meio da imagem.');
+    }
+});
+Explicação:
+getBoundingClientRect():
+Retorna as posições top, bottom, left, e right do elemento em relação à viewport.
+rect.top:
+Posição superior da imagem em relação ao topo da tela.
+rect.height / 2:
+Metade da altura da imagem.
+Comparação:
+Se o meio da imagem (rect.top + rect.height / 2) for igual ou menor que topOfScreen, você sabe que o limite do topo da tela cruzou o meio da imagem.
+Caso queira verificar com precisão:
+Se deseja um ajuste mais refinado, leve em conta a altura do window.innerHeight para fazer a comparação baseada no centro exato da viewport, se necessário.

@@ -102,7 +102,6 @@ h2, h3, h4{
     font-family: "Roboto Condensed";
 }
 h2{font-size: 1.32em; font-weight: 600;}
-h3{ font-size: 1.2em;}
 p{
     font-weight: 400;
     font-size: 1.05em;
@@ -152,8 +151,8 @@ div#intro{
 
 /*Eestilo de imagens*/
 
-.menor>div>img, .menor2>img, .menor3>img, .menor4>img{
-    filter: blur(0.8px) opacity(80%) brightness(90%);
+.menor>img, .menor2>img, .menor3>img, .menor4>img{
+    filter: brightness(75%) opacity(85%);
 }
 
 /*Classe 1 para imagens*/
@@ -189,23 +188,11 @@ div#intro{
         border: none;
         gap: 6%;
     }
-    .menor>div{
-        position: relative;
+    div.menor>img{
         width: 100%;
         height: 28%;
-        background-color: rgb(118, 118, 118);
-        padding: 1px;
-        border-radius: 7px;
-        box-shadow: 2px 2px 4px rgb(97, 97, 97);
-    }
-    div.menor>div>img{
-        width: 100%;
-        height: 100%;
         flex: 1 0 auto;
         object-fit: cover;
-        border: none;
-        margin: auto;
-        box-shadow: none;
     }
 
 /*Classe 2 para imagens*/
@@ -230,7 +217,6 @@ div#intro{
         height: 100%;
         object-fit: cover;
     }
-
     .menor2{
         display: flex;
         flex-flow: column;
@@ -257,7 +243,7 @@ div#intro{
     .imgs3{
         width: 100%;
        /*flex: 1 0 380px;*/
-        min-height: 120vw;
+        height: 114vw;
         display: flex;
         flex-flow: column wrap;
         align-items: flex-start;
@@ -267,25 +253,26 @@ div#intro{
 
     .maior3{
         width: 100%;
-        height: 75%;
+        height: 68%;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         border: none;
         background-color: rgb(244, 244, 244);
         overflow-x: hidden;
         gap: 7%;
-        padding-left: 14px;
-        margin-left: 3%;
-        margin-right: -3.2%;
+        padding: 14px;
+        padding-left: 15px;
+        margin-left: 5%;
         border-radius: 7px 0px 0px 7px;
         box-shadow: 2px 2px 4px rgb(153, 153, 153);
     }
     .maior3>img{
         width: 80%;
-        height: 92%;
+        flex: 1 0;
+        height: 76vw;
         margin: auto;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     .menor3{
@@ -304,53 +291,26 @@ div#intro{
     }
     div.menor3>img{
         max-width: 46%;
-        height: 70%;
+        height: 80%;
         flex: 1 0 auto;
         object-fit: cover;
         box-shadow: none;
         box-shadow: 2px 2px 4px rgb(153, 153, 153);
     }
 
-/*Classe 4 para imagens*/
-.imgs4{
-    width: 100%;
-    flex: 1 0 380px;
-    height: 100vw;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-between;
-    align-content: space-between;
-    border: none;
-}
-
-.maior4{
-    width: 100%;
-    height: 70%;
-    border: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-.maior4>img{
-    width: 47%;
-    object-fit: cover;
-}
-
-.menor4{
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    height: 25%;
-    justify-content: space-between;
-    gap: 6%;
-    border: none;
-}
-div.menor4>img{
-    width: 44%;
-    height: 100%;
-    flex: 1 0 auto;
-    object-fit: cover;
+/*Estilo para spans*/
+span.botao{
+    position: absolute;
+    top: -2px;
+    right: -9px;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 3.5%;
+    border-radius: 7px;
+    border: 2px solid rgb(158, 158, 158);
+    background-color: rgb(35, 35, 35);
+    box-shadow: 3px 3px 3px rgb(24, 24, 24);
 }
 
     main> div#sombrasSimpli{
@@ -361,7 +321,7 @@ div.menor4>img{
         margin: auto;
         border: none;
     }
-/*Classe de estilo*/
+/*Classe de bacground*/
 .background{
     box-shadow: 3px 3px 6px rgb(179, 179, 179) ;
     border: 2px solid rgb(215, 215, 215);
@@ -372,14 +332,13 @@ div.menor4>img{
 div#ss{
     width: 90%;
     margin: 0px;
-    margin-bottom: 20px;
     padding-bottom: 12%;
     display: flex;
     flex-flow: column;
     align-items: center;
     box-shadow: 3px 3px 6px rgb(179, 179, 179) ;
     border: 2px solid rgb(215, 215, 215);
-    border-radius: 9px;
+    border-radius: 9px 9px 0px 0px;
     background-color: rgb(238, 238, 238);
 }
     div.txt{
@@ -402,7 +361,6 @@ div#imgs_ss{
     margin-bottom: 32px;
 }
    
-
     div#imgs_2{
         width: 90%;
     }
@@ -413,39 +371,30 @@ div#imgs_ss{
         flex-flow: column nowrap;
         align-items: center;
         background-color: rgb(43, 43, 43);
+        background-image: linear-gradient(to bottom, rgb(13, 13, 13), rgb(43, 43, 43));
         width: 90%;
-        margin-bottom: 32px;
-        box-shadow: inset 0 0 8px #0000006d, 7px 5px 7px rgba(0, 0, 0, 0.326);
-        border-radius: 9px;
+        border-radius: 0px 0px 9px 9px;
+        padding-top: 20px;
+        height: 60px;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        border: 2px solid rgb(29, 29, 29);
     }
     div#rel3d>div.txt{
         width: 84%;
         margin-bottom: 0px;
+        padding-top: 0px;
     }
         div#rel3d>div.txt>h3{
             align-self: flex-start;
-            font-size: 1.5em;
             padding: 0px;
+            padding-top: 3%;
             color: white;
             margin: 0px;
             margin-bottom: 22px;
+            font-size: 1.35em;
         }
-
-        span#expand, span#collapse {
-            position: absolute;
-            top: 20px;
-            right: 10px;
-            width: 12.5%;
-            color: white;
-            font-size: 1.8em;
-            text-align: center;
-            padding-top: 4px;
-            padding-bottom: 4px;
-            border-radius: 7px;
-            border: 1px solid black;
-            background-color: rgb(35, 35, 35);
-            box-shadow: 3px 3px 3px rgb(24, 24, 24);
-        }
+        
         span#expand{ z-index: 1;}
         
         span#collapse{ z-index:0;}
@@ -460,22 +409,31 @@ div#imgs_ss{
             line-height: 25px;
         }
         div#iframe{
-            display: flex; 
-            flex-flow: column wrap;
+            display: flex;
+            flex-flow: column nowrap;
             align-items: center;
             border: none;
         }
-            div#rel3d>div#iframe>iframe{
-                width: 90%;
-                height: 90%;
-                margin-bottom: 21px;
-                border-radius: 6px;
-                border: 0.5px solid rgb(0, 0, 0);
+        div#iframe> div.out{
+            width: 72vw;
+            height: 70vw;
+            margin-bottom: 21px;
+            border-radius: 6px;
+            border: 0.5px solid rgb(0, 0, 0);
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        div.out>iframe{
+                height: 100%;
+                width: 100%;
+                transform: scale(1.8);
+                transform-origin: center;
             }
+
 
     div#pelagem{
         width: 100%;
-        padding: 0px 0px 40px 0px;
+        padding: 0px;
         display: flex;
         flex-flow: column wrap;
         justify-content: space-evenly;
@@ -484,24 +442,26 @@ div#imgs_ss{
     div#pelossolidos{
         display: flex;
         flex-flow: row wrap;
-        width: 80%;
+        width: 90%;
         justify-content: center;
-        margin-bottom: 20px;
-        padding: 20px;
+        padding: 20px 0px;
+        height: 45px;
+        overflow-y: hidden;
+        border-radius: 0;
     }
     div#pelossolidos>div.txt{
         display: flex;
-        width: 100%;
+        width: 90%;
         flex-flow: column wrap;
         padding: 0px;
     }
         div#pelossolidos>div.txt> h3{
             width: 70%;
             color: black;
-            font-size: 1.3em;
             padding: 0px;
             margin-top: 0px;
             margin-bottom: 24px;
+            font-size: 1.35em;
         }
         div#pelossolidos>div.txt> p{
             width: 100%;
@@ -510,68 +470,26 @@ div#imgs_ss{
             padding: 0px;
         }
         div#pelossolidos>div.txt>span{
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            padding: 8px;
             background-color: rgb(137, 137, 137);
-            color: white;
-            border-radius: 25%;
-            border: 2px solid white;
-            box-shadow: 2px 2px 4px rgb(210, 210, 210);
+            box-shadow: 2px 2px 4px rgb(126, 126, 126);
+            right: -7px;
         }
-    div#pelossolidos>div.imgs{
-        width: 88%;
-    }
-    
-    div#folhas{
-        width: 90%;
-        padding: 26px 0px;
-        border-radius: 9px;
-        background-color: rgb(52, 52, 52);
-        box-shadow: inset 0 0 15px #0000006d;
-        border: 1px solid rgb(14, 14, 14);
-    }
-    div#folhas>div.txt{
-        padding: 0px;
-        width: 85%;
-        margin: auto;
-    }
-    div#folhas>div.txt>span{
-       position: absolute;
-       top: 0px;
-       right: -20px;
-       padding: 10px;
-       background-color: rgb(81, 81, 81);
-       color: white;
-       border-radius: 7px;
-    }
-    div#folhas>div.txt>h3{
-        margin-top: 0px;
-        margin-bottom: 26px;
-        color:#91c049;
-        font-size: 1.35em;
-        width: 80%;
-    }
-    div#folhas>div.txt>p{
-        margin: auto;
-        margin-bottom: 24px;
-        padding: 0px;
-        color: white;
-        width: 100%;
-    }
-    div#folhas>div.txt>p>a{
-        color:#A8DF54;
-    }
-    div#gFol{
-        width: 88%;
-        margin: auto;
-    }
-    div#gFol img{
-     box-shadow: 2px 2px 4px rgb(28, 28, 28);
-     border: 1px solid rgb(23, 23, 23);
-    }
+        div#imgsPel{
+            max-width: 99%;
+        }
 
+/*Sombras de todas as formas*/
+div#staf>h2{
+    margin: auto;
+    width: 90%;
+
+}
+h2.staf{
+    color: rgb(100, 100, 100);
+}
+.o_cor{
+    color: black;
+}
 /*Poligonos*/
 
     div#poligonos{
@@ -589,12 +507,13 @@ div#imgs_ss{
         align-items: center;
         width: 90%;
         padding: 25px 0px;
-        margin-bottom: 32px;
+        border-radius: 9px 9px 0px 0px;
     }
     div#gPol> h2{
         width: 90%;
         margin-bottom: 22px;
         margin-top: 0px;
+        
     }
     div#gPol>p{
         width: 90%;
@@ -605,7 +524,6 @@ div#imgs_ss{
     }
     div#pol{
         width: 94%;
-        height: 60vw;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -618,10 +536,11 @@ div#imgs_ss{
     }
     div#pol>div.menor3{
         gap: 3.5%;
+        background-color: rgb(243, 243, 243);
     }
     div#rel3D2{
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         align-items: center;
         position: relative;
         width: 90%;
@@ -629,37 +548,28 @@ div#imgs_ss{
         padding-top: 22px;
         box-shadow: 7px 5px 7px rgb(141, 141, 141);
         background-color: rgb(43, 43, 43);
-        border-radius: 9px;
+        background-image: linear-gradient(to bottom, rgb(13, 13, 13), rgb(43, 43, 43));
+        border-radius: 0px 0px 9px 9px;
         color: white;
+        height: 40px;
+        overflow-y: hidden;
     }
     div#rel3D2>div.txt{
+        padding-top: 0px;
         width: 82%;
     }
     div#rel3D2>div.txt>h3{ 
         color: white;
-        height: 45px; 
-        font-size: 1.5em; 
+        height: 45px;
         line-height: 45px;
         margin: 0px 0px 20px;
         font-weight: 500;
         align-self: flex-start; 
-        border-radius: 8px;  
+        border-radius: 8px; 
+        font-size: 1.35em; 
     }
-    div#rel3D2>div.txt>span{
-        position: absolute;
-        top: 0px;
-        right: 16px;
-        height: 10px;
-        width: 12.5%;
-        color: white;
-        font-size: 1.8em;
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 23px;
-        border-radius: 7px;
-        border: 0.5px solid rgb(160, 160, 160);
-        background-color: rgb(35, 35, 35);
-        box-shadow: inset 3px 3px 4px rgb(24, 24, 24);
+    div#rel3D2>div.txt>span{ 
+        right: -11px;
     }
     div#rel3D2>div.txt>p{
         text-align: justify;
@@ -712,7 +622,7 @@ div#imgs_ss{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        margin-bottom: 5px;
+        margin-bottom: 30px;
         padding-bottom: 20px;
     }
     div#tri{
@@ -727,15 +637,111 @@ div#imgs_ss{
         margin-bottom: 26px;
         padding-top: 10px;
     }
-/*Mosaico de Triangulos*/
+
+/*Formas curvas juntas*/
+div#forJ{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-bottom: 24px;
+}
+div#forJ>div.imgs{
+    width: 90%;
+    margin: auto;
+}
+div#forJ h2{
+    width: 90%;
+    margin: auto;
+    padding: 24px 0px 26px;
+}
+
+/*Autores de circulos*/
+div#autores{
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+div#autores>h2{
+    width: 85%;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px 0px 20px;
+    padding-left: 5%;
+    font-size: 1.35em;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+div#tho{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-bottom: 26px;
+    overflow-x: hidden;
+    border-radius:0px;
+}
+div#tho>div.txt{
+    margin-left: 0px;
+}
+div#oi{
+    margin-bottom: 10px;
+}
+div#tho>div.txt{
+    width: 90%;
+    margin: auto;
+    margin-left: 5%;
+    padding: 10px 0px;
+}
+
+/*Trias Isa*/
+div#tri{
+    margin: auto;
+    width: 90%;
+    padding-bottom: 25px;
+    padding-top: 24px;
+    border-radius:0px;
+}
+div#tri>h2{
+    margin: auto;
+    width: 90%;
+    margin-bottom: 26px;
+    padding: 0px;
+}
+div#tri>p{
+    margin: auto;
+    width: 90%;
+    margin-bottom: 26px;
+    padding: 0px;
+}
+div#tri>div.imgs4{
+    margin: auto;
+    width: 90%;
+}
+
+/*Mosaicos*/
+
+div#mosaicos>h2{
+    width: 85%;
+    padding: 20px 0px;
+    padding-left: 5%;
+    margin: auto;
+    border-radius: 7px 7px 0px 0px;
+    font-size: 1.35em;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    
+}
     div#mosaicoT{
         display: flex;
         flex-flow: column;
         align-items: center;
         width: 90%;
         margin: auto;
-        margin-bottom: 30px;
         padding: 0px 0px 25px;
+        border-radius: 0px;
     }
     div#mosaicoT>div.txt{
         padding: 10px 0px 8px;
@@ -773,11 +779,12 @@ div#imgs_ss{
         object-fit: cover;
         height: 28%;
     }
-/*Mosaico de formas retangulares*/
+    /*Mosaico de formas retangulares*/
     div#mosaicFR{
         width: 90%;
         margin: auto;
         padding-bottom: 24px;
+        border-radius: 0;
     }
     div#mosaicFR>h2{
         width: 90%;
@@ -789,32 +796,30 @@ div#imgs_ss{
         margin: auto;
     }
 
-/*Mosaico de formas curvas*/
+    /*Mosaico de formas curvas*/
     div#mosaicFC{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 27px;
-    }
-
-    div#mosaicFC>div{
-        width: 88%;
-        height: 400px;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-    div#mosaicFC>div>img{
-        min-width: 47%;
-    }
-/*Formas curvas juntas*/
-    div#forJ{
         width: 90%;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 26px;
+        padding-bottom: 20px;
+        border-radius: 0px 0px 7px 7px;
     }
+    div#mosaicFC>div.txt{
+        width: 90%;
+        margin: auto;
+        padding-bottom: 28px;
+    }
+    div#mosaicFC>div.txt>h2{
+        margin: 0;
+    }
+    div#mosaicFC>div.imgs{
+        width: 90%;
+        margin: auto;
+    }
+    div#mosaicFC>div.imgs img{
+        object-position: top center;
+    }
+
 /*Circulos*/
     div#cir{
         width: 90%;
@@ -835,89 +840,129 @@ div#imgs_ss{
     div#imgs_cir{
         width: 90%;
         margin: auto;
-        height: 85vw;
     }
-
-/*Thomas Pavitte*/
-    div#autores{
-        width: 100%;
-        margin: auto;
-        border-radius: 10px;
-        margin-bottom: 30px;
-    }
-    div#tho{
-        width: 90%;
-        margin: auto;
-        margin-bottom: 10px;
-        margin-top: 18px;
-        padding-bottom: 26px;
-    }
-
-/*Trias Isa*/
-    div#tri{
-        margin: auto;
-        width: 90%;
-        padding-bottom: 25px;
-        padding-top: 24px;
-    }
-    div#tri>h2{
-        margin: auto;
-        width: 90%;
-        margin-bottom: 26px;
-        padding: 0px;
-    }
-    div#tri>div.imgs4{
-        margin: auto;
-        width: 90%;
-    }
-
 
 /*Linhas*/
 div#li{
     margin: auto;
     width: 90%;
+    height: 130vw;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+div#li>div.imgs3{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*Folhas*/
+div#folhas{
+    width: 90%;
+    margin: auto;
+    padding: 26px 0px;
+    border-radius: 9px;
+    background-color: rgb(52, 52, 52);
+    box-shadow: inset 0 0 15px #0000006d;
+    border: 1px solid rgb(14, 14, 14);
+    height: 25px;
+    overflow-y: hidden;
+}
+div#folhas>div.txt{
+    padding: 0px;
+    width: 85%;
+    box-sizing: border-box;
+    margin: auto;
+}
+div#folhas>div.txt>h3{
+    margin-top: 0px;
+    margin-bottom: 26px;
+    color:#91c049;
+    width: 80%;
+    font-size: 1.35em;
+}
+div#folhas>div.txt>span{
+  top: -10px;
+}
+div#folhas>div.txt>p{
+    margin: auto;
+    margin-bottom: 24px;
+    padding: 0px;
+    color: white;
+    width: 100%;
+}
+div#folhas>div.txt>p>a{
+    color:#A8DF54;
+}
+
+div#gFol{
+    width: 88%;
+    margin: auto;
+}
+div#gFol img{
+ box-shadow: 2px 2px 4px rgb(28, 28, 28);
+ border: 1px solid rgb(23, 23, 23);
 }
 
 aside{
     display: flex;
+    flex-flow: column;
     justify-content: center;
     width: 90%;
     margin: auto;
 }
+    aside>h3{
+        font-size: 1.2em;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        padding: 20px 10px;
+        margin: 0px;
+        color: white;
+        background-color: rgb(30, 30, 30);
+        box-sizing: border-box;
+    }
 
 div#gatos{
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    gap: 10px;
-    border-radius: 15px;
+    justify-content: space-evenly;
+    border-radius: 0px 0px 15px 15px;
     background-color: rgb(40, 40, 40);
-    border-radius: 7px;
-    padding: 0px 20px;
-    padding-bottom: 24px;
-
+    padding-top:24px;
+    padding-bottom: 0px;
+    position: relative;
 }
-    div#gatos>h3{
-        font-size: 1.35em;
-        text-align: center;
-        border-radius: 5px;
-        padding: 12px 0px;
-        width: 100%;
-        margin-bottom: 20px;
-        color: white;
-        background-color: rgb(11, 11, 11);
-    }
-    div#gatos> img{
-        width: 47%;
-        height: 47%;
-        border-radius: 5px;
+    div#gatos>div{
+        width: 42%;
+        height: 50vw;
+        border-radius: 15px;
         box-shadow: 10px 6px 10px rgba(0, 0, 0, 0.245);
+        margin-bottom: 6%;
     }
-    div#gatos>img#ult{
-       margin: auto;
+
+    div#gatos>div>img{
+        width: 100%;
+        height: 40vw;
+        object-fit: cover;
+        object-position: top;
+        box-shadow: none;
+        border-radius: 10px 10px 0px 0px;
     }
+    div#gatos>div>p{
+        width: 100%;
+        background-color: rgb(223, 223, 223);
+        border-radius: 0px 0px 10px 10px;
+        padding: 7px 0px;
+        text-align: center;
+        margin: 0;
+        margin-top: -5px;
+        border: 1px solid white;
+    }
+
 footer{
     display: block;
     padding: 20px 0px;
