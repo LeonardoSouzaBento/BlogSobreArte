@@ -13,3 +13,7 @@ O objet-fit (no, caso eu precisei do cover), só funciona se o elemento pai ter 
 08/12/2024
 
 As divs filhas de uma div em display flex não crescem se o flex do pai não estiver coonfigurado. Ex.: flex: 1 0 240px;.
+
+15/12/2024
+
+As regras de overflow (como hidden) interferem na aplicação do display stick.
