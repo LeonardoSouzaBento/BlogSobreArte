@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Intro</title>
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .intro {
+      position: sticky;
+      top: 0; /* Fica fixo ao chegar no topo */
+      background: lightblue;
+      padding: 20px;
+      z-index: 10; /* Para garantir que fique sobre outros elementos */
+    }
+    main {
+      padding: 20px;
+      background: #f0f0f0;
+      height: 2000px; /* Apenas para demonstrar a rolagem */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Meu Site</h1>
+  </header>
+
+  <div class="intro">
+    <p>Bem-vindo à introdução! Este texto fica fixo enquanto você rola.</p>
+  </div>
+
+  <main>
+    <p>Conteúdo do main. Role para ver o efeito!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+  </main>
+  
+</body>
+</html>

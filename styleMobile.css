@@ -116,7 +116,10 @@ main h3{
     font-weight: 600;
     font-size: 1.2em;
 }
-div#intro{
+div.intro{
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: block;
     line-height: 1.5em;
     text-align: left;
@@ -124,15 +127,16 @@ div#intro{
     margin-bottom: 34px;
     padding: 40px 0px 40px;
     width: 100%;
+    height: 200px;
+    overflow-y: hidden;
     background-color: white;
     background-image: linear-gradient(to top, rgb(218, 218, 218), white);
     background-size: 100% 15px;
     background-repeat: no-repeat;
     background-position: bottom;
     border-radius: 0px;
-
 }
-    div#intro> h3{
+    div.intro> h3{
         width: 80%;
         text-align: center;
         margin-bottom: 25px;
@@ -142,12 +146,33 @@ div#intro{
         font-size: 1.35em;
         border-radius: 6px;
     }
-    div#intro p{
+    div.intro p{
         margin: auto;
         text-align: justify;
         width: 80%;
         font-size: 1em;
     }
+div.intro>div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.369), rgba(255, 255, 255, 0));
+    border: none;
+}
+div.intro > div > button{
+    width: 60%;
+    margin-left: 20%;
+    height: 100%;
+    font-size: 1em;
+    border: 1px solid black;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    border: 2px solid rgb(117, 117, 117);
+    box-shadow: 0px 2px 4px rgb(113, 113, 113);
+}
 
 /*Eestilo de imagens*/
 
@@ -364,73 +389,8 @@ div#imgs_ss{
     div#imgs_2{
         width: 90%;
     }
-   
-    div#rel3d{
-        position: relative;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        background-color: rgb(43, 43, 43);
-        background-image: linear-gradient(to bottom, rgb(13, 13, 13), rgb(43, 43, 43));
-        width: 90%;
-        border-radius: 0px 0px 9px 9px;
-        padding-top: 20px;
-        height: 60px;
-        margin-bottom: 15px;
-        overflow-y: hidden;
-        border: 2px solid rgb(29, 29, 29);
-    }
-    div#rel3d>div.txt{
-        width: 84%;
-        margin-bottom: 0px;
-        padding-top: 0px;
-    }
-        div#rel3d>div.txt>h3{
-            align-self: flex-start;
-            padding: 0px;
-            padding-top: 3%;
-            color: white;
-            margin: 0px;
-            margin-bottom: 22px;
-            font-size: 1.35em;
-        }
-        
-        span#expand{ z-index: 1;}
-        
-        span#collapse{ z-index:0;}
 
-        div#rel3d>div.txt>p{
-            color: white;
-            display: block;
-            text-align: justify;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            font-size: 1.05em;
-            line-height: 25px;
-        }
-        div#iframe{
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            border: none;
-        }
-        div#iframe> div.out{
-            width: 72vw;
-            height: 70vw;
-            margin-bottom: 21px;
-            border-radius: 6px;
-            border: 0.5px solid rgb(0, 0, 0);
-            overflow-x: hidden;
-            overflow-y: hidden;
-        }
-        div.out>iframe{
-                height: 100%;
-                width: 100%;
-                transform: scale(1.8);
-                transform-origin: center;
-            }
-
-
+/*Pelagem de animais feitas nesse estilo*/
     div#pelagem{
         width: 100%;
         padding: 0px;
@@ -478,27 +438,105 @@ div#imgs_ss{
             max-width: 99%;
         }
 
+/*Relativo ao 3d*/
+        div#rel3d{
+            position: relative;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            background-color: rgb(43, 43, 43);
+            background-image: linear-gradient(to bottom, rgb(13, 13, 13), rgb(43, 43, 43));
+            width: 90%;
+            border-radius: 0px 0px 9px 9px;
+            padding-top: 20px;
+            height: 60px;
+            margin-bottom: 30px;
+            overflow-y: hidden;
+            border: 2px solid rgb(29, 29, 29);
+        }
+        div#rel3d>div.txt{
+            width: 84%;
+            margin-bottom: 0px;
+            padding-top: 0px;
+        }
+            div#rel3d>div.txt>h3{
+                align-self: flex-start;
+                padding: 0px;
+                padding-top: 3%;
+                color: white;
+                margin: 0px;
+                margin-bottom: 22px;
+                font-size: 1.35em;
+            }
+            
+            span#expand{ z-index: 1;}
+            
+            span#collapse{ z-index:0;}
+    
+            div#rel3d>div.txt>p{
+                color: white;
+                display: block;
+                text-align: justify;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-size: 1.05em;
+                line-height: 25px;
+            }
+            div#iframe{
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                border: none;
+            }
+            div#iframe> div.out{
+                width: 72vw;
+                height: 70vw;
+                margin-bottom: 21px;
+                border-radius: 6px;
+                border: 0.5px solid rgb(0, 0, 0);
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+            div.out>iframe{
+                    height: 100%;
+                    width: 100%;
+                    transform: scale(1.8);
+                    transform-origin: center;
+                }
+
 /*Sombras de todas as formas*/
+
+div#staf{
+   border: 1px dashed blue;
+   width: 90%;
+   margin: auto;
+}
 div#staf>h2{
     margin: auto;
-    width: 90%;
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 20px 17px;
+    box-sizing: border-box;
+    font-size: 1.38em;
+    border-radius: 9px 9px 0px 0px;
+    background-color: #EEEEEE;
+    border: 2px solid rgb(204, 204, 204);
+}
+div#todas{
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-items: flex-start;
+    overflow-x: hidden;
+}
 
-}
-h2.staf{
-    color: rgb(100, 100, 100);
-}
-.o_cor{
-    color: black;
-}
 /*Poligonos*/
 
     div#poligonos{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 20px;
         padding: 0px;
     }
     div#gPol{
@@ -507,7 +545,7 @@ h2.staf{
         align-items: center;
         width: 90%;
         padding: 25px 0px;
-        border-radius: 9px 9px 0px 0px;
+        border-radius: 0px 0px 9px 9px;
     }
     div#gPol> h2{
         width: 90%;
@@ -617,12 +655,9 @@ h2.staf{
     }
 /*Triangulos Juntos*/
     div#triJ{
-        width: 90%;
-        margin: auto;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        margin-bottom: 30px;
         padding-bottom: 20px;
     }
     div#tri{
@@ -640,9 +675,6 @@ h2.staf{
 
 /*Formas curvas juntas*/
 div#forJ{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 30px;
     padding-bottom: 24px;
 }
 div#forJ>div.imgs{
@@ -722,26 +754,35 @@ div#tri>div.imgs4{
 }
 
 /*Mosaicos*/
+div#mosaicos{
+    width: 90%;
+    margin: auto;
+    height: 180vw;
+    overflow-y: hidden;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
 
 div#mosaicos>h2{
-    width: 85%;
+    width: 100%;
     padding: 20px 0px;
     padding-left: 5%;
+    box-sizing: border-box;
     margin: auto;
-    border-radius: 7px 7px 0px 0px;
     font-size: 1.35em;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
-    
+    border-radius: 0px;
 }
     div#mosaicoT{
         display: flex;
         flex-flow: column;
         align-items: center;
-        width: 90%;
+        width: 100%;
         margin: auto;
         padding: 0px 0px 25px;
         border-radius: 0px;
+        border: none;
     }
     div#mosaicoT>div.txt{
         padding: 10px 0px 8px;
@@ -781,10 +822,11 @@ div#mosaicos>h2{
     }
     /*Mosaico de formas retangulares*/
     div#mosaicFR{
-        width: 90%;
+        width: 100%;
         margin: auto;
         padding-bottom: 24px;
         border-radius: 0;
+        border: none;
     }
     div#mosaicFR>h2{
         width: 90%;
@@ -803,6 +845,7 @@ div#mosaicos>h2{
         margin-bottom: 26px;
         padding-bottom: 20px;
         border-radius: 0px 0px 7px 7px;
+        border: none;
     }
     div#mosaicFC>div.txt{
         width: 90%;
@@ -819,23 +862,30 @@ div#mosaicos>h2{
     div#mosaicFC>div.imgs img{
         object-position: top center;
     }
-
+/*Desenhos com elementos repetidos*/
+    div#pattern{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+    div#pattern>h2{
+        width: 90%;
+        margin: auto;
+        margin: 24px 0px 24px 20px;
+    }
 /*Circulos*/
     div#cir{
         width: 90%;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         padding: 24px 0px;
     }
     div#cir>h2{
         width: 90%;
-        margin: auto;
         margin-bottom: 24px;
-    }
-    div#cir>p{
-        width: 90%;
-        margin: auto;
-        margin-bottom: 24px;
+        margin-top: 0px;
+        margin-left: 15px;
     }
     div#imgs_cir{
         width: 90%;
@@ -843,30 +893,64 @@ div#mosaicos>h2{
     }
 
 /*Linhas*/
-div#li{
-    margin: auto;
-    width: 90%;
-    height: 130vw;
-    
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-div#li>div.imgs3{
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
+    div#li{
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding-bottom: 18px;
+        overflow-x: hidden;
+        margin-bottom: 10px;
+    }
+    div#li>h2{
+        margin-left: 15px;
+        margin-top: 24px;
+        margin-bottom: 20px;
+    }
+    div#linhas{
+        overflow-x: hidden;
+        display: flex;
+        flex-flow: column nowrap;
+        padding-bottom: 10px;
+    }
+    div#linhas>div.maior3{
+        height: 77vw;
+        width: 90%;
+        margin: auto;
+        box-shadow: 2px 2px 4px 1px rgb(153, 153, 153);
+        border-radius: 0px;
+        background-color: #EEEEEE;
+    }
+    div#rel3D3{
+        position: relative;
+        height: 100vw;
+        width: 100%;
+        background-color: #343434;
+        border: 1px solid red;
+        border-radius: 0px 0px 10px 10px;
+    }
+    div#rel3D3>span{
+        right: 10px;
+    }
+   
+    /*Palavras*/
+    div#words{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 12px;
+    }
 
 /*Folhas*/
 div#folhas{
     width: 90%;
+    height: 52px;
     margin: auto;
     padding: 26px 0px;
     border-radius: 9px;
     background-color: rgb(52, 52, 52);
     box-shadow: inset 0 0 15px #0000006d;
     border: 1px solid rgb(14, 14, 14);
-    height: 25px;
     overflow-y: hidden;
 }
 div#folhas>div.txt{

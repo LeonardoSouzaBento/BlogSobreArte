@@ -26,14 +26,18 @@
         </div>
     </header>
 
-    <main>
-        <div id="intro">
-            <h3>Resumo</h3>
-            <p>A alternativa a usar o estilo realista de pintura é desenhar partes com cores solidas ou juntar elementos de cores solidas. A forma mais direta é usar sombras simplificadas (estilo de anime e desenhos animados).
-            As formas das sombras podem ser convertidas em poligonos ou em formas curvas abstratas.
-            Seguindo essa lógica de estilização, as imagens podem ser feitas de elementos repetidos, como circulos ou pontos (que é o pontilhismo), linhas (somete linhas), ou qualquer outro desenho repetido, como folhas ou palavras.</p>
+    <div class="intro">
+        <h3>Resumo</h3>
+        <p>A alternativa a usar o estilo realista de pintura é desenhar partes com cores solidas ou juntar elementos de cores solidas. A forma mais direta é usar sombras simplificadas (estilo de anime e desenhos animados).
+        As formas das sombras podem ser convertidas em poligonos ou em formas curvas abstratas.
+        Seguindo essa lógica de estilização, as imagens podem ser feitas de elementos repetidos, como circulos ou pontos (que é o pontilhismo), linhas (somete linhas), ou qualquer outro desenho repetido, como folhas ou palavras.</p>
+
+        <div>
+            <button>Ativar leitura rápida</button>
         </div>
-    
+    </div>
+
+    <main>
         <div id="sombrasSimpli">
                 <div id="ss">
                     <div class="txt">
@@ -71,13 +75,13 @@
                     <div class="txt">
                         <h3>Pelagem de animais feitas nesse estilo</h3>
 
-                        <span class="material-symbols-outlined botao" >
-                            expand_all
-                        </span>
                         <span class="material-symbols-outlined botao",>
                             collapse_all
                         </span>
-
+                        <span class="material-symbols-outlined botao" >
+                            expand_all
+                        </span>
+                        
                         <p>Cada mecha tem uma cor solida diferente da mecha ao lado. É trabalho um de ilustração manual, manual e bonito. Esse estilo é melhor para animais de pelo alto.</p>
                     </div>
 
@@ -97,8 +101,8 @@
 
             <div id="rel3d">
                 <div class="txt">
-                    <span class="material-symbols-outlined botao" id="expand" class="botao"> expand_all </span>
                     <span class="material-symbols-outlined botao" id="collapse"> collapse_all </span>
+                    <span class="material-symbols-outlined botao" id="expand" class="botao"> expand_all </span>
                     <h3>Relativo ao 3D</h3>
                     <p>Esse estilo de pintura, em sombras simplificadas, é usado em <strong>bonecos 3d</strong> (digitais ou reais).</p>
                 </div>
@@ -111,64 +115,65 @@
         <div id="staf">
             <h2>2. Sombras de todas as formas</h2>
             
-            <div id="poligonos">
-                <div id="gPol" class="background">
-                    <h2 class="staf">Sombras de todas as formas: <span class="o_cor">poligonos</span></h2>
-
-                    <div id="pol" class="imgs3">
-                        <div class="maior3">
-                            <img id="can" src="Polígonos/cantora.png" alt="">
-                            <img id="ind" src="Polígonos/indio.png" alt="">
+            <div id="todas">
+                <div id="poligonos">
+                    <div id="gPol" class="background">
+                        <h2>Poligonos</h2>
+                        <div id="pol" class="imgs3">
+                            <div class="maior3">
+                                <img id="ind" src="Polígonos/indio.png" alt="">
+                                <img id="can" src="Polígonos/cantora.png" alt="">
+                            </div>
+                            <div class="menor3">
+                                <img id="qua2" src="Polígonos/quadrolongo2.png" alt="">
+                                <img id="qua1" src="Polígonos/quadrolongo1.png" alt="">
+                            </div>
                         </div>
-                        <div class="menor3">
-                            <img id="qua2" src="Polígonos/quadrolongo2.png" alt="">
-                            <img id="qua1" src="Polígonos/quadrolongo1.png" alt="">
+                    </div>
+                    <div id="rel3D2">
+                        <div class="txt">
+                            <span class="material-symbols-outlined botao" id="collapse2"> collapse_all </span>
+                            <span class="material-symbols-outlined botao" id="expand2"> expand_all </span>
+                            <h3>Relativo ao 3D</h3>
+                            <p>É uma tendencia entre artistas 3D modelar com polígonos. Pois, modelos assim podem ser <em>projetados em pepel. Depois de cada parte ser dobrada e colada</em>, tem-se de volta o modelo 3D — nisso consiste o <i>papercraft</i> ("arte em papel").</p>
                         </div>
-                    </div>
-                </div>
-                <div id="rel3D2">
-                    <div class="txt">
-                        <span class="material-symbols-outlined botao" id="expand2"> expand_all </span>
-                        <span class="material-symbols-outlined botao" id="collapse2"> collapse_all </span>
-                        <h3>Relativo ao 3D</h3>
-                        <p>É uma tendencia entre artistas 3D modelar com polígonos. Pois, modelos assim podem ser <em>projetados em pepel. Depois de cada parte ser dobrada e colada</em>, tem-se de volta o modelo 3D — nisso consiste o <i>papercraft</i> ("arte em papel").</p>
-                    </div>
-                    <div id="lowpoly">
-                        <iframe width="135" height="250" src="https://youtube.com/embed/TGoiKX9bb0o?si=O4Q3KnRyrfg9X0X6&amp;controls=0&amp;start=25" title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-                        <img src="https://i.pinimg.com/736x/bb/e8/ed/bbe8edacbf1f6aa65d689ae9a4d7879b.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div id="triJ"  class="background">
-                <div id="tri">
-                    <h2 class="staf">Sombras de todas as formas:<span class="o_cor">triângulos juntos</span></h2>
+                        <div id="lowpoly">
+                            <iframe width="135" height="250" src="https://youtube.com/embed/TGoiKX9bb0o?si=O4Q3KnRyrfg9X0X6&amp;controls=0&amp;start=25" title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 
-                    <div class="imgs">
-                        <div class="maior">
-                            <img id="sher" src="Triangulos/sherlock.png" alt="">
-                        </div>
-                        <div class="menor">
-                            <img id="per" src="Triangulos/perereca.png" alt="">
-                            <img id="inu" src="Triangulos/inu.png" alt="">
-                            <img id="tuc" src="Triangulos/Tucano.png" alt="">
+                            <img src="https://i.pinimg.com/736x/bb/e8/ed/bbe8edacbf1f6aa65d689ae9a4d7879b.jpg" alt="">
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="forJ" class="background">
-                <h2 class="staf">Sombras de todas as formas: <span class="o_cor">formas curvas juntas</span></h2>
-
-                <div class="imgs">
-                    <div class="maior">
-                        <img src="FormasArredondadas/porco.jpg" alt="">
+                <div>
+                    <div id="triJ"  class="background">
+                        <div id="tri">
+                            <h2>triângulos juntos</h2>
+                    
+                            <div class="imgs">
+                                <div class="maior">
+                                    <img id="sher" src="Triangulos/sherlock.png" alt="">
+                                </div>
+                                <div class="menor">
+                                    <img id="per" src="Triangulos/perereca.png" alt="">
+                                    <img id="inu" src="Triangulos/inu.png" alt="">
+                                    <img id="tuc" src="Triangulos/Tucano.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="menor">
-                        <img src="FormasArredondadas/cachorro.jpg" alt="">
-                        <img src="FormasArredondadas/esquilo.jpg" alt="">
-                        <img src="FormasArredondadas/galinhas.jpg" alt="">
+                    <div id="forJ" class="background">
+                        <h2>formas curvas juntas</h2>
+                        <div class="imgs">
+                            <div class="maior">
+                                <img src="FormasArredondadas/porco.jpg" alt="">
+                            </div>
+                            <div class="menor">
+                                <img src="FormasArredondadas/cachorro.jpg" alt="">
+                                <img src="FormasArredondadas/esquilo.jpg" alt="">
+                                <img src="FormasArredondadas/galinhas.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -199,7 +204,7 @@
         </div>
 
         <div id="mosaicos" >
-            <h2 class="background">Mosaicos de vários formatos</h2>
+            <h2 class="background">3. Mosaicos de vários formatos</h2>
             <div id="mosaicoT" class="background">
                 <div class="txt">
                     <h2>Mosaico de triângulos</h2>
@@ -246,56 +251,75 @@
             </div>
         </div>
 
-        <div id="cir" class="background">
-                <h2>4.Círculos e pontos</h2>
-                <p>Sei que você conhece o pontilhismo, mas esse estilo é um pouco diferente.</p>
-            <div class="imgs" id="imgs_cir">
-                <div class="maior">
-                    <img src="PontosouCirculos/elefante.png" alt="">
-                </div>
-                <div class="menor">
-                    <img src="PontosouCirculos/perereca.png" alt="">
-                    <img src="PontosouCirculos/joaninha.png" alt="">
-                    <img src="PontosouCirculos/beijaflor.png" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div id="li" class="background">
-            <h2>Linhas</h2>
-
-            <div class="imgs3">
-                <div class="maior3">
-                    <img src="Linhas/mulher.jpg" alt="">
-                    <img src="Linhas/homem1.jpg" alt="">
-                    <img src="Linhas/homem3.jpg" alt="">
-                </div>
-                <div class="menor3">
-                    <img src="Linhas/leão.jpg" alt="">
+        <div id="pattern" class="background">
+            <h2>4. Desenhos com elementos repetidos</h2>
+            <div id="cir" class="background">
+                    <h2>Círculos e pontos</h2>
+                <div class="imgs" id="imgs_cir">
+                    <div class="maior">
+                        <img src="PontosouCirculos/elefante.png" alt="">
+                    </div>
+                    <div class="menor">
+                        <img src="PontosouCirculos/perereca.png" alt="">
+                        <img src="PontosouCirculos/joaninha.png" alt="">
+                        <img src="PontosouCirculos/beijaflor.png" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
+            <div id="li" class="background">
+                <h2>Linhas</h2>
+                    <div id="linhas">
+                        <div class="maior3">
+                            <img src="Linhas/mulher.jpg" alt="">
+                            <img src="Linhas/homem1.jpg" alt="">
+                            <img src="Linhas/homem3.jpg" alt="">
+                            <img src="Linhas/leão.jpg" alt="">
+                        </div>
 
-        <div id="folhas">
-            <div class="txt">
-                <h3>Animais feitos de folhas</h3>
-                <span class="material-symbols-outlined">
-                    expand_all
-                </span>
-                <span class="material-symbols-outlined">
-                    collapse_all
-                </span>
-                <p><a href="https://dribbble.com/sodesign" target="_blank">Sergey Kovalenko</a> usa folhas para representar penas ou pelo.</p>
+                        <div id="rel3D3">
+                            <span class="material-symbols-outlined botao">collapse_all
+                            </span>
+                            <span class="material-symbols-outlined botao">
+                                expand_all
+                            </span>
+                            
+                            <div>
+
+                            </div> 
+                        </div>
+                    </div>
             </div>
 
-            <div id="gFol" class="imgs">
-                <div class="maior">
-                    <img id="ag" src="Folhas/aguia.png" alt="">
+            <div id="words" class="background">
+                <h2>Palavras</h2>
+                <div id="pal">
+                    <img src="https://i.pinimg.com/736x/24/de/d0/24ded003c6f0d672e538a98b2da9d777.jpg" alt="">
+                    <img src="https://i.pinimg.com/736x/11/8e/1b/118e1b195ff621bd28ddf1b4474918b5.jpg" alt="">
+                    <img src="https://i.pinimg.com/736x/04/6a/ce/046ace435bd12350d29f6c90ef3fb1bc.jpg" alt="">
+                    <img src="" alt="">
                 </div>
-                <div class="menor">
-                    <img id="co" src="Folhas/coruja.png" alt="">
-                    <img id="lo" src="Folhas/lobo.png" alt="">
-                    <img id="cer" src="Folhas/cervo.png" alt="">
+            </div>
+
+            <div id="folhas">
+                <div class="txt">
+                    <h3>Animais feitos de folhas</h3>
+                    <span class="material-symbols-outlined botao">
+                        collapse_all
+                    </span>
+                    <span class="material-symbols-outlined botao">
+                        expand_all
+                    </span>
+                    <p><a href="https://dribbble.com/sodesign" target="_blank">Sergey Kovalenko</a> usa folhas para representar penas ou pelo.</p>
+                </div>
+                <div id="gFol" class="imgs">
+                    <div class="maior">
+                        <img id="ag" src="Folhas/aguia.png" alt="">
+                    </div>
+                    <div class="menor">
+                        <img id="co" src="Folhas/coruja.png" alt="">
+                        <img id="lo" src="Folhas/lobo.png" alt="">
+                        <img id="cer" src="Folhas/cervo.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
