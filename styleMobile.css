@@ -122,10 +122,10 @@ div.intro{
     line-height: 1.5em;
     text-align: left;
     margin: auto;
-    margin-bottom: 34px;
+    margin-bottom: 64px;
     padding: 25px 0px 40px;
     width: 100%;
-    height: 240px;
+    height: 42vw;
     overflow-y: hidden;
     background-color: white;
     background-image: linear-gradient(to top, rgb(218, 218, 218), white);
@@ -133,38 +133,42 @@ div.intro{
     background-repeat: no-repeat;
     background-position: bottom;
     border-radius: 0px;
-    position: sticky;
+    position: relative;
+    /*position: sticky;
     top: 0px;
-    z-index: 10;
+    z-index: 1;*/
 }
 div#resumo{
     position: relative;
     width: 80%;
     margin: auto;
-    height: 40px;
+    height: 11vw;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    border: 1px solid red;
     background-image: none;
     margin-bottom: 22px;
 }
     div#resumo>h3{
-        width: 100%;
+        width: 70%;
+        height: 100%;
         margin: auto;
         text-align: center;
         color: #1B140A;
         font-size: 1.35em;
         border-radius: 6px;
         background-color: rgb(237, 237, 237);
-        padding: 7px 0px;
+        box-sizing: border-box;
+        padding: 3% 0%;
     }
     div#resumo>span{
         background-color: #1B140A;
-        width: 40px;
-        height: 40px;
-        padding: 4%;
-        font-size: 1em;
+        width: 15%;
+        padding: 5% 0%;
+        box-sizing: border-box;
+        font-size: 1.3em;
+        line-height: 0.6em;
+        text-align: center;
         color: white;
         box-shadow: none;
         border-radius: none;
@@ -195,10 +199,11 @@ div#botIn{
     flex-flow: row nowrap;
     justify-content: center;
     width: 100%;
+    height: 18%;
 }
 div#botIn > button{
-    width: 72%;
-    height: 40px;
+    width: 88%;
+    height: 100%;
     font-size: 1em;
     border: 1px solid black;
     background-color: #000000;
@@ -208,16 +213,7 @@ div#botIn > button{
     border-radius: 7px;
     box-shadow: 0px 2px 4px rgb(113, 113, 113);
 }
-div#botIn > span{
-    top: 0px;
-    right: 9%;
-    padding: 2.62%;
-    background-color: #000000;
-    border: none;
-    box-sizing: border-box;
-    border-radius: 0px 8px 8px 0px;
-    box-shadow: none;
-}
+
 /*Eestilo de imagens*/
 
 .menor>img, .menor2>img, .menor3>img, .menor4>img{
