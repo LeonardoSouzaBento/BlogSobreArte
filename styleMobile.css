@@ -140,30 +140,31 @@ div.intro{
 }
 div#resumo{
     position: relative;
-    width: 80%;
+    width: 88%;
     margin: auto;
     height: 11vw;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     background-image: none;
     margin-bottom: 22px;
 }
     div#resumo>h3{
-        width: 70%;
+        width: 86.5%;
         height: 100%;
-        margin: auto;
         text-align: center;
         color: #1B140A;
         font-size: 1.35em;
-        border-radius: 6px;
+        border-radius: 6px 0px 0px 6px;
         background-color: rgb(237, 237, 237);
         box-sizing: border-box;
         padding: 3% 0%;
+        margin: 0px;
     }
     div#resumo>span{
         background-color: #1B140A;
-        width: 15%;
+        width: 13.5%;
+        height: 100%;
         padding: 5% 0%;
         box-sizing: border-box;
         font-size: 1.3em;
@@ -171,13 +172,11 @@ div#resumo{
         text-align: center;
         color: white;
         box-shadow: none;
-        border-radius: none;
+        border-radius: 0px 6px 6px 0px;
         box-sizing: border-box;
-    }
-    div#resumo>span#two{
-        box-shadow: none;
-        border-radius: 0px 9px 9px 0px ;
-        margin-left: 2px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
     }
     div.intro p{
         margin: auto;
@@ -550,6 +549,7 @@ div#staf{
    border: 1px dashed blue;
    width: 90%;
    margin: auto;
+   overflow-x: hidden;
 }
 div#staf>h2{
     margin: auto;
@@ -563,14 +563,24 @@ div#staf>h2{
     border: 2px solid rgb(204, 204, 204);
 }
 div#todas{
-    border: 1px solid black;
     display: flex;
     flex-flow: row nowrap;
-    align-items: flex-start;
-    justify-items: flex-start;
+    height: 130vw;
     overflow-x: hidden;
+    width: auto;
+    padding: 0px;
+    margin-bottom: 20px;
+    border-radius: 0px;
 }
-
+div#trifor{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    width: 100%;
+    height: 98%;
+    border: 2px dashed blue;
+    margin-top: 0px;
+}
 /*Poligonos*/
 
     div#poligonos{
@@ -578,20 +588,28 @@ div#todas{
         flex-flow: column wrap;
         align-items: center;
         padding: 0px;
+        width: 90%;
+        flex: none;
+        margin-right: 7%;
+        border-radius: 0px;
+        height: 100%;
+        display: none;
     }
     div#gPol{
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        width: 90%;
-        padding: 25px 0px;
-        border-radius: 0px 0px 9px 9px;
+        width: 100%;
+        height: 80%;
+        padding: 0px;
+        border-radius: 0px 9px 0px 0px;
+        box-shadow: 4px 4px 10px rgb(105, 105, 105);
+        border: none;
     }
     div#gPol> h2{
-        width: 90%;
-        margin-bottom: 22px;
-        margin-top: 0px;
-        
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px;
     }
     div#gPol>p{
         width: 90%;
@@ -601,7 +619,8 @@ div#todas{
         padding: 0px;
     }
     div#pol{
-        width: 94%;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -609,27 +628,29 @@ div#todas{
         margin-top: 0px;
         margin-bottom: 0px;
         gap: 12px;
-        border-radius: 5px 5px 0px 0px;
+        border-radius: 0px;
         border: none;
+        box-shadow: none;
     }
-    div#pol>div.menor3{
-        gap: 3.5%;
-        background-color: rgb(243, 243, 243);
+    div#pol>div.maior3{
+        margin-left: 0%;
+        height: 85%;
+        padding: 0px;
     }
     div#rel3D2{
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         position: relative;
-        width: 90%;
+        width: 100%;
         padding-bottom: 20px;
         padding-top: 22px;
-        box-shadow: 7px 5px 7px rgb(141, 141, 141);
         background-color: rgb(43, 43, 43);
         background-image: linear-gradient(to bottom, rgb(13, 13, 13), rgb(43, 43, 43));
         border-radius: 0px 0px 9px 9px;
         color: white;
-        height: 40px;
+        height: 5%;
+        box-shadow: 4px 4px 10px rgb(105, 105, 105);
         overflow-y: hidden;
     }
     div#rel3D2>div.txt{
@@ -693,24 +714,27 @@ div#todas{
         margin: auto;
         margin-bottom: 24px;
     }
+
 /*Triangulos Juntos*/
     div#triJ{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
+        box-shadow: none;
     }
     div#tri{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         width: 90%;
-        margin-bottom: 30px;
+        padding: 0px 0px 15px 0px;
+        
     }
     div#tri>h2{
         align-self: flex-start; 
         margin-bottom: 26px;
-        padding-top: 10px;
+        padding-top: 0px;
     }
 
 /*Formas curvas juntas*/
@@ -769,29 +793,29 @@ div#tho>div.txt{
 }
 
 /*Trias Isa*/
-div#tri{
+/*div#trias{
     margin: auto;
     width: 90%;
     padding-bottom: 25px;
     padding-top: 24px;
     border-radius:0px;
 }
-div#tri>h2{
+div#trias>h2{
     margin: auto;
     width: 90%;
     margin-bottom: 26px;
     padding: 0px;
 }
-div#tri>p{
+div#trias>p{
     margin: auto;
     width: 90%;
     margin-bottom: 26px;
     padding: 0px;
 }
-div#tri>div.imgs4{
+div#trias>div.imgs4{
     margin: auto;
     width: 90%;
-}
+}*/
 
 /*Mosaicos*/
 div#mosaicos{
