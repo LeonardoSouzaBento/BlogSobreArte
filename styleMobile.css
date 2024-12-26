@@ -11,10 +11,14 @@
     'GRAD' 0,
     'opsz' 24
 }
-    
-*{
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
 html, body{
      margin: 0px;
 }
@@ -125,7 +129,7 @@ div.intro{
     margin-bottom: 64px;
     padding: 25px 0px 40px;
     width: 100%;
-    height: 42vw;
+    height: 220px;
     overflow-y: hidden;
     background-color: white;
     background-image: linear-gradient(to top, rgb(218, 218, 218), white);
@@ -184,21 +188,17 @@ div#resumo{
         width: 80%;
         font-size: 1em;
     }
-div.intro>div{
+
+div#botIn{
     position: absolute;
     bottom: 0px;
-    width: 100%;
-    height: 20%;
-    background-color: rgba(255, 255, 255, 0);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.369), rgba(255, 255, 255, 0));
-    box-sizing: border-box;
-}
-div#botIn{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     width: 100%;
-    height: 18%;
+    height: 36px;
+    background-image: linear-gradient(to top, rgb(181, 181, 181), rgba(255, 255, 255, 0));
+    transition: 'display 0.20s ease';
 }
 div#botIn > button{
     width: 88%;
@@ -374,37 +374,40 @@ span.botao{
     border-radius: 7px;
     border: 2px solid rgb(158, 158, 158);
     background-color: rgb(35, 35, 35);
-    box-shadow: 3px 3px 3px rgb(24, 24, 24);
+    cursor: pointer;
+    user-select: none;
 }
 
-    main> div#sombrasSimpli{
+/*Classe de bacground*/
+.background{
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 9px;
+    background-color: rgb(238, 238, 238);
+}
+
+/*Sombras simplificadas*/
+    div#sombrasSimpli{
         width: 100%;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         margin: auto;
         border: none;
+        margin-bottom: 30px;
     }
-/*Classe de bacground*/
-.background{
-    box-shadow: 3px 3px 6px rgb(179, 179, 179) ;
-    border: 2px solid rgb(215, 215, 215);
-    border-radius: 9px;
-    background-color: rgb(238, 238, 238);
-}
 
-div#ss{
-    width: 90%;
-    margin: 0px;
-    padding-bottom: 12%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    box-shadow: 3px 3px 6px rgb(179, 179, 179) ;
-    border: 2px solid rgb(215, 215, 215);
-    border-radius: 9px 9px 0px 0px;
-    background-color: rgb(238, 238, 238);
-}
+    div#ss{
+        width: 90%;
+        margin: 0px;
+        padding-bottom: 12%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        border: 2px solid rgb(215, 215, 215);
+        background-color: rgb(238, 238, 238);
+        border-radius: 6px 6px 0px 0px;
+
+    }
     div.txt{
         width: 90%;
         position: relative;
@@ -443,10 +446,10 @@ div#imgs_ss{
         flex-flow: row wrap;
         width: 90%;
         justify-content: center;
-        padding: 20px 0px;
-        height: 45px;
+        height: 40px;
+        padding: 12px 0px 62px;
         overflow-y: hidden;
-        border-radius: 0;
+        border-radius: 0px 0px 6px 6px;
     }
     div#pelossolidos>div.txt{
         display: flex;
@@ -460,7 +463,7 @@ div#imgs_ss{
             padding: 0px;
             margin-top: 0px;
             margin-bottom: 24px;
-            font-size: 1.35em;
+            font-size: 1.25em;
         }
         div#pelossolidos>div.txt> p{
             width: 100%;
@@ -469,93 +472,28 @@ div#imgs_ss{
             padding: 0px;
         }
         div#pelossolidos>div.txt>span{
-            background-color: rgb(137, 137, 137);
-            box-shadow: 2px 2px 4px rgb(126, 126, 126);
-            right: -7px;
+            background-color: rgb(191, 191, 191);
+            box-shadow: 2px 2px 5px rgb(89, 89, 89);
+            top: 2px;
         }
         div#imgsPel{
-            max-width: 99%;
+            max-width: 90%;
+            margin-bottom: -30px;
         }
-
-/*Relativo ao 3d*/
-        div#rel3d{
-            position: relative;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            background-color: rgb(43, 43, 43);
-            background-image: linear-gradient(to bottom, rgb(13, 13, 13), rgb(43, 43, 43));
-            width: 90%;
-            border-radius: 0px 0px 9px 9px;
-            padding-top: 20px;
-            height: 60px;
-            margin-bottom: 30px;
-            overflow-y: hidden;
-            border: 2px solid rgb(29, 29, 29);
-        }
-        div#rel3d>div.txt{
-            width: 84%;
-            margin-bottom: 0px;
-            padding-top: 0px;
-        }
-            div#rel3d>div.txt>h3{
-                align-self: flex-start;
-                padding: 0px;
-                padding-top: 3%;
-                color: white;
-                margin: 0px;
-                margin-bottom: 22px;
-                font-size: 1.35em;
-            }
-            
-            span#expand{ z-index: 1;}
-            
-            span#collapse{ z-index:0;}
-    
-            div#rel3d>div.txt>p{
-                color: white;
-                display: block;
-                text-align: justify;
-                margin-top: 0px;
-                margin-bottom: 0px;
-                font-size: 1.05em;
-                line-height: 25px;
-            }
-            div#iframe{
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                border: none;
-            }
-            div#iframe> div.out{
-                width: 72vw;
-                height: 70vw;
-                margin-bottom: 21px;
-                border-radius: 6px;
-                border: 0.5px solid rgb(0, 0, 0);
-                overflow-x: hidden;
-                overflow-y: hidden;
-            }
-            div.out>iframe{
-                    height: 100%;
-                    width: 100%;
-                    transform: scale(1.8);
-                    transform-origin: center;
-                }
-
+  
 /*Sombras de todas as formas*/
 
 div#staf{
-   border: 1px dashed blue;
    width: 90%;
    margin: auto;
+   margin-bottom: 30px;
    overflow-x: hidden;
 }
 div#staf>h2{
     margin: auto;
     margin-bottom: 0px;
     width: 100%;
-    padding: 20px 17px;
+    padding: 5.5% 5%;
     box-sizing: border-box;
     font-size: 1.38em;
     border-radius: 9px 9px 0px 0px;
@@ -564,22 +502,13 @@ div#staf>h2{
 }
 div#todas{
     display: flex;
-    flex-flow: row nowrap;
-    height: 130vw;
+    flex-flow: column wrap;
+    align-items: center;
     overflow-x: hidden;
-    width: auto;
+    width: 100%;
     padding: 0px;
     margin-bottom: 20px;
     border-radius: 0px;
-}
-div#trifor{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-items: center;
-    width: 100%;
-    height: 98%;
-    border: 2px dashed blue;
-    margin-top: 0px;
 }
 /*Poligonos*/
 
@@ -588,28 +517,25 @@ div#trifor{
         flex-flow: column wrap;
         align-items: center;
         padding: 0px;
-        width: 90%;
         flex: none;
-        margin-right: 7%;
         border-radius: 0px;
-        height: 100%;
-        display: none;
     }
     div#gPol{
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        width: 100%;
+        width: 95%;
         height: 80%;
         padding: 0px;
-        border-radius: 0px 9px 0px 0px;
-        box-shadow: 4px 4px 10px rgb(105, 105, 105);
-        border: none;
+        padding-bottom: 24px;
+        margin-right: -18px;
     }
     div#gPol> h2{
         width: 100%;
         margin: 0px;
         border-radius: 0px;
+        padding: 20px 0px 14px;
+        font-size: 1.35em;
     }
     div#gPol>p{
         width: 90%;
@@ -631,90 +557,33 @@ div#trifor{
         border-radius: 0px;
         border: none;
         box-shadow: none;
+        position: relative;
     }
     div#pol>div.maior3{
-        margin-left: 0%;
-        height: 85%;
+        height: 100%;
         padding: 0px;
+        padding-bottom: 5px;
+        box-shadow: none;
+        box-sizing: border-box;
+        margin-left: 0px;
     }
-    div#rel3D2{
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        position: relative;
-        width: 100%;
-        padding-bottom: 20px;
-        padding-top: 22px;
-        background-color: rgb(43, 43, 43);
-        background-image: linear-gradient(to bottom, rgb(13, 13, 13), rgb(43, 43, 43));
-        border-radius: 0px 0px 9px 9px;
-        color: white;
-        height: 5%;
-        box-shadow: 4px 4px 10px rgb(105, 105, 105);
-        overflow-y: hidden;
-    }
-    div#rel3D2>div.txt{
-        padding-top: 0px;
-        width: 82%;
-    }
-    div#rel3D2>div.txt>h3{ 
-        color: white;
-        height: 45px;
-        line-height: 45px;
-        margin: 0px 0px 20px;
-        font-weight: 500;
-        align-self: flex-start; 
-        border-radius: 8px; 
-        font-size: 1.35em; 
-    }
-    div#rel3D2>div.txt>span{ 
-        right: -11px;
-    }
-    div#rel3D2>div.txt>p{
-        text-align: justify;
-        line-height: 25px;
-        margin: 0px 0px 20px;
-    }
-    div#rel3D2 em{
-        color: #ffcd57;
-    }
-    div#lowpoly{
-        width: 80%;
-        height: 360px;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        border: none;
-        gap: 8%;
-        padding: 22px 15px;
-        margin: auto;
-        overflow-x: hidden;
-        background-color: rgb(30, 30, 30);
-        border-radius: 12px 0px 0px 12px;
-    }
-    div#lowpoly>p{
-        width: 100%;
-        border: 1px solid blue;
-    }
-    div#lowpoly>iframe{
-        width: 70%;
-        height: 99%;
-        border-radius: 7px;
-        box-shadow: 2px 2px 4px rgb(0, 0, 0);
-    }
-    div#lowpoly>img{
-        width: 70%;
-        height: 99%;
-        border-radius: 7px;
-        box-shadow: 2px 2px 4px rgb(0, 0, 0);
-    }
-    div#rel3D2>p{
-        width: 88%;
-        margin: auto;
-        margin-bottom: 24px;
+    .sombras{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 30%;
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.191), rgba(255, 255, 255, 0));
     }
 
+div#trifor{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    border: 2px dashed rgb(86, 182, 42);
+    margin-top: 0px;
+}
 /*Triangulos Juntos*/
     div#triJ{
         display: flex;
@@ -727,9 +596,8 @@ div#trifor{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        width: 90%;
+        width: 100%;
         padding: 0px 0px 15px 0px;
-        
     }
     div#tri>h2{
         align-self: flex-start; 
@@ -740,9 +608,10 @@ div#trifor{
 /*Formas curvas juntas*/
 div#forJ{
     padding-bottom: 24px;
+    width: 90%;
 }
 div#forJ>div.imgs{
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 div#forJ h2{
