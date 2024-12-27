@@ -322,14 +322,12 @@ div#botIn > button{
         flex-flow: row nowrap;
         justify-content: flex-start;
         border: none;
-        background-color: rgb(244, 244, 244);
         overflow-x: hidden;
         gap: 7%;
         padding: 14px;
         padding-left: 15px;
         margin-left: 5%;
         border-radius: 7px 0px 0px 7px;
-        box-shadow: 2px 2px 4px rgb(153, 153, 153);
     }
     .maior3>img{
         width: 80%;
@@ -486,7 +484,6 @@ div#imgs_ss{
 div#staf{
    width: 90%;
    margin: auto;
-   margin-bottom: 30px;
    overflow-x: hidden;
 }
 div#staf>h2{
@@ -507,7 +504,6 @@ div#todas{
     overflow-x: hidden;
     width: 100%;
     padding: 0px;
-    margin-bottom: 20px;
     border-radius: 0px;
 }
 /*Poligonos*/
@@ -560,12 +556,13 @@ div#todas{
         position: relative;
     }
     div#pol>div.maior3{
-        height: 100%;
+        height: 98%;
         padding: 0px;
         padding-bottom: 5px;
         box-shadow: none;
         box-sizing: border-box;
         margin-left: 0px;
+        background-color: rgba(255, 255, 255, 0);
     }
     .sombras{
         position: absolute;
@@ -581,28 +578,21 @@ div#trifor{
     flex-flow: column wrap;
     align-items: center;
     width: 100%;
-    border: 2px dashed rgb(86, 182, 42);
     margin-top: 0px;
 }
 /*Triangulos Juntos*/
-    div#triJ{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        padding-bottom: 0px;
-        box-shadow: none;
-    }
+
     div#tri{
+        width: 90%;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        width: 100%;
         padding: 0px 0px 15px 0px;
+        margin-bottom: 15px;
     }
     div#tri>h2{
-        align-self: flex-start; 
-        margin-bottom: 26px;
-        padding-top: 0px;
+        width: 100%;
+        margin-bottom: 15px;
     }
 
 /*Formas curvas juntas*/
@@ -615,31 +605,43 @@ div#forJ>div.imgs{
     margin: auto;
 }
 div#forJ h2{
-    width: 90%;
-    margin: auto;
-    padding: 24px 0px 26px;
+    width: 100%;
+    margin-bottom: 18px;
 }
 
 /*Autores de circulos*/
 div#autores{
     width: 100%;
+    height: 70px;
+    overflow-y: hidden;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 0px 0px 9px 9px;
     margin-bottom: 30px;
 }
-div#autores>h2{
-    width: 85%;
-    margin: auto;
-    border-radius: 10px 10px 0px 0px;
-    padding: 20px 0px 20px;
-    padding-left: 5%;
-    font-size: 1.35em;
+div#one{
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   margin: auto;
+   border-radius: 0px;
+   padding: 10px 0px;
+}
+div#one> h2{
+    width: 70%;
+    font-size: 1.22em;
     font-weight: 600;
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    margin-left: 5%;
+}
+div#one>span{
+    right: 10px;
+    top: 12px;
+    background-color: rgb(178, 178, 178);
 }
 
 div#tho{
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-flow: column wrap;
@@ -649,42 +651,20 @@ div#tho{
     border-radius:0px;
 }
 div#tho>div.txt{
-    margin-left: 0px;
+    width: 90%;
+    padding: 19px 0px;
 }
-div#oi{
+div#tho>div.txt>h2{
+    margin-bottom: 15px;
+}
+div#tho>div.maior3{
     margin-bottom: 10px;
+    padding-right: 0px;
+    background-color: rgba(255, 255, 255, 0);
 }
-div#tho>div.txt{
-    width: 90%;
-    margin: auto;
-    margin-left: 5%;
-    padding: 10px 0px;
+div#tho>div.maior3>img{
+   box-shadow: 0px 0px 7px 0 rgb(79, 79, 79);
 }
-
-/*Trias Isa*/
-/*div#trias{
-    margin: auto;
-    width: 90%;
-    padding-bottom: 25px;
-    padding-top: 24px;
-    border-radius:0px;
-}
-div#trias>h2{
-    margin: auto;
-    width: 90%;
-    margin-bottom: 26px;
-    padding: 0px;
-}
-div#trias>p{
-    margin: auto;
-    width: 90%;
-    margin-bottom: 26px;
-    padding: 0px;
-}
-div#trias>div.imgs4{
-    margin: auto;
-    width: 90%;
-}*/
 
 /*Mosaicos*/
 div#mosaicos{
