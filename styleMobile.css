@@ -138,9 +138,6 @@ div.intro{
     background-position: bottom;
     border-radius: 0px;
     position: relative;
-    /*position: sticky;
-    top: 0px;
-    z-index: 1;*/
 }
 div#resumo{
     position: relative;
@@ -237,7 +234,7 @@ div#botIn > button{
     }
 
     .maior{
-        width: 72%;
+        width: 76%;
         height: 100%;
         border: none;
     }
@@ -277,7 +274,7 @@ div#botIn > button{
     }
 
     .maior2{
-        width: 72%;
+        width: 75%;
         height: 100%;
         border: none;
     }
@@ -449,7 +446,7 @@ span.botao{
     .variacao>p{
         font-size: 0.9em;
     }
-    div.variacoes>div:first-child{
+    .selected{
         background-color: rgb(206, 206, 225);
         border: 1px solid rgb(126, 126, 173);
     }
@@ -768,10 +765,6 @@ div#mosaicos>.variacoes>.variacao>p{
         justify-content: space-between;
         margin-bottom: 20px;
     }
-    div#imgsT>div.maior{
-        width: 72%;
-        height: 100%;
-    }
     div#imgsT>div.maior>img{
         width: 99%;
         object-fit: cover;
@@ -837,15 +830,38 @@ div#mosaicos>.variacoes>.variacao>p{
     }
 /*Desenhos com elementos repetidos*/
     div#pattern{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
         width: 90%;
         margin: auto;
         margin-bottom: 30px;
         padding-bottom: 20px;
     }
     div#pattern>h2{
-        width: 90%;
+        width: 100%;
+        min-height: 50px;
         margin: auto;
-        margin: 24px 0px 24px 20px;
+        padding: 20px 0px;
+        padding-left: 5%;
+        box-shadow: 0px 2px 0px rgb(215, 215, 215);
+    }
+    div#pattern>.variacoes2{
+        gap: 12px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        min-height: 50px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    div#pattern>.variacoes>.variacao2{
+        height: 45%;
+        gap: 12px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    div#pattern>.variacoes>.variacao2{
+        height: 100%;
     }
 /*Circulos*/
     div#cir{

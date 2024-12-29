@@ -113,3 +113,16 @@ document.querySelectorAll('.menor>img, .menor2>img').forEach(img=>{
 
 //Função de rolagem para imagem altas
 let imgs_altas= [...document.querySelectorAll('#cavalo, #beatles')]
+
+
+img_altas[0].onload = () => {
+    const naturalWidth = img.naturalWidth;
+    const naturalHeight = img.naturalHeight;
+
+    // Largura em que a imagem está sendo exibida
+    const displayedWidth = img.offsetWidth;
+
+    // Altura proporcional baseada na largura exibida
+    const displayedHeight = (displayedWidth / naturalWidth) * naturalHeight;
+
+    console.log("Altura exibida da imagem:", displayedHeight);}
