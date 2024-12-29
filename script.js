@@ -105,7 +105,7 @@ document.querySelectorAll('.menor>img, .menor2>img').forEach(img=>{
           setTimeout(() => {
             img.style.filter = 'saturate(0) opacity(0.85)';
           }, 200);
-        }, 600);
+        }, 500);
   
       });
 
