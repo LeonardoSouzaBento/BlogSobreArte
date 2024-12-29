@@ -36,7 +36,7 @@ let spans_collapse = spans.filter(span => {
 let pais_spans= spans_expand.map(span => span.parentElement.parentElement);
 
 pais_spans.forEach(pai => {
-    pai.style.transition = 'height 0.4s ease';
+    pai.style.transition = 'height 0.6s ease';
 });
 
 let alturaDoPai = pais_spans.map((pai,i) => {
@@ -111,4 +111,5 @@ document.querySelectorAll('.menor>img, .menor2>img').forEach(img=>{
 
 })
 
-
+//Função de rolagem para imagem altas
+let imgs_altas= [...document.querySelectorAll('#cavalo, #beatles')]

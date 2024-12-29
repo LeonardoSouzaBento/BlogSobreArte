@@ -401,10 +401,9 @@ span.botao{
 
     div#ss{
         width: 90%;
-        height: 560px;
+        height: 510px;
         overflow-y: hidden;
         margin: 0px;
-        padding-bottom: 12%;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -430,8 +429,9 @@ span.botao{
     }
     div.variacoes{
         width: 90%;
-        height: 75px;
+        min-height: 35px;
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
         margin-bottom: 15px;
         box-sizing: border-box;
@@ -439,24 +439,31 @@ span.botao{
     .variacao{
         background-color: rgb(216, 216, 216);
         height: 100%;
-        padding: 3% 6.5%;
+        width: 45%;
         border-radius: 5px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
     }
     .variacao>p{
         font-size: 0.9em;
     }
     div.variacoes>div:first-child{
         background-color: rgb(206, 206, 225);
-        outline: 1px solid rgb(126, 126, 173);
+        border: 1px solid rgb(126, 126, 173);
     }
 
 div#imgs_ss{
     width: 90%;
     margin-bottom: 32px;
 }
-   
+div#imgs_ss>.maior>img{
+  object-position: top;
+}
     div#imgs_2{
         width: 90%;
+        display: none;
     }
 
 /*Pelagem de animais feitas nesse estilo*/
@@ -512,8 +519,10 @@ div#imgs_ss{
 
 div#staf{
    width: 90%;
+   min-height: 149vw;
    margin: auto;
    overflow-x: hidden;
+   margin-bottom: 40px;
 }
 div#staf>h2{
     margin: auto;
@@ -532,30 +541,31 @@ div#todas{
     align-items: center;
     overflow-x: hidden;
     width: 100%;
-    overflow-y: hidden;
-    height: 522px;
     padding: 0px;
-    border-radius: 0px;
+    border-radius: 0px 0px 9px 9px;
 }
 div#todas>.variacoes{
-    margin-top: 19px;
+    margin-top: 10px;
     margin-bottom: 21px;
+    min-height: 90px;
+    gap: 10px;
 }
 div#todas>.variacoes>.variacao{
-    width: 30%;
+    width: 47%;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 0px;
 }
-div#todas>.variacoes>.variacao>p{
-    width: 70%;
+div#todas>.variacoes>div:nth-child(3){
+    width: 100%;
 }
 
 /*Poligonos*/
 
     div#poligonos{
-        height: 340px;
+        height: 80vw;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -571,7 +581,6 @@ div#todas>.variacoes>.variacao>p{
         width: 95%;
         height: 100%;
         padding: 0px;
-        padding-bottom: 24px;
         margin-right: -18px;
     }
     div#gPol> h2{
@@ -588,6 +597,9 @@ div#todas>.variacoes>.variacao>p{
         font-size: 1em;
         padding: 0px;
     }
+    div#gPol>div.imgs3>{
+        height: 100%;
+    }
     div#gPol>div.imgs3>div.maior3{
         height: 100%;
         padding: 0px;
@@ -603,19 +615,12 @@ div#todas>.variacoes>.variacao>p{
         top: 0;
         right: 0;
         height: 100%;
-        width: 20%;
-        background-image: linear-gradient(to left, rgba(53, 53, 53, 0.118), rgba(255, 255, 255, 0));
+        width: 25%;
+        background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+        mix-blend-mode: saturation;
     }
 
-div#trifor{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    width: 100%;
-    margin-top: 0px;
-}
 /*Triangulos Juntos*/
-
     div#tri{
         width: 90%;
         display: flex;
@@ -623,6 +628,7 @@ div#trifor{
         align-items: center;
         padding: 0px 0px 15px 0px;
         margin-bottom: 15px;
+        display: none;
     }
     div#tri>h2{
         width: 100%;
@@ -633,6 +639,7 @@ div#trifor{
 div#forJ{
     padding-bottom: 24px;
     width: 90%;
+    display: none;
 }
 div#forJ>div.imgs{
     width: 100%;
@@ -650,7 +657,8 @@ div#autores{
     overflow-y: hidden;
     margin: auto;
     border-radius: 0px 0px 9px 9px;
-    margin-bottom: 30px;
+    box-sizing: content-box;
+    box-shadow: 0px -3px 0px rgb(210, 210, 210);
 }
 div#one{
    position: relative;
@@ -702,9 +710,12 @@ div#tho>div.maior3>img{
 
 /*Mosaicos*/
 div#mosaicos{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     width: 90%;
     margin: auto;
-    height: 180vw;
+    height: 690px;
     overflow-y: hidden;
     margin-bottom: 30px;
     border-radius: 15px;
@@ -712,21 +723,33 @@ div#mosaicos{
 
 div#mosaicos>h2{
     width: 100%;
-    padding: 20px 0px;
     padding-left: 5%;
+    padding: 20px;
     box-sizing: border-box;
-    margin: auto;
     font-size: 1.35em;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
     border-radius: 0px;
+    box-shadow: 0px 2px 0px rgb(215, 215, 215);
+}
+div#mosaicos>.variacoes{
+    margin-top: 15px;
+    margin-bottom: 12px;
+    min-height: 180px;
+}
+div#mosaicos>.variacoes>.variacao{
+    width: 100%;
+    height: 50px;
+}
+div#mosaicos>.variacoes>.variacao>p{
+   width: 90%;
 }
     div#mosaicoT{
         display: flex;
         flex-flow: column;
         align-items: center;
         width: 100%;
-        margin: auto;
+        margin-top: 0px;
         padding: 0px 0px 25px;
         border-radius: 0px;
         border: none;
@@ -743,6 +766,7 @@ div#mosaicos>h2{
         flex-flow: row wrap;
         align-items: flex-start;
         justify-content: space-between;
+        margin-bottom: 20px;
     }
     div#imgsT>div.maior{
         width: 72%;
@@ -774,6 +798,7 @@ div#mosaicos>h2{
         padding-bottom: 24px;
         border-radius: 0;
         border: none;
+        display: none;
     }
     div#mosaicFR>h2{
         width: 90%;
@@ -793,6 +818,7 @@ div#mosaicos>h2{
         padding-bottom: 20px;
         border-radius: 0px 0px 7px 7px;
         border: none;
+        display: none;
     }
     div#mosaicFC>div.txt{
         width: 90%;
