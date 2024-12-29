@@ -216,9 +216,14 @@ div#botIn > button{
 /*Eestilo de imagens*/
 
 .menor>img, .menor2>img, .menor3>img, .menor4>img{
-    filter: brightness(75%) opacity(85%);
+    filter: brightness(80%) opacity(85%) saturate(0);
 }
-
+.menor>img, .menor2>img{
+    transition: filter 0.6s ease;
+}
+.maior>img, .maior2>img{
+    transition: filter 0.6s ease-out;
+}
 /*Classe 1 para imagens*/
     .imgs{
         width: 100%;
@@ -391,11 +396,13 @@ span.botao{
         align-items: center;
         margin: auto;
         border: none;
-        margin-bottom: 30px;
+        margin-bottom: 45px;
     }
 
     div#ss{
         width: 90%;
+        height: 560px;
+        overflow-y: hidden;
         margin: 0px;
         padding-bottom: 12%;
         display: flex;
@@ -403,7 +410,7 @@ span.botao{
         align-items: center;
         border: 2px solid rgb(215, 215, 215);
         background-color: rgb(238, 238, 238);
-        border-radius: 6px 6px 0px 0px;
+        border-radius: 9px 9px 0px 0px;
 
     }
     div.txt{
@@ -411,16 +418,38 @@ span.botao{
         position: relative;
         height: auto;
         border: none;
-        padding: 25px 0px;
+        padding: 25px 0px 18px;
     }
     div#ss>div.txt>h2{
-        margin-bottom: 27px;
+        margin-bottom: 20px;
         margin-top: 0px;
     }
     div#ss>div.txt>p{
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         margin-top: 0px;
     }
+    div.variacoes{
+        width: 90%;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    .variacao{
+        background-color: rgb(216, 216, 216);
+        height: 100%;
+        padding: 3% 6.5%;
+        border-radius: 5px;
+    }
+    .variacao>p{
+        font-size: 0.9em;
+    }
+    div.variacoes>div:first-child{
+        background-color: rgb(206, 206, 225);
+        outline: 1px solid rgb(126, 126, 173);
+    }
+
 div#imgs_ss{
     width: 90%;
     margin-bottom: 32px;
@@ -447,7 +476,7 @@ div#imgs_ss{
         height: 40px;
         padding: 12px 0px 62px;
         overflow-y: hidden;
-        border-radius: 0px 0px 6px 6px;
+        border-radius: 0px 0px 9px 9px;
     }
     div#pelossolidos>div.txt{
         display: flex;
@@ -499,29 +528,48 @@ div#staf>h2{
 }
 div#todas{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
     overflow-x: hidden;
     width: 100%;
+    overflow-y: hidden;
+    height: 522px;
     padding: 0px;
     border-radius: 0px;
 }
+div#todas>.variacoes{
+    margin-top: 19px;
+    margin-bottom: 21px;
+}
+div#todas>.variacoes>.variacao{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+div#todas>.variacoes>.variacao>p{
+    width: 70%;
+}
+
 /*Poligonos*/
 
     div#poligonos{
+        height: 340px;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         padding: 0px;
         flex: none;
         border-radius: 0px;
+        margin-bottom: 30px;
     }
     div#gPol{
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         width: 95%;
-        height: 80%;
+        height: 100%;
         padding: 0px;
         padding-bottom: 24px;
         margin-right: -18px;
@@ -540,37 +588,23 @@ div#todas{
         font-size: 1em;
         padding: 0px;
     }
-    div#pol{
-        width: 100%;
+    div#gPol>div.imgs3>div.maior3{
         height: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        gap: 12px;
-        border-radius: 0px;
-        border: none;
-        box-shadow: none;
-        position: relative;
-    }
-    div#pol>div.maior3{
-        height: 98%;
         padding: 0px;
         padding-bottom: 5px;
         box-shadow: none;
         box-sizing: border-box;
         margin-left: 0px;
         background-color: rgba(255, 255, 255, 0);
+        position: relative;
     }
     .sombras{
         position: absolute;
         top: 0;
         right: 0;
         height: 100%;
-        width: 30%;
-        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.191), rgba(255, 255, 255, 0));
+        width: 20%;
+        background-image: linear-gradient(to left, rgba(53, 53, 53, 0.118), rgba(255, 255, 255, 0));
     }
 
 div#trifor{

@@ -76,3 +76,39 @@ spans_collapse.forEach(collapse => {
     });
 });
 
+//Função de troca de imagens
+
+document.querySelectorAll('.menor>img, .menor2>img').forEach(img=>{
+    img.addEventListener('click', (clicada) => {
+        const img_maior = clicada.target.parentElement.previousElementSibling.firstElementChild;
+        // Apagar miniatura
+        img.style.filter = 'saturate(0) opacity(0.2)';
+        // depois de 0,2s, apagar a imagem menor
+        setTimeout(() => {
+          img_maior.style.filter = 'opacity(0.2)';
+        }, 200);
+    
+        // depois de 0,6s, trocar, ascender imagens
+        setTimeout(() => {
+          // Troca
+          const tempSrc = img_maior.src;
+          const tempAlt = img_maior.alt;
+    
+          img_maior.src = img.src;
+          img_maior.alt = img.alt;
+    
+          img.src = tempSrc;
+          img.alt = tempAlt;
+    
+          img_maior.style.filter = 'opacity(1)';
+          //ascender thum depois de 0,2s
+          setTimeout(() => {
+            img.style.filter = 'saturate(0) opacity(0.85)';
+          }, 200);
+        }, 600);
+  
+      });
+
+})
+
+
