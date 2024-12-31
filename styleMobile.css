@@ -101,7 +101,7 @@ img{
     border-radius: 7px;
     width: 63px;
     box-shadow: 3px 3px 4px rgb(131, 131, 131);
-    border: 1px solid white;
+    border: 1px solid rgb(209, 209, 209);
 }
 h2, h3, h4{
     font-family: "Roboto Condensed";
@@ -846,22 +846,20 @@ div#mosaicos>.variacoes>.variacao>p{
         padding-left: 5%;
         box-shadow: 0px 2px 0px rgb(215, 215, 215);
     }
-    div#pattern>.variacoes2{
+    div#pattern>.variacoes{
         gap: 12px;
         margin-top: 15px;
-        margin-bottom: 15px;
-        min-height: 50px;
+        margin-bottom: 0px;
+        height: 100px;
         display: flex;
         flex-flow: row wrap;
     }
-    div#pattern>.variacoes>.variacao2{
+    div#pattern>.variacoes>.variacao{
+        width: 47%;
         height: 45%;
-        gap: 12px;
-        margin-top: 15px;
-        margin-bottom: 30px;
     }
-    div#pattern>.variacoes>.variacao2{
-        height: 100%;
+    div#pattern>.variacoes>.selected{
+        width: 100%;
     }
 /*Circulos*/
     div#cir{
@@ -876,67 +874,43 @@ div#mosaicos>.variacoes>.variacao>p{
         margin-top: 0px;
         margin-left: 15px;
     }
-    div#imgs_cir{
-        width: 90%;
-        margin: auto;
-    }
-
+    
 /*Linhas*/
-    div#li{
-        margin: auto;
-        width: 90%;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: flex-start;
-        padding-bottom: 18px;
-        overflow-x: hidden;
-        margin-bottom: 10px;
-    }
-    div#li>h2{
-        margin-left: 15px;
-        margin-top: 24px;
-        margin-bottom: 20px;
-    }
     div#linhas{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 25px;
         overflow-x: hidden;
-        display: flex;
-        flex-flow: column nowrap;
-        padding-bottom: 10px;
+        display: none;
     }
     div#linhas>div.maior3{
-        height: 77vw;
-        width: 90%;
         margin: auto;
-        box-shadow: 2px 2px 4px 1px rgb(153, 153, 153);
-        border-radius: 0px;
-        background-color: #EEEEEE;
+        padding: 0px;
+        padding-bottom: 10px;
+        gap: 20px;
+        width: 95%;
+        height: 290px;
+        margin-right: 0px;
     }
-    div#rel3D3{
-        position: relative;
-        height: 100vw;
-        width: 100%;
-        background-color: #343434;
-        border: 1px solid red;
-        border-radius: 0px 0px 10px 10px;
+    div#linhas>div.maior3>img{
+        height: 100%;
     }
-    div#rel3D3>span{
-        right: 10px;
-    }
-   
+
     /*Palavras*/
     div#words{
         width: 90%;
         margin: auto;
-        margin-bottom: 12px;
+        margin-bottom: 30px;
+        display: none;
     }
 
 /*Folhas*/
 div#folhas{
-    width: 90%;
-    height: 52px;
+    width: 95%;
+    height: 60px;
     margin: auto;
-    padding: 26px 0px;
-    border-radius: 9px;
+    padding: 20px 0px 50px 0px;
+    border-radius: 5px;
     background-color: rgb(52, 52, 52);
     box-shadow: inset 0 0 15px #0000006d;
     border: 1px solid rgb(14, 14, 14);
@@ -944,16 +918,16 @@ div#folhas{
 }
 div#folhas>div.txt{
     padding: 0px;
-    width: 85%;
+    width: 90%;
     box-sizing: border-box;
     margin: auto;
 }
 div#folhas>div.txt>h3{
-    margin-top: 0px;
     margin-bottom: 26px;
     color:#91c049;
-    width: 80%;
+    width: 85%;
     font-size: 1.35em;
+    margin-top: -4px;
 }
 div#folhas>div.txt>span{
   top: -10px;
