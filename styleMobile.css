@@ -216,10 +216,10 @@ div#botIn > button{
     filter: brightness(80%) opacity(85%) saturate(0);
 }
 .menor>img, .menor2>img{
-    transition: filter 0.6s ease;
+    transition: filter 0.4s ease;
 }
 .maior>img, .maior2>img{
-    transition: filter 0.5s ease-out;
+    transition: filter 0.4s ease-out;
 }
 /*Classe 1 para imagens*/
     .imgs{
@@ -327,7 +327,7 @@ div#botIn > button{
         overflow-x: hidden;
         gap: 7%;
         padding: 14px;
-        padding-left: 15px;
+        padding-left: 9px;
         margin-left: 5%;
         border-radius: 7px 0px 0px 7px;
     }
@@ -424,6 +424,9 @@ span.botao{
         margin-bottom: 0px;
         margin-top: 0px;
     }
+
+/*Variaçoes*/
+
     div.variacoes{
         width: 90%;
         min-height: 35px;
@@ -442,9 +445,11 @@ span.botao{
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
     .variacao>p{
         font-size: 0.9em;
+        cursor: pointer;
     }
     .selected{
         background-color: rgb(206, 206, 225);
@@ -454,13 +459,14 @@ span.botao{
 div#imgs_ss{
     width: 90%;
     margin-bottom: 32px;
+    display: none;
 }
 div#imgs_ss>.maior>img{
   object-position: top;
 }
     div#imgs_2{
         width: 90%;
-        display: none;
+        margin-bottom: 32px;
     }
 
 /*Pelagem de animais feitas nesse estilo*/
@@ -569,7 +575,7 @@ div#todas>.variacoes>div:nth-child(3){
         padding: 0px;
         flex: none;
         border-radius: 0px;
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
     div#gPol{
         display: flex;
@@ -624,7 +630,7 @@ div#todas>.variacoes>div:nth-child(3){
         flex-flow: column wrap;
         align-items: center;
         padding: 0px 0px 15px 0px;
-        margin-bottom: 15px;
+        margin-bottom: 19px;
         display: none;
     }
     div#tri>h2{
@@ -634,7 +640,7 @@ div#todas>.variacoes>div:nth-child(3){
 
 /*Formas curvas juntas*/
 div#forJ{
-    padding-bottom: 24px;
+    margin-bottom: 34px;
     width: 90%;
     display: none;
 }
@@ -712,9 +718,9 @@ div#mosaicos{
     align-items: center;
     width: 90%;
     margin: auto;
-    height: 690px;
     overflow-y: hidden;
     margin-bottom: 30px;
+    padding-bottom: 10px;
     border-radius: 15px;
 }
 
@@ -725,7 +731,6 @@ div#mosaicos>h2{
     box-sizing: border-box;
     font-size: 1.35em;
     font-weight: 600;
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
     border-radius: 0px;
     box-shadow: 0px 2px 0px rgb(215, 215, 215);
 }
@@ -786,8 +791,10 @@ div#mosaicos>.variacoes>.variacao>p{
     }
     /*Mosaico de formas retangulares*/
     div#mosaicFR{
-        width: 100%;
+        width: 90%;
         margin: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
         padding-bottom: 24px;
         border-radius: 0;
         border: none;
@@ -807,8 +814,7 @@ div#mosaicos>.variacoes>.variacao>p{
     div#mosaicFC{
         width: 90%;
         margin: auto;
-        margin-bottom: 26px;
-        padding-bottom: 20px;
+        margin-bottom: 24px;
         border-radius: 0px 0px 7px 7px;
         border: none;
         display: none;
@@ -849,7 +855,7 @@ div#mosaicos>.variacoes>.variacao>p{
     div#pattern>.variacoes{
         gap: 12px;
         margin-top: 15px;
-        margin-bottom: 0px;
+        margin-bottom: 22px;
         height: 100px;
         display: flex;
         flex-flow: row wrap;
@@ -858,7 +864,7 @@ div#mosaicos>.variacoes>.variacao>p{
         width: 47%;
         height: 45%;
     }
-    div#pattern>.variacoes>.selected{
+    div#pattern>.variacoes>.variacao:nth-child(1){
         width: 100%;
     }
 /*Circulos*/
@@ -867,6 +873,7 @@ div#mosaicos>.variacoes>.variacao>p{
         margin: auto;
         margin-bottom: 10px;
         padding: 24px 0px;
+        padding-top: 0px;
     }
     div#cir>h2{
         width: 90%;
@@ -906,28 +913,25 @@ div#mosaicos>.variacoes>.variacao>p{
 
 /*Folhas*/
 div#folhas{
-    width: 95%;
-    height: 60px;
+    width: 100%;
     margin: auto;
-    padding: 20px 0px 50px 0px;
     border-radius: 5px;
-    background-color: rgb(52, 52, 52);
-    box-shadow: inset 0 0 15px #0000006d;
-    border: 1px solid rgb(14, 14, 14);
-    overflow-y: hidden;
 }
+div#gFol{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+div#gFol img{
+ box-shadow: 2px 2px 4px rgb(28, 28, 28);
+ border: 1px solid rgb(23, 23, 23);
+}
+
 div#folhas>div.txt{
     padding: 0px;
     width: 90%;
     box-sizing: border-box;
     margin: auto;
-}
-div#folhas>div.txt>h3{
-    margin-bottom: 26px;
-    color:#91c049;
-    width: 85%;
-    font-size: 1.35em;
-    margin-top: -4px;
 }
 div#folhas>div.txt>span{
   top: -10px;
@@ -936,20 +940,9 @@ div#folhas>div.txt>p{
     margin: auto;
     margin-bottom: 24px;
     padding: 0px;
-    color: white;
-    width: 100%;
 }
 div#folhas>div.txt>p>a{
-    color:#A8DF54;
-}
-
-div#gFol{
-    width: 88%;
-    margin: auto;
-}
-div#gFol img{
- box-shadow: 2px 2px 4px rgb(28, 28, 28);
- border: 1px solid rgb(23, 23, 23);
+    color: #2C4918;
 }
 
 aside{
@@ -958,11 +951,12 @@ aside{
     justify-content: center;
     width: 90%;
     margin: auto;
+    margin-bottom: 25px;
 }
     aside>h3{
         font-size: 1.2em;
         text-align: center;
-        border-radius: 15px 15px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
         width: 100%;
         padding: 20px 10px;
         margin: 0px;
@@ -975,39 +969,24 @@ div#gatos{
     width: 100%;
     margin: auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
-    border-radius: 0px 0px 15px 15px;
+    border-radius:0px 0px 10px 10px;
     background-color: rgb(40, 40, 40);
-    padding-top:24px;
-    padding-bottom: 0px;
-    position: relative;
+    padding: 20px;
+    padding-bottom: 34px;
+    padding-top: 28px;
+    overflow-x: hidden;
+    gap: 20px;
 }
-    div#gatos>div{
-        width: 42%;
-        height: 50vw;
-        border-radius: 15px;
-        box-shadow: 10px 6px 10px rgba(0, 0, 0, 0.245);
-        margin-bottom: 6%;
-    }
-
-    div#gatos>div>img{
-        width: 100%;
-        height: 40vw;
+    div#gatos>img{
+        width: 38%;
+        height: 100vw;
         object-fit: cover;
-        object-position: top;
-        box-shadow: none;
-        border-radius: 10px 10px 0px 0px;
-    }
-    div#gatos>div>p{
-        width: 100%;
-        background-color: rgb(223, 223, 223);
-        border-radius: 0px 0px 10px 10px;
-        padding: 7px 0px;
-        text-align: center;
-        margin: 0;
-        margin-top: -5px;
-        border: 1px solid white;
+        object-position: center;
+        box-shadow: -2px 2px 6px rgb(19, 19, 19);
+        border-radius: 10px;
+        border: 1px solid rgb(97, 97, 97);
     }
 
 footer{

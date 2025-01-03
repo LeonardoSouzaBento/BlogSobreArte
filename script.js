@@ -76,6 +76,58 @@ spans_collapse.forEach(collapse => {
     });
 });
 
+//Função de selecão das variacoes
+let variacao = [...document.getElementsByClassName("variacao")];
+
+variacao.forEach((div) => {
+  div.addEventListener("click", (clicada) => {
+    
+    let variacoes= [...clicada.currentTarget.parentElement.children];
+    variacoes.map((div) => {
+     div.classList.remove("selected")
+    });
+    clicada.currentTarget.classList.add("selected")
+    let div1= clicada.currentTarget.parentElement.nextElementSibling;
+    let div2= clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling;
+    let div3= clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling.nextElementSibling;
+
+    if(clicada.currentTarget.previousElementSibling==null){
+        div1.style.filter='opacity(1)'
+        div1.style.display='flex'
+
+        div2.style.filter='opacity(0)'
+        div2.style.display='none'
+
+        if(div2.nextElementSibling!==null){
+        div3.style.filter='opacity(0)'
+        div3.style.display='none'}
+    }
+     //div segunda
+     else if (clicada.currentTarget.previousElementSibling.previousElementSibling==null){
+        clicada.currentTarget.parentElement.nextElementSibling.style.filter='opacity(0)'
+        clicada.currentTarget.parentElement.nextElementSibling.style.display='none'
+
+        clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling.style.filter= 'opacity(1)'
+        clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling.style.display = 'flex'
+
+        if(clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling.nextElementSibling!==null){
+        clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.filter='opacity(0)'
+        clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display='none'}
+    }
+    //terceira div
+    else{
+        clicada.currentTarget.parentElement.nextElementSibling.style.filter='opacity(0)'
+        clicada.currentTarget.parentElement.nextElementSibling.style.display='none'
+        clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling.style.filter= 'opacity(0)'
+        clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling.style.display = 'none'
+        clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.filter='opacity(1)'
+        clicada.currentTarget.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display='flex'
+    }
+  });
+});
+
+
+
 //Função de troca de imagens
 
 document.querySelectorAll('.menor>img, .menor2>img').forEach(img=>{
@@ -105,24 +157,30 @@ document.querySelectorAll('.menor>img, .menor2>img').forEach(img=>{
           setTimeout(() => {
             img.style.filter = 'saturate(0) opacity(0.85)';
           }, 200);
-        }, 500);
+        }, 400);
   
       });
 
 })
 
+/*
+Se o elemento pai dor a div maior...
+transladar para baixo, e para cima, a altura proporcional menor a altura que esta sendo exibida.
+
 //Função de rolagem para imagem altas
 let imgs_altas= [...document.querySelectorAll('#cavalo, #beatles')]
 
+imgs_altas.forEach((img)=>{ img.addEventListner("onmouse") })
 
-img_altas[0].onload = () => {
-    const naturalWidth = img.naturalWidth;
-    const naturalHeight = img.naturalHeight;
+imgs_altas[0].onclick = () => {
+    const naturalWidth = imgs_altas[0].naturalWidth;
+    const naturalHeight = imgs_altas[0].naturalHeight;
 
     // Largura em que a imagem está sendo exibida
-    const displayedWidth = img.offsetWidth;
+    const displayedWidth = imgs_altas[0].offsetWidth;
 
     // Altura proporcional baseada na largura exibida
     const displayedHeight = (displayedWidth / naturalWidth) * naturalHeight;
 
-    console.log("Altura exibida da imagem:", displayedHeight);}
+    console.log("Altura proporcional da imagem:", displayedHeight);}
+*/
