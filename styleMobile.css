@@ -98,10 +98,11 @@ a{
     text-decoration: none;
 }
 img{
-    border-radius: 7px;
     width: 63px;
-    box-shadow: 3px 3px 4px rgb(131, 131, 131);
     border: 1px solid rgb(209, 209, 209);
+    object-position: center;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px rgb(131, 131, 131);
 }
 h2, h3, h4{
     font-family: "Roboto Condensed";
@@ -216,7 +217,12 @@ div#botIn > button{
     filter: brightness(80%) opacity(85%) saturate(0);
 }
 .menor>img, .menor2>img{
-    transition: filter 0.4s ease;
+    transition: filter 0.3s ease;
+}
+.maior, .maior2{
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px rgb(131, 131, 131);
 }
 .maior>img, .maior2>img{
     transition: filter 0.4s ease-out;
@@ -246,7 +252,6 @@ div#botIn > button{
         height: 100%;
         object-fit: cover;
     }
-
     .menor{
         display: flex;
         flex-flow: column;
@@ -462,9 +467,6 @@ span.botao{
 div#imgs_ss{
     width: 90%;
     margin-bottom: 32px;
-}
-div#imgs_ss>.maior>img{
-  object-position: top;
 }
     div#imgs_2{
         width: 90%;
@@ -856,18 +858,21 @@ div#mosaicos>.variacoes>.variacao>p{
         box-shadow: 0px 2px 0px rgb(215, 215, 215);
     }
     div#pattern>.variacoes{
-        gap: 12px;
+        gap: 10px;
         margin-top: 15px;
         margin-bottom: 22px;
-        height: 100px;
+        height: 165px;
         display: flex;
         flex-flow: row wrap;
     }
     div#pattern>.variacoes>.variacao{
         width: 47%;
-        height: 45%;
+        height: 29%;
     }
     div#pattern>.variacoes>.variacao:nth-child(1){
+        width: 100%;
+    }
+    div#pattern>.variacoes>.variacao:nth-child(4){
         width: 100%;
     }
 /*Circulos*/
@@ -875,7 +880,7 @@ div#mosaicos>.variacoes>.variacao>p{
         width: 90%;
         margin: auto;
         margin-bottom: 10px;
-        padding: 24px 0px;
+        padding: 20px 0px;
         padding-top: 0px;
     }
     div#cir>h2{
@@ -889,7 +894,7 @@ div#mosaicos>.variacoes>.variacao>p{
     div#linhas{
         width: 100%;
         margin: auto;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         overflow-x: hidden;
         display: none;
     }
@@ -919,6 +924,7 @@ div#folhas{
     width: 100%;
     margin: auto;
     border-radius: 5px;
+    display: none;
 }
 div#gFol{
     width: 90%;
