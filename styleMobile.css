@@ -100,6 +100,7 @@ a{
 img{
     width: 63px;
     border: 1px solid rgb(209, 209, 209);
+    object-fit: cover;
     object-position: center;
     border-radius: 7px;
     box-shadow: 3px 3px 4px rgb(131, 131, 131);
@@ -210,22 +211,28 @@ div#botIn > button{
     border-radius: 7px;
     box-shadow: 0px 2px 4px rgb(113, 113, 113);
 }
-
 /*Eestilo de imagens*/
 
 .menor>img, .menor2>img, .menor3>img, .menor4>img{
     filter: brightness(80%) opacity(85%) saturate(0);
 }
 .menor>img, .menor2>img{
-    transition: filter 0.3s ease;
+    transition: filter 0.4s ease;
 }
 .maior, .maior2{
-    overflow: hidden;
+    width: 75%;
+    height: 100%;
+    border: none;
+    overflow-y: hidden;
     border-radius: 7px;
     box-shadow: 3px 3px 4px rgb(131, 131, 131);
+    position: relative;
 }
 .maior>img, .maior2>img{
+    width: 100%;
+    height: 100%;
     transition: filter 0.4s ease-out;
+    object-fit: cover;
 }
 /*Classe 1 para imagens*/
 .imgs, .imgs2, .imgs3{
@@ -240,17 +247,6 @@ div#botIn > button{
         align-items: flex-start;
         justify-content: space-between;
         border: none;
-    }
-
-    .maior{
-        width: 76%;
-        height: 100%;
-        border: none;
-    }
-    .maior>img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
     .menor{
         display: flex;
@@ -279,17 +275,6 @@ div#botIn > button{
         align-items: flex-start;
         justify-content: space-between;
         border: none;
-    }
-
-    .maior2{
-        width: 75%;
-        height: 100%;
-        border: none;
-    }
-    .maior2>img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
     .menor2{
         display: flex;
@@ -403,7 +388,6 @@ span.botao{
         border: none;
         margin-bottom: 45px;
     }
-
     div#ss{
         width: 90%;
         height: 510px;
@@ -776,8 +760,7 @@ div#mosaicos>.variacoes>.variacao>p{
         margin-bottom: 20px;
     }
     div#imgsT>div.maior>img{
-        width: 99%;
-        object-fit: cover;
+       height: 100%;
     }
     div#imgsT>div.menor{
         display: flex;
@@ -931,9 +914,12 @@ div#gFol{
     margin: auto;
     margin-bottom: 20px;
 }
+div#gFol>div.maior>img{
+    height: 100%;
+}
 div#gFol img{
- box-shadow: 2px 2px 4px rgb(28, 28, 28);
- border: 1px solid rgb(23, 23, 23);
+    box-shadow: 2px 2px 4px rgb(28, 28, 28);
+    border: 1px solid rgb(23, 23, 23);
 }
 
 div#folhas>div.txt{

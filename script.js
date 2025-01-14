@@ -236,71 +236,114 @@ variacao_folhas.forEach((div) => {
     });
   });
 
-//Função de troca de imagens
+//Rolar imagens compridas
+
+let imgs_altas= [...document.querySelectorAll('#cavalo, #beatles, #dogFullColors, #galinhas, #pomba')]
+imgs_altas.forEach((img)=>{img.style.transition='transform 0.4s ease'})
+
+let toc_ini = 0;
+let arraste = 0;
+
+imgs_altas.forEach((img)=>{img.addEventListener("touchstart",(e)=>{
+    if (img.parentElement.classList.contains('maior')||img.parentElement.classList.contains('maior2')){
+    toc_ini = e.touches[0].clientY;
+    }
+})
+})
+
+imgs_altas.forEach((img)=>{img.addEventListener("touchmove",(e)=>{
+    e.preventDefault();
+})
+})
+
+imgs_altas.forEach((img)=>{img.addEventListener("touchend",(e)=>{
+    
+    if(['cavalo', 'beatles','dogFullColors','galinhas','pomba'].includes(img.id)){
+        const toc_final = e.changedTouches[0].clientY;
+        const difference = toc_final - toc_ini;
+        console.log(toc_ini)
+        console.log(toc_final)
+
+        let altura= img.offsetHeight;
+        let largura= img.offsetWidth;
+        
+        //Gesto para baixo
+        if (toc_ini<toc_final) {
+            arraste = Math.min((altura - largura) / 2 * 1.5, difference);
+        }
+        //Gesto para cima
+        if(toc_ini>toc_final){
+            arraste = Math.min(( altura- largura) / 2 * 0.75, difference);
+        }
+        img.style.transform = `translateY(${arraste}px)`;
+    }
+})
+})
+
+//Troca de imagens
+
+    //Imagem de exceção
+const beatles=document.getElementById('beatles')
+beatles.style.height= 'auto';
+beatles.style.position= 'absolute';
+beatles.style.transform = 'translateY(-50%)'
+beatles.style.top= '50%';
+
 
 document.querySelectorAll('.menor>img, .menor2>img').forEach(img=>{
     img.addEventListener('click', (clicada) => {
-        const img_maior = clicada.target.parentElement.previousElementSibling.firstElementChild;
+        const beatles=document.getElementById('beatles')
+        const img_maior = img.parentElement.previousElementSibling.firstElementChild;
+    
         // Apagar miniatura
         img.style.filter = 'saturate(0) opacity(0.2)';
+        //apagar maior
         setTimeout(() => {
-        img_maior.style.filter = 'opacity(0.2)';
+            img_maior.style.filter = 'opacity(0.2)';
+
+            if (img.parentElement.parentElement.id == 'imgs_ss') {
+               setTimeout(() => {
+                beatles.style.transition = 'height 0.4s ease';
+               }, 0);
+                beatles.style.height = '28%';
+                beatles.style.position = 'relative';
+                beatles.style.transform = 'translateY(0%)';
+            }
         }, 100);
-    
+
         // Troca
         setTimeout(() => {
         const tempSrc = img_maior.src;
         const tempAlt = img_maior.alt;
-    
+        const tempId = img_maior.id;
+        
         img_maior.src = img.src;
         img_maior.alt = img.alt;
-    
+        img_maior.id = img.id;
+        img_maior.style.height= '100%';
+        img_maior.style.position= 'relative';
+        img_maior.style.transform = 'translateY(0%)';
+        img_maior.style.top = '0px';
+        img_maior.style.transition = 'height 0s';
+
         img.src = tempSrc;
         img.alt = tempAlt;
-    
+        img.id = tempId;
+        
+        //estilo diferentes para imagens compridas
+        if(['cavalo', 'beatles','dogFullColors','galinhas','pomba'].includes(img_maior.id)){
+            img_maior.style.height= 'auto';
+            img_maior.style.position= 'absolute';
+            img_maior.style.transform = 'translateY(-50%)'
+            img_maior.style.top= '50%';
+        }
+
         img_maior.style.filter = 'opacity(1)';
+
         setTimeout(() => {
             img.style.filter = 'saturate(0) opacity(0.85)';
         }, 100);
-
         }, 200);
-
     });
-
 })
-
-/*
-Criar um novo array
-let filhos_filtrados = filhos_diretos.filter(div => !['x', 'y', 'z'].includes(div.id));
-
-console.log(filhos_filtrados);  // Exibe o novo array sem as divs com IDs x, y, z
-
-Mudar o array original
-for (let i = filhos_diretos.length - 1; i >= 0; i--) {
-    if (['x', 'y', 'z'].includes(filhos_diretos[i].id)) {
-        filhos_diretos.splice(i, 1);  // Remove o elemento da posição i
-    }
-}
-*/
-
-/*movimento de imagens compridas
-Se o elemento pai dor a div maior...
-transladar para baixo, e para cima, a altura proporcional menor a altura que esta sendo exibida.
-
-//Função de rolagem para imagem altas
-let imgs_altas= [...document.querySelectorAll('#cavalo, #beatles')]
-
-imgs_altas.forEach((img)=>{ img.addEventListner("onmouse") })
-
-imgs_altas[0].onclick = () => {
-    const naturalWidth = imgs_altas[0].naturalWidth;
-    const naturalHeight = imgs_altas[0].naturalHeight;
-
-    // Largura em que a imagem está sendo exibida
-    const displayedWidth = imgs_altas[0].offsetWidth;
-
-    // Altura proporcional baseada na largura exibida
-    const displayedHeight = (displayedWidth / naturalWidth) * naturalHeight;
-
-    console.log("Altura proporcional da imagem:", displayedHeight);}
-*/
+       
