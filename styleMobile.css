@@ -58,6 +58,7 @@ div#monalisa{
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid black;
+    margin-bottom: 18px;
 }
 
 #monachild{
@@ -88,8 +89,7 @@ div#monalisa{
 img, video, iframe {
     max-width: 100%;
     height: auto;
-    }
-
+}
 
 main div{
     align-self: auto;
@@ -119,7 +119,6 @@ main>p{
     margin: auto;
 }
 main h3{
-    color: rgb(54, 54, 54);
     font-weight: 600;
     font-size: 1.2em;
 }
@@ -131,7 +130,7 @@ div.intro{
     margin-bottom: 64px;
     padding: 25px 0px 40px;
     width: 100%;
-    height: 220px;
+    height: 390px;
     overflow-y: hidden;
     background-color: white;
     background-image: linear-gradient(to top, rgb(218, 218, 218), white);
@@ -143,74 +142,75 @@ div.intro{
 }
 div#resumo{
     position: relative;
-    width: 88%;
+    width: 86%;
     margin: auto;
     height: 11vw;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     background-image: none;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
 }
     div#resumo>h3{
         width: 86.5%;
         height: 100%;
-        text-align: center;
         color: #1B140A;
-        font-size: 1.35em;
-        border-radius: 6px 0px 0px 6px;
-        background-color: rgb(237, 237, 237);
+        font-size: 1.2em;
+        border-radius: 4px 0px 0px 4px;
+        background-color: rgb(241, 241, 241);
         box-sizing: border-box;
         padding: 3% 0%;
+        padding-left: 3%;
         margin: 0px;
+        letter-spacing: 1px;
     }
     div#resumo>span{
-        background-color: #1B140A;
+        background-color: rgb(241, 241, 241);
         width: 13.5%;
         height: 100%;
         padding: 5% 0%;
         box-sizing: border-box;
-        font-size: 1.3em;
+        font-size: 1.4em;
         line-height: 0.6em;
         text-align: center;
-        color: white;
         box-shadow: none;
-        border-radius: 0px 6px 6px 0px;
+        border-radius: 0px 4px 4px 0px;
         box-sizing: border-box;
         position: absolute;
         top: 0px;
         right: 0px;
     }
-    div.intro p{
+    div#com_p_intro{
+        width: 90%;
         margin: auto;
-        text-align: justify;
-        width: 80%;
-        font-size: 1em;
+        margin-bottom: 10px;
     }
+    div#com_p_intro>p{
+        width: 90%;
+        margin: auto;
+    }
+    div#gatos{
+        width: 81%;
+        margin: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        border-radius:0px 0px 7px 7px;
+        padding: 20px 0px 20px 0px;
+        overflow-x: hidden;
+        gap: 20px;
+    }
+        div#gatos>img{
+            width: 38%;
+            height: 100vw;
+            object-fit: cover;
+            object-position: center;
+            box-shadow: -2px 2px 6px rgb(150, 150, 150);
+            border-radius: 8px;
+            border: 2px solid rgb(189, 189, 189);
+            filter: opacity(0.95) contrast(1.1);
+        }
 
-div#botIn{
-    position: absolute;
-    bottom: 0px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    width: 100%;
-    height: 36px;
-    background-image: linear-gradient(to top, rgb(181, 181, 181), rgba(255, 255, 255, 0));
-    transition: 'display 0.20s ease';
-}
-div#botIn > button{
-    width: 88%;
-    height: 100%;
-    font-size: 1em;
-    border: 1px solid black;
-    background-color: #000000;
-    color: #ffffff;
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.481);
-    border: none;
-    border-radius: 7px;
-    box-shadow: 0px 2px 4px rgb(113, 113, 113);
-}
 /*Eestilo de imagens*/
 
 .menor>img, .menor2>img, .menor3>img, .menor4>img{
@@ -939,50 +939,6 @@ div#folhas>div.txt>p{
 div#folhas>div.txt>p>a{
     color: #2C4918;
 }
-
-aside{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 25px;
-}
-    aside>h3{
-        font-size: 1.2em;
-        text-align: center;
-        border-radius: 10px 10px 0px 0px;
-        width: 100%;
-        padding: 20px 10px;
-        margin: 0px;
-        color: white;
-        background-color: rgb(30, 30, 30);
-        box-sizing: border-box;
-    }
-
-div#gatos{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    border-radius:0px 0px 10px 10px;
-    background-color: rgb(40, 40, 40);
-    padding: 20px;
-    padding-bottom: 34px;
-    padding-top: 28px;
-    overflow-x: hidden;
-    gap: 20px;
-}
-    div#gatos>img{
-        width: 38%;
-        height: 100vw;
-        object-fit: cover;
-        object-position: center;
-        box-shadow: -2px 2px 6px rgb(19, 19, 19);
-        border-radius: 10px;
-        border: 1px solid rgb(97, 97, 97);
-    }
 
 footer{
     display: block;

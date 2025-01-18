@@ -253,28 +253,31 @@ imgs_altas.forEach((img)=>{img.addEventListener("touchstart",(e)=>{
 
 imgs_altas.forEach((img)=>{img.addEventListener("touchmove",(e)=>{
     e.preventDefault();
+    let movidos = e.changedTouches[0].clientY;
+    console.log(movidos);
 })
 })
 
 imgs_altas.forEach((img)=>{img.addEventListener("touchend",(e)=>{
     
     if(['cavalo', 'beatles','dogFullColors','galinhas','pomba'].includes(img.id)){
-        const toc_final = e.changedTouches[0].clientY;
-        const difference = toc_final - toc_ini;
-        console.log(toc_ini)
-        console.log(toc_final)
-
+        let toc_final = e.changedTouches[0].clientY;
+        let difference = toc_final - toc_ini;
+        
         let altura= img.offsetHeight;
         let largura= img.offsetWidth;
-        
+        /*
         //Gesto para baixo
         if (toc_ini<toc_final) {
-            arraste = Math.min((altura - largura) / 2 * 1.5, difference);
+            arraste= difference+difference;
+            //arraste = Math.min((altura - largura) / 2 * 1.5, difference);
         }
+        /*
         //Gesto para cima
         if(toc_ini>toc_final){
-            arraste = Math.min(( altura- largura) / 2 * 0.75, difference);
-        }
+            //arraste = Math.min(( altura- largura) / 2 * 0.75, difference);
+            arraste= difference;
+        }*/
         img.style.transform = `translateY(${arraste}px)`;
     }
 })
@@ -284,6 +287,16 @@ imgs_altas.forEach((img)=>{img.addEventListener("touchend",(e)=>{
 
     //Imagem de exceção
 const beatles=document.getElementById('beatles')
+let nat_height= beatles.naturalHeight;
+let nat_width= beatles.naturalWidth;
+let width=beatles.offsetWidth;
+let prop_height= nat_height/nat_width*width;
+let rest_height=prop_height-width;
+let max_top= 0.75*rest_height;
+let max_bottom= 1.5*rest_height;
+
+console.log(max_bottom);
+
 beatles.style.height= 'auto';
 beatles.style.position= 'absolute';
 beatles.style.transform = 'translateY(-50%)'
