@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
 
-@media only screen and (min-width: 577px) and (max-width: 768px){
+@media only screen and (min-width: 993px){
 
 .material-symbols-outlined {
     font-variation-settings:
@@ -22,63 +22,71 @@
 html, body{
      margin: 0px;
 }
-
+body{max-width: 1375px;margin: auto;}
 main{
-    padding-bottom: 30px; overflow: auto;
+    padding-bottom: 30px; 
+    overflow: auto; 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 34px;
+    max-width: 1250px;
+    margin: auto;
 }
 
 header{
     display: block;
     margin: auto;
     padding: 0px;
+    background-image: linear-gradient(to bottom, rgb(220, 220, 220), rgb(255, 255, 255));
     background-color: rgb(238, 238, 238);
+    margin-bottom: 50px;
 }
 header h1{
     font-family: "Roboto Condensed";
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     display: block;
     margin: auto;
     margin-top: 0px;
-    font-size: 1.5em;
+    font-size: 1.6em;
+    font-weight: 500;
     width: 80%;
-    padding: 50px 0px;
-    letter-spacing: 0.6px;
-    line-height: 32px;
+    padding: 60px 0px;
+    letter-spacing: 0.8px;
+    line-height: 38px;
 }
 div#monalisa{
     background: black url(MonaLisa/FundoDetelaMonaLisa.png);
     width: 100%;
-    height: 190px;
+    height: 200px;
     border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 20px 0px;
+    padding: 0px;
     background-position: 47% center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid black;
-    margin-bottom: 18px;
 }
 
 #monachild{
     width: 98%;
-    height: 165px;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
     overflow-x: hidden;
 }
 #monachild img{
     width: auto;
-    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.389);
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.251);
     border-radius: 5%;
-    border: 1px solid rgba(255, 255, 255, 0.441);
     padding: 0px;
     margin: 0px;
+    border: none;
 }
     img#a{height: 77%;} 
     img#b{height: 82%;}
@@ -110,7 +118,7 @@ img{
 h2, h3, h4{
     font-family: "Roboto Condensed";
 }
-h2{font-size: 1.32em; font-weight: 600;}
+h2{font-size: 1.32em; font-weight: 450; letter-spacing: 0.2px;}
 p{
     font-weight: 400;
     font-size: 1.05em;
@@ -121,7 +129,7 @@ main h3{
     font-size: 1.2em;
 }
 div.intro{
-    display: block;
+    display: none;
     line-height: 1.5em;
     text-align: left;
     margin: auto;
@@ -213,58 +221,63 @@ div#resumo{
             filter: opacity(0.95) contrast(1.1);
         }
 
-/*Eestilo de imagens*/
+/*Classes de layout para imagens*/
 
-.menor>img, .menor2>img, .menor3>img, .menor4>img{
-    filter: brightness(80%) opacity(85%) saturate(0);
-}
-.menor>img, .menor2>img{
+.imgs, .imgs2, .imgs3{
     transition: filter 0.4s ease;
 }
+.imgs{
+    width: 90%;
+    flex: 1 0 220px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: none;
+}
+
 .maior, .maior2{
     width: 75%;
     height: 100%;
     border: none;
     overflow-y: hidden;
     border-radius: 7px;
-    box-shadow: 3px 3px 4px rgb(131, 131, 131);
     position: relative;
+    padding-right: 6px;
+    padding-bottom: 6px;
 }
 .maior>img, .maior2>img{
     width: 100%;
     height: 100%;
     transition: filter 0.4s ease-out;
     object-fit: cover;
+    box-shadow: 3px 3px 4px rgb(131, 131, 131);
+    border-radius: none;
 }
-/*Classe 1 para imagens*/
-.imgs, .imgs2, .imgs3{
+
+.menor{
+    display: flex;
+    flex-flow: column;
+    width: 20%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: none;
+    gap: 6%;
+    padding-bottom: 6px;
+}
+div.menor>img{
+    width: 100%;
+    height: 28%;
+    flex: 1 0 auto;
+    object-fit: cover;
+}
+.menor>img, .menor2>img, .menor3>img, .menor4>img{
+    filter: brightness(80%) opacity(85%) saturate(0);
+}
+.menor>img, .menor2>img{
     transition: filter 0.4s ease;
 }
-    .imgs{
-        width: 90%;
-        flex: 1 0 220px;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-        border: none;
-    }
-    .menor{
-        display: flex;
-        flex-flow: column;
-        width: 20%;
-        height: 100%;
-        justify-content: space-between;
-        align-items: flex-end;
-        border: none;
-        gap: 6%;
-    }
-    div.menor>img{
-        width: 100%;
-        height: 28%;
-        flex: 1 0 auto;
-        object-fit: cover;
-    }
 
 /*Classe 2 para imagens*/
     .imgs2{
@@ -302,8 +315,7 @@ div#resumo{
 /*Classe 3 para imagens*/
     .imgs3{
         width: 100%;
-       /*flex: 1 0 380px;*/
-        height: 114vw;
+        height: 100%;
         display: flex;
         flex-flow: column wrap;
         align-items: flex-start;
@@ -313,7 +325,7 @@ div#resumo{
 
     .maior3{
         width: 100%;
-        height: 68%;
+        height: 100%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
@@ -364,7 +376,7 @@ span.botao{
     color: white;
     font-size: 1.3em;
     text-align: center;
-    padding: 3.5%;
+    padding: 2.5%;
     border-radius: 7px;
     border: 2px solid rgb(158, 158, 158);
     background-color: rgb(35, 35, 35);
@@ -381,23 +393,31 @@ span.botao{
 
 /*Sombras simplificadas*/
     div#sombrasSimpli{
-        width: 100%;
+        width: 23.5%;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         margin: auto;
-        border: none;
-        margin-bottom: 45px;
+        margin-top: 0px;
+    }
+    div#sombrasSimpli>h2{
+        margin: auto;
+        margin-bottom: 0px;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 1.38em;
+        border-radius: 9px 9px 0px 0px;
+        background-color: #EEEEEE;
+        box-shadow: 0px 2px 0px rgb(215, 215, 215);
     }
     div#ss{
-        width: 85%;
+        width: 100%;
         overflow-y: hidden;
         margin: 0px;
         display: flex;
         flex-flow: column;
         align-items: center;
-        border: 2px solid rgb(215, 215, 215);
-        background-color: rgb(238, 238, 238);
         border-radius: 9px 9px 0px 0px;
     }
     div.txt{
@@ -424,12 +444,14 @@ span.botao{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
+        margin-top: 15px;
         box-sizing: border-box;
+        gap: 12px;
     }
     .variacao{
         background-color: rgb(216, 216, 216);
-        height: 100%;
+        height: 37px;
         width: 45%;
         border-radius: 5px;
         display: flex;
@@ -458,12 +480,13 @@ div#imgs_ss{
 
 /*Pelagem de animais feitas nesse estilo*/
     div#pelagem{
-        width: 85%;
+        width: 100%;
         padding: 0px;
         display: flex;
         flex-flow: column wrap;
         justify-content: space-evenly;
         align-items: center;
+        box-shadow: 0px -2px 0px rgb(215, 215, 215);
     }
     div#pelossolidos{
         display: flex;
@@ -508,7 +531,7 @@ div#imgs_ss{
 /*Sombras de todas as formas*/
 
 div#staf{
-   width: 85%;
+   width: 23.5%;
    margin: auto;
    overflow-x: hidden;
    margin-bottom: 40px;
@@ -517,12 +540,12 @@ div#staf>h2{
     margin: auto;
     margin-bottom: 0px;
     width: 100%;
-    padding: 5.5% 5%;
+    padding: 20px;
     box-sizing: border-box;
     font-size: 1.38em;
     border-radius: 9px 9px 0px 0px;
     background-color: #EEEEEE;
-    border: 2px solid rgb(204, 204, 204);
+    box-shadow: 0px 2px 0px rgb(215, 215, 215);
 }
 div#todas{
     display: flex;
@@ -534,14 +557,10 @@ div#todas{
     border-radius: 0px 0px 9px 9px;
 }
 div#todas>.variacoes{
-    margin-top: 10px;
-    margin-bottom: 21px;
     min-height: 90px;
-    gap: 10px;
 }
 div#todas>.variacoes>.variacao{
     width: 47%;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -554,7 +573,8 @@ div#todas>.variacoes>div:nth-child(3){
 /*Poligonos*/
 
     div#poligonos{
-        height: 80vw;
+        height: 400px;
+        width: 95%;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -570,7 +590,6 @@ div#todas>.variacoes>div:nth-child(3){
         width: 95%;
         height: 100%;
         padding: 0px;
-        margin-right: -18px;
     }
     div#gPol> h2{
         width: 100%;
@@ -586,11 +605,8 @@ div#todas>.variacoes>div:nth-child(3){
         font-size: 1em;
         padding: 0px;
     }
-    div#gPol>div.imgs3>{
-        height: 100%;
-    }
     div#gPol>div.imgs3>div.maior3{
-        height: 100%;
+        max-height: 100%;
         padding: 0px;
         padding-bottom: 5px;
         box-shadow: none;
@@ -598,6 +614,11 @@ div#todas>.variacoes>div:nth-child(3){
         margin-left: 0px;
         background-color: rgba(255, 255, 255, 0);
         position: relative;
+    }
+    div#gPol>div.imgs3>div.maior3>img{
+        height: 100%;
+        flex: 0 1 auto;
+        object-fit: cover;
     }
     .sombras{
         position: absolute;
@@ -629,10 +650,7 @@ div#forJ{
     margin-bottom: 34px;
     width: 90%;
     display: none;
-}
-div#forJ>div.imgs{
-    width: 100%;
-    margin: auto;
+    padding: 0px;
 }
 div#forJ h2{
     width: 100%;
@@ -702,32 +720,24 @@ div#mosaicos{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 85%;
+    width: 23.5%;
     margin: auto;
     overflow-y: hidden;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    border-radius: 15px;
+    margin-top: 0px;
+    padding-bottom: 24px;
 }
 
 div#mosaicos>h2{
     width: 100%;
     padding-left: 5%;
-    padding: 20px;
+    padding: 18px;
     box-sizing: border-box;
     font-size: 1.35em;
-    font-weight: 600;
-    border-radius: 0px;
+    border-radius: 9px 9px 0px 0px;
     box-shadow: 0px 2px 0px rgb(215, 215, 215);
-}
-div#mosaicos>.variacoes{
-    margin-top: 15px;
-    margin-bottom: 12px;
-    min-height: 180px;
 }
 div#mosaicos>.variacoes>.variacao{
     width: 100%;
-    height: 50px;
 }
 div#mosaicos>.variacoes>.variacao>p{
    width: 90%;
@@ -738,7 +748,7 @@ div#mosaicos>.variacoes>.variacao>p{
         align-items: center;
         width: 100%;
         margin-top: 0px;
-        padding: 0px 0px 25px;
+        padding: 0px;
         border-radius: 0px;
         border: none;
     }
@@ -790,11 +800,6 @@ div#mosaicos>.variacoes>.variacao>p{
         margin: auto;
         padding: 26px 0px;
     }
-    div#mosaicFR>div.imgs{
-        width: 90%;
-        margin: auto;
-    }
-
     /*Mosaico de formas curvas*/
     div#mosaicFC{
         width: 90%;
@@ -812,10 +817,6 @@ div#mosaicos>.variacoes>.variacao>p{
     div#mosaicFC>div.txt>h2{
         margin: 0;
     }
-    div#mosaicFC>div.imgs{
-        width: 90%;
-        margin: auto;
-    }
     div#mosaicFC>div.imgs img{
         object-position: top center;
     }
@@ -824,9 +825,9 @@ div#mosaicos>.variacoes>.variacao>p{
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        width: 85%;
+        width: 23.5%;
         margin: auto;
-        margin-bottom: 30px;
+        margin-top: 0px;
         padding-bottom: 20px;
     }
     div#pattern>h2{
@@ -838,16 +839,11 @@ div#mosaicos>.variacoes>.variacao>p{
         box-shadow: 0px 2px 0px rgb(215, 215, 215);
     }
     div#pattern>.variacoes{
-        gap: 10px;
-        margin-top: 15px;
-        margin-bottom: 22px;
-        height: 165px;
         display: flex;
         flex-flow: row wrap;
     }
     div#pattern>.variacoes>.variacao{
         width: 47%;
-        height: 29%;
     }
     div#pattern>.variacoes>.variacao:nth-child(1){
         width: 100%;
@@ -858,6 +854,7 @@ div#mosaicos>.variacoes>.variacao>p{
 /*Circulos*/
     div#cir{
         width: 90%;
+        height: 100%;
         margin: auto;
         margin-bottom: 10px;
         padding: 20px 0px;
@@ -939,12 +936,13 @@ div#folhas>div.txt>p>a{
 
 footer{
     display: block;
+    height: 250px ;
     padding: 20px 0px;
     margin: auto;
     background-color: black;
     color: white;
 }
 footer> div#sobre{
-    width: 90%;
-    margin-left: 5%;
+    width: 970px;
+    margin: auto;
 }}
