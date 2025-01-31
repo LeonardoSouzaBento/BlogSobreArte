@@ -241,12 +241,45 @@ variacao_folhas.forEach((div) => {
 let imgs_altas= [...document.querySelectorAll('#cavalo, #beatles, #dogFullColors, #galinhas, #pomba')]
 imgs_altas.forEach((img)=>{img.style.transition='transform 0.4s ease'})
 
+let transformações= imgs_altas.map((img) => {
+
+    let nat_height= img.naturalHeight;
+    let nat_width= img.naturalWidth;
+    let width=img.offsetWidth;
+    let height= img.parentElement.offsetHeight;
+    let prop_height= nat_height/nat_width*width;
+    let arraste= prop_height/2;
+    let rest_height = prop_height - width;
+    let max_top= 0.75*rest_height;
+    let max_bottom= 1.5*rest_height;
+    
+    return {
+        imagem: img,
+        arraste: arraste,
+        limiteSuperior: max_top,
+        limiteInferior: max_bottom,
+        altura_aparente: height,
+        altura_real: prop_height
+    };
+});
+console.log(transformações)
+
+let toc_ini2= 0;
+let time_touch = 0;
+let velocidade = 0;
+let animacaoRolagem = null;
 let toc_ini = 0;
+let arrastando = false;
+
 let arraste = 0;
+const limiteSuperior = 0;
+const limiteInferior = 0;
 
 imgs_altas.forEach((img)=>{img.addEventListener("touchstart",(e)=>{
     if (img.parentElement.classList.contains('maior')||img.parentElement.classList.contains('maior2')){
     toc_ini = e.touches[0].clientY;
+
+
     }
 })
 })
@@ -254,7 +287,6 @@ imgs_altas.forEach((img)=>{img.addEventListener("touchstart",(e)=>{
 imgs_altas.forEach((img)=>{img.addEventListener("touchmove",(e)=>{
     e.preventDefault();
     let movidos = e.changedTouches[0].clientY;
-    console.log(movidos);
 })
 })
 
@@ -294,8 +326,6 @@ let prop_height= nat_height/nat_width*width;
 let rest_height=prop_height-width;
 let max_top= 0.75*rest_height;
 let max_bottom= 1.5*rest_height;
-
-console.log(max_bottom);
 
 beatles.style.height= 'auto';
 beatles.style.position= 'absolute';
