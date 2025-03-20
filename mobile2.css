@@ -24,118 +24,26 @@ header h1{
 div#monalisa{
     height: 190px;
 }
-
 #monachild{
     width: 98%;
     height: 165px;
     gap: 25px;
 }
 
-h2, h3, h4{
-    font-family: "Roboto Condensed";
-}
-h2{font-size: 1.32em; font-weight: 600;}
-p{
-    font-weight: 400;
-    font-size: 1.05em;
-    letter-spacing: 0.7px;
-}
-main h3{
-    font-weight: 600;
-    font-size: 1.2em;
-}
 div.intro{
-    display: block;
-    line-height: 1.5em;
-    text-align: left;
-    margin: auto;
-    margin-bottom: 64px;
-    padding: 25px 0px 40px;
-    width: 100%;
     height: 250px;
-    overflow-y: hidden;
-    background-color: white;
-    background-image: linear-gradient(to top, rgb(218, 218, 218), white);
-    background-size: 100% 15px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    border-radius: 0px;
-    position: relative;
 }
-div#resumo{
-    position: relative;
-    width: 82%;
-    margin: auto;
-    height: 46px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    background-image: none;
-    margin-bottom: 28px;
-    border: 2px solid rgb(221, 221, 221);
-    border-radius: 4px;
-}
-    div#resumo>h3{
-        width: 90%;
-        height: 100%;
-        color: #1B140A;
-        font-size: 1.2em;
-        border-radius: 4px 0px 0px 4px;
-        background-color: hsl(0, 0%, 95%);
-        box-sizing: border-box;
-        padding: 1.6% 0%;
-        padding-left: 3%;
-        margin: 0px;
-        letter-spacing: 1px;
-        text-align: center;
-    }
     div#resumo>span{
         background-color: hsl(0, 0%, 95%);
         width: 10%;
-        height: 100%;
         padding: 1.8% 0%;
-        box-sizing: border-box;
         font-size: 1.4em;
-        text-align: center;
-        box-shadow: none;
-        border-radius: 0px 4px 4px 0px;
-        box-sizing: border-box;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-    }
-    div#com_p_intro{
-        width: 90%;
-        margin: auto;
-        margin-bottom: 15px;
     }
     div#com_p_intro>p{
         width: 90%;
         margin: auto;
         text-align: center;
     }
-    div#gatos{
-        width: 81%;
-        height: 310px;
-        margin: auto;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        border-radius:0px 0px 7px 7px;
-        padding: 20px 0px 20px 0px;
-        overflow-x: hidden;
-        gap: 25px;
-    }
-        div#gatos>img{
-            width: 38%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            box-shadow: -2px 2px 6px rgb(150, 150, 150);
-            border-radius: 8px;
-            border: 2px solid rgb(189, 189, 189);
-            filter: opacity(0.95) contrast(1.1);
-        }
 
 /*Eestilo de imagens*/
 
