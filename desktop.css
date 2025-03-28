@@ -4,15 +4,15 @@
 
 @media only screen and (min-width: 993px){
 
-body{max-width: 1375px;margin: auto;}
 main{
     padding-bottom: 30px; 
     overflow: auto; 
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     margin-bottom: 34px;
-    max-width: 1250px;
+    width: 100%;
+    max-width: 1380px;
     margin: auto;
 }
 
@@ -20,9 +20,8 @@ header{
     display: block;
     margin: auto;
     padding: 0px;
-    background-image: linear-gradient(to bottom, rgb(220, 220, 220), rgb(255, 255, 255));
-    background-color: rgb(238, 238, 238);
-    margin-bottom: 50px;
+    background-color: rgb(241, 246, 255);
+    margin-bottom: 34px;
 }
 header h1{
     text-align: center;
@@ -45,24 +44,7 @@ div#monalisa{
     border: none;
 }
 
-div.intro{
-    display: none;
-    height: 250px;
-}
-    div#resumo>span{
-        width: 10%;
-        padding: 1.8% 0%;
-    }
-    div#com_p_intro>p{
-        width: 90%;
-        margin: auto;
-        text-align: center;
-    }
 /*Classes de layout para imagens*/
-
-.imgs, .imgs2, .imgs3{
-    transition: filter 0.4s ease;
-}
 .imgs{
     width: 90%;
     flex: 1 0 220px;
@@ -83,14 +65,7 @@ div.intro{
     padding-right: 6px;
     padding-bottom: 6px;
 }
-.maior>img, .maior2>img{
-    width: 100%;
-    height: 100%;
-    transition: filter 0.4s ease-out;
-    object-fit: cover;
-    box-shadow: 3px 3px 4px rgb(131, 131, 131);
-    border-radius: none;
-}
+
 
 .menor{
     display: flex;
@@ -770,16 +745,4 @@ div#folhas>div.txt>p{
 div#folhas>div.txt>p>a{
     color: #2C4918;
 }
-
-footer{
-    display: block;
-    height: 250px ;
-    padding: 20px 0px;
-    margin: auto;
-    background-color: black;
-    color: white;
 }
-footer> div#sobre{
-    width: 970px;
-    margin: auto;
-}}

@@ -11,14 +11,18 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-
+main{
+    width: 100%;
+    max-width: 1380px;
+    margin: auto;
+}
 header{
     display: block;
     margin: auto;
+    margin-bottom: 28px;
     padding: 0px;
     background-color: rgb(238, 238, 238);
 }
-
 header h1{
     font-family: "Roboto Condensed";
     font-weight: 500;
@@ -47,7 +51,6 @@ div#monalisa{
     background-position: 47% center;
     background-size: cover;
     border: 1px solid black;
-    margin-bottom: 18px;
 }
 #monachild{
     width: 98%;
@@ -106,87 +109,83 @@ p{
 }
 
 div.intro{
-    display: block;
-    line-height: 1.5em;
-    text-align: left;
-    margin: auto;
-    margin-bottom: 64px;
-    padding: 25px 0px 40px;
     width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
     overflow-y: hidden;
     background-color: white;
-    background-image: linear-gradient(to top, rgb(218, 218, 218), white);
-    background-size: 100% 15px;
+    background-image: linear-gradient(to top, rgb(228, 228, 228), rgba(255, 255, 255, 0));
+    background-size: 100% 10px;
     background-repeat: no-repeat;
     background-position: bottom;
     border-radius: 0px;
-    position: relative;
 }
 div#resumo{
-    position: relative;
-    width: 82%;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     margin: auto;
-    height: 46px;
+    margin-bottom: 25px;
+    padding: 0px 30px ;
+}
+div#resumo>h3{
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    color: #1B140A;
+    font-size: 1.2em;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding: 8px 0px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div#gatos{
+    height: 310px;
+    width: calc(100% - 60px);
+    max-width: 850px;
+    margin: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-bottom: 28px;
-    border: 2px solid rgb(221, 221, 221);
-    border-radius: 4px;
-}
-div#resumo>h3{
-    width: 90%;
-    height: 100%;
-    color: #1B140A;
-    font-size: 1.2em;
-    border-radius: 4px 0px 0px 4px;
-    background-color: hsl(0, 0%, 95%);
-    box-sizing: border-box;
-    padding: 1.6% 0%;
-    padding-left: 3%;
-    margin: 0px;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-div#resumo>span{
-    background-color: rgb(241, 241, 241);
-    height: 100%;
-    box-sizing: border-box;
-    font-size: 1.4em;
-    line-height: 0.6em;
-    text-align: center;
-    box-shadow: none;
-    border-radius: 0px 4px 4px 0px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-div#com_p_intro{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 15px;
-}
-div#gatos{
-    height: 310px;
-    width: 81%;
-    margin: auto;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
     border-radius:0px 0px 7px 7px;
-    padding: 20px 0px 20px 0px;
-    overflow-x: hidden;
-    gap: 25px;
+    padding: 5px 0px;
+    margin-bottom: 50px;
+    overflow-x: auto;
+    gap: 15px;
 }
 div#gatos>img{
-    width: 38%;
+    width: 140px;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    box-shadow: -2px 2px 6px rgb(150, 150, 150);
+    box-shadow: 0px 0px 4px rgb(204, 204, 204);
     border-radius: 8px;
-    border: 2px solid rgb(189, 189, 189);
+    border: 1px solid rgb(198, 198, 198);
     filter: opacity(0.95) contrast(1.1);
+}
+
+.imgs, .imgs2, .imgs3{
+    transition: filter 0.4s ease;
+}
+.maior>img, .maior2>img{
+    width: 100%;
+    height: 100%;
+    transition: filter 0.4s ease-out;
+    object-fit: cover;
+    box-shadow: 3px 3px 4px rgb(131, 131, 131);
+    border-radius: none;
+}
+
+footer{
+    display: block;
+    height: 185px ;
+    margin: auto;
+    background-color: black;
+    color: white;
 }

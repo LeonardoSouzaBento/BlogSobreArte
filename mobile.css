@@ -4,23 +4,6 @@
 
 @media only screen and (max-width: 576px){
 
-main{padding-bottom: 30px; overflow: auto;}
-
-div.intro{
-    height: 390px;
-}
-    div#resumo>span{
-        width: 13.5%;
-    }
-
-    div#com_p_intro{
-        width: 90%;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    div#gatos{
-        gap: 20px;
-    }
 /*Eestilo de imagens*/
 
 .menor>img, .menor2>img, .menor3>img, .menor4>img{
@@ -38,16 +21,7 @@ div.intro{
     box-shadow: 3px 3px 4px rgb(131, 131, 131);
     position: relative;
 }
-.maior>img, .maior2>img{
-    width: 100%;
-    height: 100%;
-    transition: filter 0.4s ease-out;
-    object-fit: cover;
-}
 /*Classe 1 para imagens*/
-.imgs, .imgs2, .imgs3{
-    transition: filter 0.4s ease;
-}
     .imgs{
         width: 100%;
         flex: 1 0 220px;
@@ -749,15 +723,4 @@ div#folhas>div.txt>p{
 div#folhas>div.txt>p>a{
     color: #2C4918;
 }
-
-footer{
-    display: block;
-    padding: 20px 0px;
-    margin: auto;
-    background-color: black;
-    color: white;
 }
-footer> div#sobre{
-    width: 90%;
-    margin-left: 5%;
-}}

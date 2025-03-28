@@ -1,3 +1,5 @@
+//rolagem personalizada: 196px, 396px, 878px
+
 let spans_resumo= [...document.querySelectorAll('#resumo span')]
 spans_resumo.forEach((span)=>{
     addEventListener("click", (el)=>{

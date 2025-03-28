@@ -40,26 +40,9 @@ div#monalisa{
 #monachild img{
     border: none;
 }
-div.intro{
-    display: none;
-    height: 250px;
-}
-    div#resumo>span{
-        background-color: hsl(0, 0%, 95%);
-        width: 10%;
-        padding: 1.8% 0%;
-    }
-    div#com_p_intro>p{
-        width: 90%;
-        margin: auto;
-        text-align: center;
-    }
 
 /*Classes de layout para imagens*/
 
-.imgs, .imgs2, .imgs3{
-    transition: filter 0.4s ease;
-}
 .imgs{
     width: 90%;
     flex: 1 0 220px;
@@ -79,14 +62,6 @@ div.intro{
     position: relative;
     padding-right: 6px;
     padding-bottom: 6px;
-}
-.maior>img, .maior2>img{
-    width: 100%;
-    height: 100%;
-    transition: filter 0.4s ease-out;
-    object-fit: cover;
-    box-shadow: 3px 3px 4px rgb(131, 131, 131);
-    border-radius: none;
 }
 
 .menor{
@@ -768,15 +743,4 @@ div#folhas>div.txt>p>a{
     color: #2C4918;
 }
 
-footer{
-    display: block;
-    height: 250px ;
-    padding: 20px 0px;
-    margin: auto;
-    background-color: black;
-    color: white;
 }
-footer> div#sobre{
-    width: 970px;
-    margin: auto;
-}}
