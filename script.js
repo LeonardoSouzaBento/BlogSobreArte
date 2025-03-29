@@ -1,4 +1,73 @@
-//rolagem personalizada: 196px, 396px, 878px
+window.onload = function(){
+    
+//rolagem personalizada: 196px (altura do h1), 396px (+altura da div monalisa), 962px (margin-botton do header + altura da div #intro+ metade da margin-botom da div intro);
+
+let i_scroll = 0;
+const scrollSteps = [];
+
+function ObterRolagens(){
+    scrollSteps[0] = 0;
+    let height_h1 = (document.querySelector('h1')).offsetHeight + 2;
+    scrollSteps[1]= height_h1;
+    let height_mona = (document.querySelector('#monalisa')).offsetHeight + height_h1;
+    scrollSteps[2]= height_mona;
+    let margin_header = parseFloat(getComputedStyle(document.querySelector('header')).marginBottom);
+    let height_intro = (document.querySelector('.intro')).offsetHeight;
+    let margin_intro = parseFloat(getComputedStyle(document.querySelector('.intro')).marginBottom)/2;
+    let height_content = height_intro + margin_header + margin_intro;
+    scrollSteps [3]= height_content + height_mona;
+    scrollSteps[4] = document.documentElement.scrollHeight;
+}
+ObterRolagens();
+
+function scrollToStep(stepIndex) {
+    if (stepIndex >= 0 && stepIndex < scrollSteps.length) {
+        // window.scrollBy({
+        //     top: scrollSteps[stepIndex],
+        //     behavior: 'smooth', // Adiciona uma animação suave
+        // });
+        document.body.scrollTop = scrollSteps[stepIndex]; // Para navegadores antigos
+        document.documentElement.scrollTop = scrollSteps[stepIndex]; // Para navegadores modernos
+
+        i_scroll = stepIndex;
+    }
+}
+
+let isScrolling = false;
+
+document.addEventListener('wheel', (event) => {
+    if (isScrolling) return;
+    isScrolling = true;
+
+    if (event.deltaY > 0) {
+        //se não estiver no penultimo
+        if (i_scroll < scrollSteps.length - 1) {
+            scrollToStep(i_scroll + 1);
+        }
+    } else {
+        //se não estiver o topo
+        if (i_scroll > 0) {
+            scrollToStep(i_scroll - 1);
+        }
+    }
+
+    setTimeout(() => {
+        isScrolling = false;
+    }, 250);
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowDown') {
+        if (i_scroll < scrollSteps.length - 1) {
+            scrollToStep(i_scroll + 1);
+        }
+    } else if (event.key === 'ArrowUp') {
+        if (i_scroll > 0) {
+            scrollToStep(i_scroll - 1);
+        }
+    }
+});
+//
 
 let spans_resumo= [...document.querySelectorAll('#resumo span')]
 spans_resumo.forEach((span)=>{
@@ -391,4 +460,5 @@ document.querySelectorAll('.menor>img, .menor2>img').forEach(img=>{
         }, 200);
     });
 })
+}
        
